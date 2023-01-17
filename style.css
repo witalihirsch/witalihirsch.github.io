@@ -56,6 +56,10 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+.control-center-frame:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .control-top-icons {
     height: 16px;
     width: 16px;
@@ -102,6 +106,10 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+.battery-frame:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .battery-text {
     letter-spacing: 1px;
     font-weight: 800;
@@ -141,6 +149,13 @@ body {
 .lockscreen-frame:active,
 .poweroff-frame:active {
     background-color: rgba(255, 255, 255, 0.05);
+}
+
+.screenshot-frame:focus,
+.settings-frame:focus,
+.lockscreen-frame:focus,
+.poweroff-frame:focus {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .slider {
@@ -242,6 +257,10 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+.arrow-frame:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .arrow {
     height: 18px;
     width: 18px;
@@ -275,6 +294,13 @@ body {
     background-color: #1B82B3;
 }
 
+.wifi-frame:focus,
+.nightlight-frame:focus,
+.darkmode-frame:focus {
+    background-color: #2094C9;
+}
+
+
 .bluetooth-frame,
 .power-frame,
 .airplane-frame {
@@ -300,4 +326,10 @@ body {
 .power-frame:active,
 .airplane-frame:active {
     background-color: rgba(255, 255, 255, 0.05);
+}
+
+.bluetooth-frame:focus,
+.power-frame:focus,
+.airplane-frame:focus {
+    background-color: rgba(255, 255, 255, 0.1);
 }
