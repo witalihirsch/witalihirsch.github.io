@@ -61,7 +61,7 @@ body {
     width: 16px;
 }
 
-.control-center {
+#control-center-appear {
     background-color: #252525;
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
@@ -71,6 +71,9 @@ body {
     margin-top: 10px;
     overflow: hidden;
     padding: 25px;
+    display: none;
+    transform: scale(0);
+    transition: 0.2s;
 }
 
 .control-center-top {
@@ -178,7 +181,7 @@ body {
     height: 24px;
     width: 325px;
     position: absolute;
-    margin: 2px;   
+    margin: 2px;
 }
 
 .sound-slider-circle {

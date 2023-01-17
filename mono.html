@@ -11,13 +11,13 @@
     <header>
         <div class="project-frame">
             <div class="panel">
-                <div class="control-center-frame">
+                <div id="toggle" class="control-center-frame">
                     <img class="control-top-icons" src="images/wifi-icon.svg" alt="wifi-icon" />
                     <img class="control-top-icons" src="images/audio-icon.svg" alt="audio-icon" />
                     <img class="control-top-icons" src="images/battery-icon.svg" alt="battery-icon" />
                 </div>
             </div>
-            <div class="control-center">
+            <div id="control-center-appear" class="control-center">
                 <div class="control-center-top">
                     <div class="battery-frame">
                         <img class="control-top-icons" src="images/battery-icon.svg" alt="battery-icon" />
@@ -90,6 +90,20 @@
             </div>
         </div>
     </header>
+    <script>
+    var hint = document.getElementById('control-center-appear');
+    var btn = document.getElementById('toggle');
+
+    btn.addEventListener('click', function() {
+        if (hint.style.display == 'none') {
+            hint.style.display = 'block';
+            window.setTimeout(function() { hint.style.transform = 'scale(1)'; }, 0);
+        } else {
+            hint.style.transform = 'scale(0)';
+            window.setTimeout(function() {hint.style.display = 'none'; }, 50);
+        }
+    });
+    </script>
 </body>
 
 </html>
