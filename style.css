@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:700");
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    background-image: url(images/MonoDark.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.project-frame {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    align-items: flex-end;
+    backdrop-filter: blur(30px) brightness(100%);
+    background-color: rgba(40, 40, 40, 0.3);
+    display: flex;
+    padding: 2px 5px;
+    width: 100%;
+}
+
+.control-center-frame {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    padding: 5px 15px;
+    margin-left: auto;
+    margin-right: 0;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.control-center-frame:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.control-center-frame:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.control-top-icons {
+    height: 16px;
+    width: 16px;
+}
+
+.control-center {
+    background-color: #252525;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 25px;
+}
+
+.control-center-top {
+    align-items: center;
+    display: flex;
+}
+
+.battery-frame {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    display: flex;
+    gap: 8px;
+    overflow: hidden;
+    justify-content: center;
+    padding: 12px 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.battery-frame:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.battery-frame:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.battery-text {
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.control-center-topright {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    gap: 15px;
+}
+
+.screenshot-frame,
+.settings-frame,
+.lockscreen-frame,
+.poweroff-frame {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 99px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    padding: 13px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.screenshot-frame:hover,
+.settings-frame:hover,
+.lockscreen-frame:hover,
+.poweroff-frame:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.screenshot-frame:active,
+.settings-frame:active,
+.lockscreen-frame:active,
+.poweroff-frame:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.slider {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container {
+    height: 28px;
+    width: 100%;
+    position: relative;
+}
+
+.slider-bg {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 99px;
+    height: 28px;
+    width: 100%;
+    position: absolute;
+}
+
+.sound-slider-fill {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 99px 0 0 99px;
+    height: 24px;
+    width: 250px;
+    position: absolute;
+    margin: 2px;
+}
+
+.brightness-slider-fill {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 99px 0px 0px 99px;
+    height: 24px;
+    width: 325px;
+    position: absolute;
+    margin: 2px;   
+}
+
+.sound-slider-circle {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 99px;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: 240px;
+    margin: 2px;
+}
+
+.brightness-slider-circle {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 99px;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: 312px;
+    margin: 2px;
+}
+
+.controls-frame {
+    align-items: flex-start;
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.controls-row {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.controls-icons {
+    height: 16px;
+    width: 16px;
+    margin: 0 7px;
+}
+
+.arrow-frame {
+    height: 50px;
+    width: 35px;
+    left: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-frame:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.arrow-frame:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.arrow {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+}
+
+.wifi-frame,
+.nightlight-frame,
+.darkmode-frame {
+    align-items: center;
+    background-color: #1B82B3;
+    border-radius: 13px;
+    padding: 24px 10px;
+    display: flex;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    width: 160px;
+}
+
+.wifi-frame:hover,
+.nightlight-frame:hover,
+.darkmode-frame:hover {
+    background-color: #2094C9;
+}
+
+.wifi-frame:active,
+.nightlight-frame:active,
+.darkmode-frame:active {
+    background-color: #1B82B3;
+}
+
+.bluetooth-frame,
+.power-frame,
+.airplane-frame {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 13px;
+    padding: 24px 10px;
+    display: flex;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    width: 160px;
+}
+
+.bluetooth-frame:hover,
+.power-frame:hover,
+.airplane-frame:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bluetooth-frame:active,
+.power-frame:active,
+.airplane-frame:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
