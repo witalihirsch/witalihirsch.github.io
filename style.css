@@ -69,9 +69,9 @@ body {
     margin-right: 10px;
     margin-top: 10px;
     overflow: hidden;
-    padding: 25px;
-    display: none;
-    transform: scale(0);
+    padding: 22px;
+    display: block;
+    transform: scale(1);
     transition: 0.2s;
 }
 
@@ -149,15 +149,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.slider {
-    margin-top: 25px;
-    display: flex;
-    gap: 15px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-
+/*
 .slider-container {
     height: 28px;
     width: 100%;
@@ -208,7 +200,7 @@ body {
     position: absolute;
     left: 312px;
     margin: 2px;
-}
+}*/
 
 .controls-frame {
     align-items: flex-start;
@@ -306,4 +298,71 @@ body {
 .power-frame:active,
 .airplane-frame:active {
     background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+
+
+
+
+
+.slider-volume-frame,
+.slider-brightness-frame {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-volume,
+.slider-brightness {
+    position: relative;
+    width: 100%;
+    height: 24px;
+}
+
+.slider-volume input[type="range"],
+.slider-brightness input[type="range"] {
+    position: absolute;
+    top: 0;
+    width: 337px;
+    height: 24px;
+    -webkit-appearance: none;
+    background: transparent;
+    z-index: 99;
+}
+
+.slider-volume input::-webkit-slider-thumb,
+.slider-brightness input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.slider-volume progress,
+.slider-brightness progress {
+    width: 100%;
+    height: 28px;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.slider-volume progress::-webkit-progress-bar,
+.slider-brightness progress::-webkit-progress-bar {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2px;
+}
+
+.slider-volume progress::-webkit-progress-value,
+.slider-brightness progress::-webkit-progress-value {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 99px;
 }
