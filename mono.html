@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
     <title>Mono</title>
 </head>
 
@@ -41,15 +42,13 @@
                 <div class="slider-volume-frame">
                     <img class="control-top-icons" src="images/volume-icon.svg" alt="volume-icon" />
                     <div class="slider-volume">
-                        <input type="range" min="0" max="100" value="70">
-                        <progress min="0" max="100" value="70"></progress>
+                        <input type="range" min="0" max="100" value="80" ontouchstart="" />
                     </div>
                 </div>
                 <div class="slider-brightness-frame">
                     <img class="control-top-icons" src="images/brightness-icon.svg" alt="brightness-icon" />
                     <div class="slider-brightness">
-                        <input type="range" min="0" max="100" value="100">
-                        <progress min="0" max="100" value="100"></progress>
+                        <input type="range" min="0" max="100" value="100" ontouchstart="" />
                     </div>
                 </div>
                 <div class="controls-frame">
@@ -88,7 +87,6 @@
             </div>
         </div>
     </header>
-    <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/control-center.js"></script>
 </body>
 

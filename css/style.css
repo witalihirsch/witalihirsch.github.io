@@ -10,7 +10,7 @@ body {
     font-weight: 700;
     font-style: normal;
     color: white;
-    background-image: url(images/MonoDark.png);
+    background-image: url(../images/MonoDark.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,8 +70,8 @@ body {
     margin-top: 10px;
     overflow: hidden;
     padding: 22px;
-    display: block;
-    transform: scale(1);
+    display: none;
+    transform: scale(0);
     transition: 0.2s;
 }
 
@@ -148,59 +148,6 @@ body {
 .poweroff-frame:focus {
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-/*
-.slider-container {
-    height: 28px;
-    width: 100%;
-    position: relative;
-}
-
-.slider-bg {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 99px;
-    height: 28px;
-    width: 100%;
-    position: absolute;
-}
-
-.sound-slider-fill {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 99px 0 0 99px;
-    height: 24px;
-    width: 250px;
-    position: absolute;
-    margin: 2px;
-}
-
-.brightness-slider-fill {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 99px 0px 0px 99px;
-    height: 24px;
-    width: 325px;
-    position: absolute;
-    margin: 2px;
-}
-
-.sound-slider-circle {
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 99px;
-    height: 24px;
-    width: 24px;
-    position: absolute;
-    left: 240px;
-    margin: 2px;
-}
-
-.brightness-slider-circle {
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 99px;
-    height: 24px;
-    width: 24px;
-    position: absolute;
-    left: 312px;
-    margin: 2px;
-}*/
 
 .controls-frame {
     align-items: flex-start;
@@ -298,93 +245,4 @@ body {
 .power-frame:active,
 .airplane-frame:active {
     background-color: rgba(255, 255, 255, 0.05);
-}
-
-
-
-
-/*slider*/
-
-.slider-volume-frame,
-.slider-brightness-frame {
-    margin-top: 25px;
-    display: flex;
-    gap: 15px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-
-.slider-volume,
-.slider-brightness {
-    position: relative;
-    width: 100%;
-    height: 24px;
-}
-
-.slider-volume input[type="range"],
-.slider-brightness input[type="range"] {
-    position: absolute;
-    top: 0;
-    width: 337px;
-    height: 24px;
-    -webkit-appearance: none;
-    background: transparent;
-    z-index: 99;
-}
-
-.slider-volume input::-webkit-slider-thumb,
-.slider-brightness input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 24px;
-    height: 24px;
-    background-color: white;
-    cursor: pointer;
-    border-radius: 100%;
-}
-
-/*mozilla*/
-input[type=range]::-moz-range-thumb {
-    border: none;
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
-    background: white;
-}
-
-.slider-volume progress,
-.slider-brightness progress {
-    width: 100%;
-    height: 28px;
-    -webkit-appearance: none;
-    position: absolute;
-    top: 0;
-    border-radius: 99px;
-    overflow: hidden;
-}
-
-.slider-volume progress::-webkit-progress-bar,
-.slider-brightness progress::-webkit-progress-bar {
-    background-color: rgba(255, 255, 255, 0.05);
-    padding: 2px;
-    border: none;
-    border-radius: 99px;
-}
-
-.slider-volume progress::-webkit-progress-value,
-.slider-brightness progress::-webkit-progress-value {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 99px;
-}
-
-/*mozilla*/
-progress {
-    border: 0px solid transparent;
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-progress::-moz-progress-bar {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 99px;
-    border: 2px solid #333333;
 }
