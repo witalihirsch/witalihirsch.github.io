@@ -42,13 +42,13 @@
                 <div class="slider-volume-frame">
                     <img class="control-top-icons" src="images/volume-icon.svg" alt="volume-icon" />
                     <div class="slider-volume">
-                        <input type="range" min="0" max="100" value="80" ontouchstart="" />
+                        <input class="styled-slider slider-progress" type="range" min="0" max="100" value="80" ontouchstart="" />
                     </div>
                 </div>
                 <div class="slider-brightness-frame">
                     <img class="control-top-icons" src="images/brightness-icon.svg" alt="brightness-icon" />
                     <div class="slider-brightness">
-                        <input type="range" min="0" max="100" value="100" ontouchstart="" />
+                        <input class="styled-slider slider-progress" type="range" min="0" max="100" value="100" ontouchstart="" />
                     </div>
                 </div>
                 <div class="controls-frame">
@@ -60,7 +60,7 @@
                                 <img class="arrow" src="images/arrow.svg" alt="arrow" />
                             </div>
                         </div>
-                        <div class="power-frame" ontouchstart="">
+                        <div class="power-frame" ontouchstart="" tabindex="1">
                             <img class="controls-icons" src="images/power-icon.svg" alt="power-icon" />
                             <div class="controls-text">Balanced</div>
                         </div>
@@ -88,6 +88,7 @@
         </div>
     </header>
     <script type="text/javascript" src="js/control-center.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
 </body>
 
 </html>

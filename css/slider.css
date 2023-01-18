@@ -1,84 +1,105 @@
-.slider-volume-frame,
-.slider-brightness-frame {
-    margin-top: 25px;
+.slider-volume-frame, .slider-brightness-frame {
+    margin-top: 15px;
     margin-left: 10px;
     margin-right: 10px;
+    gap: 12px;
     display: flex;
-    gap: 15px;
-    position: relative;
     align-items: center;
-    justify-content: center;
 }
 
-.slider-volume,
-.slider-brightness {
-    position: relative;
+.slider-volume, .slider-brightness {
     width: 100%;
-    height: 20px;
 }
 
-input[type="range"] {
-    font-size: 1.5rem;
-    position: relative;
-    background: rgba(255, 255, 255, 0.05);
-    overflow: hidden;
+input[type=range].styled-slider {
+    height: 2.2em;
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+/*progress support*/
+input[type=range].styled-slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
     width: 100%;
+}
+
+input[type=range].styled-slider:focus {
+    outline: none;
 }
 
 /*webkit*/
-input[type="range"],
-input[type="range"]::-webkit-slider-runnable-track,
-input[type="range"]::-webkit-slider-thumb {
+input[type=range].styled-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    transition: all ease 100ms;
+    width: 20px;
     height: 20px;
+    border-radius: 99px;
+    background: white;
+    border: none;
+}
+
+input[type=range].styled-slider::-webkit-slider-runnable-track {
+    height: 20px;
+    border: none;
     border-radius: 99px;
 }
 
-input[type="range"]::-webkit-slider-runnable-track,
-input[type="range"]::-webkit-slider-thumb {
-    position: relative;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    cursor: grab;
-    box-shadow: calc(-100vmax - (0.5em, 2px)) 0 0 100vmax rgba(255, 255, 255, 0.5);
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 0/var(--sx) 100% no-repeat, rgba(255, 255, 255, 0.05);
 }
 
 /*mozilla*/
-input[type="range"],
-input[type="range"]::-moz-range-track,
-input[type="range"]::-moz-range-thumb {
-    appearance: none;
-    transition: all ease 100ms;
-    height: 20px;
-}
-
-input[type="range"]::-moz-range-thumb {
-    background: transparent;
-    border: 0;
+input[type=range].styled-slider::-moz-range-thumb {
+    -webkit-appearance: none;
     width: 20px;
     height: 20px;
     border-radius: 99px;
-    cursor: grab;
-    background-color: white;
+    background: white;
+    border: none;
 }
 
-input[type="range"]::-moz-range-track {
-    background: rgba(255, 255, 255, 0.05);
+input[type=range].styled-slider::-moz-range-track {
+    height: 20px;
+    border: none;
+    border-radius: 99px;
 }
 
-input[type="range"]::-moz-range-progress {
-    appearance: none;
-    background: rgba(255, 255, 255, 0.5);
-    transition-delay: 30ms;
+input[type=range].styled-slider.slider-progress::-moz-range-track {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) 0/var(--sx) 100% no-repeat, rgba(255, 255, 255, 0.05);
 }
 
-input[type="range"]::-moz-range-track,
-input[type="range"]::-moz-range-progress {
+/*ms*/
+input[type=range].styled-slider::-ms-fill-upper {
+    background: transparent;
+    border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-fill-lower {
+    background: transparent;
+    border-color: transparent;
+}
+
+input[type=range].styled-slider::-ms-thumb {
+    -webkit-appearance: none;
+    width: 20px;
     height: 20px;
     border-radius: 99px;
+    background: white;
+    border: none;
+}
+
+input[type=range].styled-slider::-ms-track {
+    height: 20px;
+    border: none;
+    border-radius: 99px;
+}
+
+input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+    height: max(calc(1em - 1px - 1px), 0px);
+    border-radius: 99px 0 0 99px;
+    margin: -1px 0 -1px -1px;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-right-width: 0;
 }
