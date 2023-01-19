@@ -28,7 +28,7 @@ body {
 .panel {
     align-items: flex-end;
     backdrop-filter: blur(30px) brightness(100%);
-    background-color: rgba(40, 40, 40, 0.3);
+    background-color: #2828284c;
     display: flex;
     padding: 2px 5px;
     width: 100%;
@@ -48,11 +48,11 @@ body {
 }
 
 .control-center-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff19;
 }
 
 .control-center-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #ffffff0c;
 }
 
 .control-top-icons {
@@ -62,7 +62,7 @@ body {
 
 #control-center-appear {
     background-color: #252525;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #ffffff19;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ body {
 
 .battery-frame {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #ffffff0c;
     border-radius: 12px;
     display: flex;
     gap: 8px;
@@ -94,11 +94,11 @@ body {
 }
 
 .battery-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff19;
 }
 
 .battery-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #ffffff0c;
 }
 
 .battery-text {
@@ -118,7 +118,7 @@ body {
 .lockscreen-frame,
 .poweroff-frame {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #ffffff0c;
     border-radius: 99px;
     display: flex;
     overflow: hidden;
@@ -132,21 +132,21 @@ body {
 .settings-frame:hover,
 .lockscreen-frame:hover,
 .poweroff-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff19;
 }
 
 .screenshot-frame:active,
 .settings-frame:active,
 .lockscreen-frame:active,
 .poweroff-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #ffffff0c;
 }
 
 .screenshot-frame:focus,
 .settings-frame:focus,
 .lockscreen-frame:focus,
 .poweroff-frame:focus {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff19;
 }
 
 .controls-frame {
@@ -180,11 +180,11 @@ body {
 }
 
 .arrow-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff19;
 }
 
 .arrow-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #ffffff0c;
 }
 
 .arrow {
@@ -224,7 +224,7 @@ body {
 .power-frame,
 .airplane-frame {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #ffffff0c;
     border-radius: 13px;
     padding: 24px 10px;
     display: flex;
@@ -238,11 +238,11 @@ body {
 .bluetooth-frame:hover,
 .power-frame:hover,
 .airplane-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff19;
 }
 
 .bluetooth-frame:active,
 .power-frame:active,
 .airplane-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #ffffff0c;
 }
