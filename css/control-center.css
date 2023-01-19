@@ -7,12 +7,13 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
     overflow: hidden;
     padding: 22px;
     display: none;
-    transform: scale(0);
-    transition: 0.2s;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .control-center-top {

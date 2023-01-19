@@ -3,11 +3,13 @@ var btnControl = document.getElementById('control-center-button');
 
 btnControl.addEventListener('click', function() {
     if (hintControl.style.display == 'block') {
-        hintControl.style.transform = 'scale(0)';
-        window.setTimeout(function() { hintControl.style.display = 'none'; }, 80);
+        hintControl.style.transform = 'translate(0px, 0px)';
+        window.setTimeout(function() { hintControl.style.display = 'none'; }, 20);
+        window.setTimeout(function() { hintControl.style.opacity = '0'; }, 50);
     } else {
         hintControl.style.display = 'block';
-        window.setTimeout(function() { hintControl.style.transform = 'scale(1)'; }, 0);
+        window.setTimeout(function() { hintControl.style.transform = 'translate(0px, 10px)'; }, 20);
+        window.setTimeout(function() { hintControl.style.opacity = '1'; }, 50);
     }
 });
 
@@ -16,10 +18,12 @@ var btnLang = document.getElementById('lang-dialog-button');
 
 btnLang.addEventListener('click', function() {
     if (hintLang.style.display == 'block') {
-        hintLang.style.transform = 'scale(0)';
-        window.setTimeout(function() { hintLang.style.display = 'none'; }, 80);
+        hintLang.style.transform = 'translate(0px, 0px)';
+        window.setTimeout(function() { hintLang.style.display = 'none'; }, 20);
+        window.setTimeout(function() { hintLang.style.opacity = '0'; }, 50);
     } else {
         hintLang.style.display = 'block';
-        window.setTimeout(function() { hintLang.style.transform = 'scale(1)'; }, 0);
+        window.setTimeout(function() { hintLang.style.transform = 'translate(0px, 10px)'; }, 20);
+        window.setTimeout(function() { hintLang.style.opacity = '1'; }, 50);
     }
 });

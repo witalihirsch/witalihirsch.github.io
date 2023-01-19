@@ -4,13 +4,13 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     margin-right: 35px;
-    margin-top: 10px;
     overflow: hidden;
     padding: 6px;
     gap: 5px;
     display: none;
-    transform: scale(0);
-    transition: 0.2s;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    transition: 0.3s;
 }
 
 .first-lang,
