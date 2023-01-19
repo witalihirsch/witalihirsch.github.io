@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:700");
+@import url("https://fonts.googleapis.com/css?family=Inter:400");
 
 html {
     height: 100%;
@@ -26,12 +27,24 @@ body {
 }
 
 .panel {
-    align-items: flex-end;
+    align-items: center;
+    justify-content: right;
     backdrop-filter: blur(30px) brightness(100%);
     background-color: rgba(40, 40, 40, 0.3);
     display: flex;
-    padding: 2px 5px;
     width: 100%;
+}
+
+.panel-right {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+    padding: 2px 5px;
+}
+
+.control-top-icons {
+    height: 16px;
+    width: 16px;
 }
 
 .control-center-frame {
@@ -55,230 +68,27 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-.control-top-icons {
-    height: 16px;
-    width: 16px;
-}
-
-#control-center-appear {
-    background-color: #252525;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    margin-top: 10px;
-    overflow: hidden;
-    padding: 22px;
-    display: none;
-    transform: scale(0);
-    transition: 0.2s;
-}
-
-.control-center-top {
+.lang-dialog-frame {
     align-items: center;
+    border-radius: 5px;
     display: flex;
-}
-
-.battery-frame {
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    display: flex;
-    gap: 8px;
+    gap: 16px;
     overflow: hidden;
-    justify-content: center;
-    padding: 12px 15px;
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-.battery-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.battery-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.battery-text {
-    letter-spacing: 1px;
-    font-weight: 800;
-}
-
-.control-center-topright {
-    display: flex;
+    padding: 5px 15px;
     margin-left: auto;
     margin-right: 0;
-    gap: 15px;
-}
-
-.screenshot-frame,
-.settings-frame,
-.lockscreen-frame,
-.poweroff-frame {
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 99px;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    padding: 13px;
     transition: 0.2s;
     cursor: pointer;
 }
 
-.screenshot-frame:hover,
-.settings-frame:hover,
-.lockscreen-frame:hover,
-.poweroff-frame:hover {
+.lang-dialog-frame:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.screenshot-frame:active,
-.settings-frame:active,
-.lockscreen-frame:active,
-.poweroff-frame:active {
+.lang-dialog-frame:active {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-.screenshot-frame:focus,
-.settings-frame:focus,
-.lockscreen-frame:focus,
-.poweroff-frame:focus {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.controls-frame {
-    align-items: flex-start;
-    display: flex;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.controls-row {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.controls-icons {
-    height: 16px;
-    width: 16px;
-    margin: 0 7px;
-}
-
-.arrow-frame {
-    height: 50px;
-    width: 35px;
-    left: 70px;
+.popups {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.arrow-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.arrow-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.arrow {
-    height: 18px;
-    width: 18px;
-    position: absolute;
-}
-
-.wifi-frame,
-.nightlight-frame,
-.darkmode-frame {
-    align-items: center;
-    background-color: #1B82B3;
-    border-radius: 13px;
-    padding: 24px 10px;
-    display: flex;
-    height: 0px;
-    overflow: hidden;
-    transition: 0.2s;
-    cursor: pointer;
-    width: 160px;
-}
-
-.wifi-frame:hover,
-.nightlight-frame:hover,
-.darkmode-frame:hover {
-    background-color: #2094C9;
-}
-
-.wifi-frame:active,
-.nightlight-frame:active,
-.darkmode-frame:active {
-    background-color: #1B82B3;
-}
-
-.wifi-frame:focus,
-.nightlight-frame:focus,
-.darkmode-frame:focus {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.wifi-frame:focus:hover,
-.nightlight-frame:focus:hover,
-.darkmode-frame:focus:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.wifi-frame:focus:active,
-.nightlight-frame:focus:active,
-.darkmode-frame:focus:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.bluetooth-frame,
-.power-frame,
-.airplane-frame {
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 13px;
-    padding: 24px 10px;
-    display: flex;
-    height: 0px;
-    overflow: hidden;
-    transition: 0.2s;
-    cursor: pointer;
-    width: 160px;
-}
-
-.bluetooth-frame:hover,
-.power-frame:hover,
-.airplane-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.bluetooth-frame:active,
-.power-frame:active,
-.airplane-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.bluetooth-frame:focus,
-.power-frame:focus,
-.airplane-frame:focus {
-    background-color: #1B82B3;
-}
-
-.bluetooth-frame:focus:hover,
-.power-frame:focus:hover,
-.airplane-frame:focus:hover {
-    background-color: #2094C9;
-}
-
-.bluetooth-frame:focus:active,
-.power-frame:focus:active,
-.airplane-frame:focus:active {
-    background-color: #1B82B3;
 }
