@@ -220,6 +220,24 @@ body {
     background-color: #1B82B3;
 }
 
+.wifi-frame:focus,
+.nightlight-frame:focus,
+.darkmode-frame:focus {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.wifi-frame:focus:hover,
+.nightlight-frame:focus:hover,
+.darkmode-frame:focus:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.wifi-frame:focus:active,
+.nightlight-frame:focus:active,
+.darkmode-frame:focus:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 .bluetooth-frame,
 .power-frame,
 .airplane-frame {
@@ -245,4 +263,22 @@ body {
 .power-frame:active,
 .airplane-frame:active {
     background-color: rgba(255, 255, 255, 0.05);
+}
+
+.bluetooth-frame:focus,
+.power-frame:focus,
+.airplane-frame:focus {
+    background-color: #1B82B3;
+}
+
+.bluetooth-frame:focus:hover,
+.power-frame:focus:hover,
+.airplane-frame:focus:hover {
+    background-color: #2094C9;
+}
+
+.bluetooth-frame:focus:active,
+.power-frame:focus:active,
+.airplane-frame:focus:active {
+    background-color: #1B82B3;
 }
