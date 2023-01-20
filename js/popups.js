@@ -27,3 +27,18 @@ btnLang.addEventListener('click', function() {
         window.setTimeout(function() { hintLang.style.opacity = '1'; }, 50);
     }
 });
+
+var hintCalendar = document.getElementById('calendar-appear');
+var btnCalendar = document.getElementById('calendar-button');
+
+btnCalendar.addEventListener('click', function() {
+    if (hintCalendar.style.display == 'block') {
+        hintCalendar.style.transform = 'translate(0px, 0px)';
+        window.setTimeout(function() { hintCalendar.style.display = 'none'; }, 20);
+        window.setTimeout(function() { hintCalendar.style.opacity = '0'; }, 50);
+    } else {
+        hintCalendar.style.display = 'block';
+        window.setTimeout(function() { hintCalendar.style.transform = 'translate(0px, 10px)'; }, 20);
+        window.setTimeout(function() { hintCalendar.style.opacity = '1'; }, 50);
+    }
+});

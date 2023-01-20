@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:800");
 @import url("https://fonts.googleapis.com/css?family=Inter:700");
+@import url("https://fonts.googleapis.com/css?family=Inter:600");
+@import url("https://fonts.googleapis.com/css?family=Inter:500");
 @import url("https://fonts.googleapis.com/css?family=Inter:400");
 
 html {
@@ -11,7 +14,7 @@ body {
     font-weight: 700;
     font-style: normal;
     color: white;
-    background-image: url(../images/MonoDark.png);
+    background-image: url(../images/Mono.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,25 +24,25 @@ body {
 }
 
 .project-frame {
-    align-items: flex-end;
     display: flex;
     flex-direction: column;
 }
 
 .panel {
     align-items: center;
-    justify-content: right;
     backdrop-filter: blur(30px) brightness(100%);
     background-color: rgba(40, 40, 40, 0.3);
     display: flex;
     width: 100%;
+    justify-content: space-between;
 }
 
 .panel-right {
+    align-items: flex-end;
     display: flex;
     justify-content: right;
     gap: 5px;
-    padding: 2px 5px;
+    margin: 2px 5px;
 }
 
 .control-top-icons {
@@ -54,8 +57,6 @@ body {
     gap: 16px;
     overflow: hidden;
     padding: 5px 15px;
-    margin-left: auto;
-    margin-right: 0;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -75,8 +76,6 @@ body {
     gap: 16px;
     overflow: hidden;
     padding: 5px 15px;
-    margin-left: auto;
-    margin-right: 0;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -89,6 +88,57 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
+.panel-center {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 2px 5px;
+}
+
+.calendar-frame {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    padding: 5px 15px;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.calendar-frame:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.calendar-frame:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.activities-frame {
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    padding: 5px 15px;
+    margin-left: auto;
+    margin-right: 0;
+    transition: 0.2s;
+    cursor: pointer;
+    margin: 2px 5px;
+}
+
+.activities-frame:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.activities-frame:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
 .popups {
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }

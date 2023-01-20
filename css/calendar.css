@@ -1,0 +1,445 @@
+#calendar-appear {
+    font-weight: 700;
+    background-color: #252525;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-right: 35px;
+    overflow: hidden;
+    display: none;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.calendar-display {
+    display: flex;
+}
+
+.calendar-left,
+.calendar-right {
+    padding: 15px;
+}
+
+.calendar-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.player {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.player:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.player:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.player-image {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.notification-icons {
+    width: 32px;
+    height: 32px;
+}
+
+.player-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-text {
+    font-size: 14px;
+    display: grid;
+    margin-left: 10px;
+    gap: 5px;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+.player-text-top {
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+.player-text-bottom {
+    font-weight: 500;
+}
+
+.player-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.player-icons {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.player-icons:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.player-icons:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.notification-1,
+.notification-2 {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.notification-1:hover,
+.notification-2:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.notification-1:active,
+.notification-2:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.notification-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.notification-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification-text {
+    font-size: 14px;
+    display: grid;
+    margin-left: 5px;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.notification-text-top {
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.notification-text-top-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.notification-text-time {
+    margin-top: 2px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.notification-close-frame {
+    justify-content: flex-end;
+    background-color: transparent;
+    border-radius: 100%;
+    transition: 0.2s;
+    height: 26px;
+}
+
+.notification-close-frame:hover {
+    background-color: #D65451;
+}
+
+.notification-close-frame:active {
+    background-color: #A8403E;
+}
+
+.notification-close-icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
+    opacity: 0;
+    padding: 5px;
+}
+
+.notification-close-icon:hover {
+    filter: invert(15%) sepia(9%) saturate(9%) hue-rotate(354deg) brightness(97%) contrast(100%);
+}
+
+.notification-close-icon:active {
+    filter: invert(15%) sepia(9%) saturate(9%) hue-rotate(354deg) brightness(97%) contrast(100%);
+}
+
+.notification-1:hover .notification-close-icon,
+.notification-2:hover .notification-close-icon {
+    opacity: 1;
+}
+
+.notification-text-bottom {
+    font-weight: 500;
+}
+
+.calendar-left-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dnd {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dnd-text {
+    cursor: default;
+    font-weight: 500;
+}
+
+.clear-button {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    padding: 5px 25px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.clear-button:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.calendar-date {
+    padding-left: 5px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.calendar-week {
+    font-weight: 500;
+    padding-bottom: 3px;
+}
+
+.calendar-m-d-y {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.calendar-box {
+    font-weight: 500;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.calendar-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    align-items: center;
+}
+
+.calendar-arrows {
+    padding: 7px 8px 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.calendar-arrows:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.calendar-arrows:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.weekdays {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    padding: 0 5px;
+}
+
+.week {
+    border-radius: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.days {
+    margin: 0;
+    display: flex;
+    gap: 3px;
+    text-align: center;
+    padding: 8px;
+    padding-top: 0;
+}
+
+.days-1,
+.days-2,
+.days-3,
+.days-4,
+.days-5,
+.days-6,
+.days-7 {
+    display: inline-grid;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.day {
+    background-color: transparent;
+    border-radius: 100%;
+    padding: 9px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+.day:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.day:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.day-active {
+    background-color: #1B82B3;
+    border-radius: 100%;
+    padding: 9px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+.day-active:focus {
+    background-color: #2094C9;
+}
+
+.day-inactive {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    padding: 9px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+
+.day-inactive:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.day-inactive:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.event-box {
+    font-weight: 500;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.event-box:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.event-box:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.event-text-top {
+    margin-bottom: 5px;
+}
+
+.event-text-bottom {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 10px;
+}
+
+.weather-box {
+    font-weight: 500;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.weather-box:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.weather-box:active {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.weather-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.weather-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+}
+
+.weather {
+    display: grid;
+    gap: 5px;
+    align-items: center;
+}
+
+.weather-time {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.weather-icon {
+    width: 32px;
+    height: 32px;
+}
