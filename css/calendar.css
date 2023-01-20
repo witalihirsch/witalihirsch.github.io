@@ -320,6 +320,7 @@
 
 .day {
     background-color: transparent;
+    color: white;
     border-radius: 100%;
     padding: 9px;
     cursor: pointer;
@@ -337,6 +338,7 @@
 
 .day-active {
     background-color: #1B82B3;
+    color: white;
     border-radius: 100%;
     padding: 9px;
     cursor: pointer;
