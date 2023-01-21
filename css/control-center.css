@@ -113,7 +113,7 @@
 .arrow-frame {
     height: 50px;
     width: 35px;
-    left: 70px;
+    left: 60px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -137,6 +137,12 @@
 .wifi-frame,
 .nightlight-frame,
 .darkmode-frame {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    border: none;
     align-items: center;
     background-color: #1B82B3;
     border-radius: 13px;
@@ -146,7 +152,7 @@
     overflow: hidden;
     transition: 0.2s;
     cursor: pointer;
-    width: 160px;
+    width: 170px;
 }
 
 .wifi-frame:hover,
@@ -164,6 +170,12 @@
 .bluetooth-frame,
 .power-frame,
 .airplane-frame {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    border: none;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 13px;
@@ -173,7 +185,7 @@
     overflow: hidden;
     transition: 0.2s;
     cursor: pointer;
-    width: 160px;
+    width: 170px;
 }
 
 .bluetooth-frame:hover,

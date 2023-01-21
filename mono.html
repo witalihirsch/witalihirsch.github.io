@@ -102,8 +102,8 @@
                             <div class="calendar-left-bottom">
                                 <div class="dnd">
                                     <div class="dnd-text">Do not disturb</div>
-                                    <label class="switch" ontouchstart="">
-                                        <input type="checkbox">
+                                    <label class="switch">
+                                        <input type="checkbox" ontouchstart="">
                                         <span class="switch-slider"></span>
                                     </label>
                                 </div>
@@ -284,44 +284,45 @@
                         </div>
                         <div class="controls-frame">
                             <div class="controls-row">
-                                <div class="wifi-frame" ontouchstart="">
-                                    <img class="controls-icons" src="images/wifi-icon.svg" alt="wifi-icon" />
+                                <button id="wifi-button" class="wifi-frame" ontouchstart="">
+                                    <img id="wifi-icon" class="controls-icons" src="images/wifi-icon.svg" alt="wifi-icon" />
                                     <div class="controls-text">Wi-Fi</div>
                                     <div class="arrow-frame">
                                         <img class="arrow" src="images/arrow.svg" alt="arrow" />
                                     </div>
-                                </div>
-                                <div class="power-frame" ontouchstart="">
-                                    <img class="controls-icons" src="images/power-icon.svg" alt="power-icon" />
-                                    <div class="controls-text">Balanced</div>
-                                </div>
-                                <div class="darkmode-frame" ontouchstart="">
-                                    <img class="controls-icons" src="images/darkmode-icon.svg" alt="darkmode-icon" />
+                                </button>
+                                <button id="power-button" class="power-frame" ontouchstart="">
+                                    <img id="power-icon" class="controls-icons" src="images/power-icon.svg" alt="power-icon" />
+                                    <div id="power-text" class="controls-text">Balanced
+                                </button>
+                                <button id="darkmode-button" class="darkmode-frame" ontouchstart="">
+                                    <img id="darkmode-icon" class="controls-icons" src="images/darkmode-icon.svg" alt="darkmode-icon" />
                                     <div class="controls-text">Dark Mode</div>
-                                </div>
+                                </button>
                             </div>
-                            <div class="controls-row">
-                                <div class="bluetooth-frame" ontouchstart="">
-                                    <img class="controls-icons" src="images/bluetooth-icon.svg" alt="bluetooth-icon" />
-                                    <div class="controls-text">Bluetooth</div>
-                                </div>
-                                <div class="nightlight-frame" ontouchstart="">
-                                    <img class="controls-icons" src="images/nightlight-icon.svg" alt="nightlight-icon" />
-                                    <div class="controls-text">Night Light</div>
-                                </div>
-                                <div class="airplane-frame" ontouchstart="">
-                                    <img class="controls-icons" src="images/airplane-icon.svg" alt="airplane-icon" />
-                                    <div class="controls-text">Airplane Mode</div>
-                                </div>
-                            </div>
+                        <div class="controls-row">
+                            <button id="bluetooth-button" class="bluetooth-frame" ontouchstart="">
+                                <img id="bluetooth-icon" class="controls-icons" src="images/bluetooth-icon.svg" alt="bluetooth-icon" />
+                                <div class="controls-text">Bluetooth</div>
+                            </button>
+                            <button id="nightlight-button" class="nightlight-frame" ontouchstart="">
+                                <img id="nightlight-icon" class="controls-icons" src="images/nightlight-icon.svg" alt="nightlight-icon" />
+                                <div class="controls-text">Night Light</div>
+                            </button>
+                            <button id="airplane-button" class="airplane-frame" ontouchstart="">
+                                <img class="controls-icons" src="images/airplane-icon.svg" alt="airplane-icon" />
+                                <div class="controls-text">Airplane Mode</div>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </header>
     <script type="text/javascript" src="js/popups.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/buttons.js"></script>
 </body>
 
 </html>
