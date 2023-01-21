@@ -56,7 +56,8 @@ body {
     display: flex;
     gap: 16px;
     overflow: hidden;
-    padding: 5px 15px;
+    padding: 0px 15px;
+    height: 27px;
     transition: 0.2s;
     cursor: pointer;
 }
