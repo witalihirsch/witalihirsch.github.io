@@ -159,8 +159,6 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 .notification-2:hover,
 .clear-button:hover,
 .calendar-arrows:hover,
-.day:hover,
-.day:focus,
 .day-inactive:hover,
 .day-inactive:focus,
 .event-box:hover,
@@ -174,10 +172,15 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 .notification-2:active,
 .clear-button:active,
 .calendar-arrows:active,
+.day:hover,
 .day-inactive:hover,
 .event-box:active,
 .weather-box:active {
     background-color: var(--dark-fg-color);
+}
+
+.day:focus {
+    background-color: var(--dark-fg-color-2);
 }
 
 .day {
