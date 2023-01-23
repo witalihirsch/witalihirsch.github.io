@@ -1,10 +1,11 @@
-const powerButton = document.getElementById("power-button");
-const bluetoothButton = document.getElementById("bluetooth-button");
-const airplaneButton = document.getElementById("airplane-button");
-
-const wifiButton = document.getElementById("wifi-button");
-const nightlightButton = document.getElementById("nightlight-button");
-const darkmodeButton = document.getElementById("darkmode-button");
+const arrButton = [
+    document.getElementById("power-button"),
+    document.getElementById("bluetooth-button"),
+    document.getElementById("airplane-button"),
+    document.getElementById("wifi-button"),
+    document.getElementById("nightlight-button"),
+    document.getElementById("darkmode-button")
+];
 
 const powerIcon = document.getElementById("power-icon");
 const bluetoothIcon = document.getElementById("bluetooth-icon");
@@ -20,76 +21,78 @@ let wifiColor = true;
 let nightlightColor = true;
 let darkmodeColor = true;
 
-powerButton.addEventListener("click", function() {
+
+
+arrButton[0].addEventListener("click", function() {
     if (powerColor) {
-        powerButton.style.backgroundColor = "#1B82B3";
+        arrButton[0].style.backgroundColor = "#1B82B3";
         powerText.textContent = "Power Saver";
         powerIcon.src = "images/power-saver-icon.svg";
         powerColor = false;
 
     } else {
-        powerButton.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+        arrButton[0].style.backgroundColor = "rgba(255, 255, 255, 0.05)";
         powerText.textContent = "Balanced";
         powerIcon.src = "images/power-icon.svg";
         powerColor = true;
     }
 });
 
-bluetoothButton.addEventListener("click", function() {
+arrButton[1].addEventListener("click", function() {
     if (bluetoothColor) {
-        bluetoothButton.style.backgroundColor = "#1B82B3";
+        arrButton[1].style.backgroundColor = "#1B82B3";
         bluetoothIcon.src = "images/bluetooth-enabled-icon.svg";
         bluetoothColor = false;
 
     } else {
-        bluetoothButton.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+        arrButton[1].style.backgroundColor = "rgba(255, 255, 255, 0.05)";
         bluetoothIcon.src = "images/bluetooth-icon.svg";
         bluetoothColor = true;
     }
 });
 
-airplaneButton.addEventListener("click", function() {
+arrButton[2].addEventListener("click", function() {
     if (airplaneColor) {
-        airplaneButton.style.backgroundColor = "#1B82B3";
+        arrButton[2].style.backgroundColor = "#1B82B3";
         airplaneColor = false;
 
     } else {
-        airplaneButton.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+        arrButton[2].style.backgroundColor = "rgba(255, 255, 255, 0.05)";
         airplaneColor = true;
     }
 });
 
-wifiButton.addEventListener("click", function() {
+arrButton[3].addEventListener("click", function() {
     if (wifiColor) {
-        wifiButton.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+        arrButton[3].style.backgroundColor = "rgba(255, 255, 255, 0.05)";
         wifiIcon.src = "images/wifi-disabled-icon.svg";
         wifiColor = false;
 
     } else {
-        wifiButton.style.backgroundColor = "#1B82B3";
+        arrButton[3].style.backgroundColor = "#1B82B3";
         wifiIcon.src = "images/wifi-icon.svg";
         wifiColor = true;
     }
 });
 
-nightlightButton.addEventListener("click", function() {
+arrButton[4].addEventListener("click", function() {
     if (nightlightColor) {
-        nightlightButton.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+        arrButton[4].style.backgroundColor = "rgba(255, 255, 255, 0.05)";
         nightlightColor = false;
 
     } else {
-        nightlightButton.style.backgroundColor = "#1B82B3";
+        arrButton[4].style.backgroundColor = "#1B82B3";
         nightlightColor = true;
     }
 });
 
-darkmodeButton.addEventListener("click", function() {
+arrButton[5].addEventListener("click", function() {
     if (darkmodeColor) {
-        darkmodeButton.style.backgroundColor = "rgba(255, 255, 255, 0.05)";
+        arrButton[5].style.backgroundColor = "rgba(255, 255, 255, 0.05)";
         darkmodeColor = false;
 
     } else {
-        darkmodeButton.style.backgroundColor = "#1B82B3";
+        arrButton[5].style.backgroundColor = "#1B82B3";
         darkmodeColor = true;
     }
 });

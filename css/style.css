@@ -5,6 +5,10 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:400");
 
 html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     height: 100%;
 }
 
@@ -13,8 +17,6 @@ body {
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
-    color: white;
-    background-image: url(../images/Mono.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,15 +25,14 @@ body {
     height: 100%;
 }
 
-.project-frame {
+.project-top-frame {
     display: flex;
     flex-direction: column;
 }
 
 .panel {
-    align-items: center;
     backdrop-filter: blur(30px) brightness(100%);
-    background-color: rgba(40, 40, 40, 0.3);
+    align-items: center;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -62,14 +63,6 @@ body {
     cursor: pointer;
 }
 
-.control-center-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.control-center-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
 .lang-dialog-frame {
     align-items: center;
     border-radius: 5px;
@@ -79,14 +72,6 @@ body {
     padding: 5px 15px;
     transition: 0.2s;
     cursor: pointer;
-}
-
-.lang-dialog-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.lang-dialog-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .panel-center {
@@ -108,14 +93,6 @@ body {
     margin-left: 30px;
 }
 
-.calendar-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.calendar-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
 .activities-frame {
     align-items: center;
     border-radius: 5px;
@@ -130,16 +107,19 @@ body {
     margin: 2px 5px;
 }
 
-.activities-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.activities-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
 .popups {
     position: relative;
     display: flex;
     justify-content: space-between;
+}
+
+.project-bottom-frame {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
 }

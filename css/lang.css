@@ -3,8 +3,6 @@
     top: 0;
     right: 0;
     font-weight: 400;
-    background-color: #252525;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     margin-right: 35px;
     overflow: hidden;
@@ -25,18 +23,6 @@
     border-radius: 8px;
     transition: 0.2s;
     cursor: pointer;
-}
-
-.first-lang:hover,
-.second-lang:hover,
-.show-keyboard:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.first-lang:active,
-.second-lang:active,
-.show-keyboard:active {
-    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .first-lang {

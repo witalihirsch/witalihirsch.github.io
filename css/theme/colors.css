@@ -1,0 +1,22 @@
+:root {
+    --dark-bg-color: #252525;
+    --light-bg-color: #f0f0f0;
+
+    --dark-color: #ffffff;
+    --dark-color-2: rgba(255, 255, 255, 0.5);
+    --light-color: #252525;
+    --light-color-2: rgba(40, 40, 40, 0.5);
+
+    --dark-fg-color: rgba(255, 255, 255, 0.05);
+    --dark-fg-color-2: rgba(255, 255, 255, 0.1);
+    --light-fg-color: rgba(40, 40, 40, 0.05);
+    --light-fg-color-2: rgba(40, 40, 40, 0.1);
+
+    --dark-panel: rgba(40, 40, 40, 0.3);
+    --light-panel: rgba(255, 255, 255, 0.3);
+
+    --accent-blue: #1B82B3;
+    --accent-blue-2: #2094C9;
+    --accent-red: #A8403E;
+    --accent-red-2: #D65451;
+}

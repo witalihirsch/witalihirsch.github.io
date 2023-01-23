@@ -1,7 +1,5 @@
 #calendar-appear {
     font-weight: 700;
-    background-color: #252525;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     margin-right: 35px;
     overflow: hidden;
@@ -27,7 +25,6 @@
 }
 
 .player {
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 15px;
@@ -36,16 +33,7 @@
     cursor: pointer;
 }
 
-.player:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.player:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
 .player-image {
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 6px;
     padding: 10px;
     display: flex;
@@ -95,17 +83,8 @@
     border-radius: 6px;
 }
 
-.player-icons:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.player-icons:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
 .notification-1,
 .notification-2 {
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     padding: 10px;
     padding-top: 12px;
@@ -114,16 +93,6 @@
     display: flex;
     transition: 0.2s;
     cursor: pointer;
-}
-
-.notification-1:hover,
-.notification-2:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.notification-1:active,
-.notification-2:active {
-    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .notification-image {
@@ -175,26 +144,9 @@
     height: 26px;
 }
 
-.notification-close-frame:hover {
-    background-color: #D65451;
-}
-
-.notification-close-frame:active {
-    background-color: #A8403E;
-}
-
 .notification-close-icon {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
     opacity: 0;
     padding: 5px;
-}
-
-.notification-close-icon:hover {
-    filter: invert(15%) sepia(9%) saturate(9%) hue-rotate(354deg) brightness(97%) contrast(100%);
-}
-
-.notification-close-icon:active {
-    filter: invert(15%) sepia(9%) saturate(9%) hue-rotate(354deg) brightness(97%) contrast(100%);
 }
 
 .notification-1:hover .notification-close-icon,
@@ -223,19 +175,10 @@
 }
 
 .clear-button {
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 6px;
     padding: 5px 25px;
     transition: 0.2s;
     cursor: pointer;
-}
-
-.clear-button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.clear-button:active {
-    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .calendar-date {
@@ -257,7 +200,6 @@
 .calendar-box {
     font-weight: 500;
     font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
 }
 
@@ -269,18 +211,12 @@
 }
 
 .calendar-arrows {
-    padding: 7px 8px 6px 8px;
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 8px;
     border-radius: 6px;
     cursor: pointer;
     transition: 0.2s;
-}
-
-.calendar-arrows:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.calendar-arrows:active {
-    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .weekdays {
@@ -320,58 +256,33 @@
 
 .day {
     background-color: transparent;
-    color: white;
     border-radius: 100%;
     padding: 9px;
     cursor: pointer;
     border: none;
     transition: 0.2s;
-}
-
-.day:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.day:focus {
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .day-active {
-    background-color: #1B82B3;
-    color: white;
     border-radius: 100%;
     padding: 9px;
     cursor: pointer;
     border: none;
     transition: 0.2s;
-}
-
-.day-active:focus {
-    background-color: #2094C9;
 }
 
 .day-inactive {
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.5);
     border-radius: 100%;
     padding: 9px;
     cursor: pointer;
     border: none;
     transition: 0.2s;
-}
-
-.day-inactive:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.day-inactive:focus {
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .event-box {
     font-weight: 500;
     font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     margin-top: 15px;
     padding: 15px;
@@ -381,41 +292,23 @@
     transition: 0.2s;
 }
 
-.event-box:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.event-box:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
 .event-text-top {
     margin-bottom: 5px;
 }
 
 .event-text-bottom {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.5);
     margin-left: 10px;
 }
 
 .weather-box {
     font-weight: 500;
     font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     margin-top: 15px;
     padding: 15px;
     cursor: pointer;
     transition: 0.2s;
-}
-
-.weather-box:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.weather-box:active {
-    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .weather-top {
@@ -438,7 +331,6 @@
 
 .weather-time {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.5);
 }
 
 .weather-icon {

@@ -1,0 +1,289 @@
+@import url('colors.css');
+
+
+/*style*/
+body {
+    background-image: url(../../images/Mono.png);
+    color: var(--light-color);
+}
+
+.panel {
+    background-color: var(--light-panel);
+}
+
+.control-center-frame:hover,
+.lang-dialog-frame:hover,
+.calendar-frame:hover,
+.activities-frame:hover {
+    background-color: var(--light-fg-color-2);
+}
+
+.control-center-frame:active,
+.lang-dialog-frame:active,
+.calendar-frame:active,
+.activities-frame:active {
+    background-color: var(--light-fg-color);
+}
+
+
+/*control center*/
+#control-center-appear {
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--light-fg-color-2);
+}
+
+.screenshot-frame,
+.settings-frame,
+.lockscreen-frame,
+.poweroff-frame,
+.battery-frame,
+.bluetooth-frame,
+.power-frame,
+.airplane-frame {
+    background-color: var(--light-fg-color);
+}
+
+.screenshot-frame:hover,
+.settings-frame:hover,
+.lockscreen-frame:hover,
+.poweroff-frame:hover,
+.battery-frame:hover,
+.arrow-frame:hover,
+.bluetooth-frame:hover,
+.power-frame:hover,
+.airplane-frame:hover {
+    background-color: var(--light-fg-color-2);
+}
+
+.screenshot-frame:active,
+.settings-frame:active,
+.lockscreen-frame:active,
+.poweroff-frame:active,
+.battery-frame:active,
+.arrow-frame:active,
+.bluetooth-frame:active,
+.power-frame:active,
+.airplane-frame:active {
+    background-color: var(--light-fg-color);
+}
+
+.wifi-frame,
+.nightlight-frame,
+.darkmode-frame {
+    color: var(--dark-bg-color);
+    background-color: var(--accent-blue);
+}
+
+.wifi-frame:hover,
+.nightlight-frame:hover,
+.darkmode-frame:hover {
+    background-color: var(--accent-blue-2);
+}
+
+.wifi-frame:active,
+.nightlight-frame:active,
+.darkmode-frame:active {
+    background-color: var(--accent-blue);
+}
+
+
+/*slider*/
+/*webkit*/
+input[type=range].styled-slider::-webkit-slider-thumb {
+    background: var(--light-bg-color);
+}
+
+input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(var(--light-color-2), var(--light-color-2)) 0/var(--sx) 100% no-repeat, var(--light-fg-color);
+}
+
+/*mozilla*/
+input[type=range].styled-slider::-moz-range-thumb {
+    background: var(--light-bg-color);
+}
+
+input[type=range].styled-slider.slider-progress::-moz-range-track {
+    background: linear-gradient(var(--light-color-2), var(--light-color-2)) 0/var(--sx) 100% no-repeat, var(--light-fg-color);
+}
+
+/*ms*/
+input[type=range].styled-slider::-ms-thumb {
+    background: var(--dark-color);
+}
+
+input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+    background: var(--light-color-2);
+}
+
+
+/*lang dialog*/
+#lang-dialog-appear {
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--light-fg-color-2);
+}
+
+.first-lang:hover,
+.second-lang:hover,
+.show-keyboard:hover {
+    background-color: var(--light-fg-color-2);
+}
+
+.first-lang:active,
+.second-lang:active,
+.show-keyboard:active {
+    background-color: var(--light-fg-color);
+}
+
+
+/*calendar*/
+#calendar-appear {
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--light-fg-color-2);
+}
+
+.player,
+.player-image,
+.notification-1,
+.notification-2,
+.clear-button,
+.calendar-box,
+.event-box,
+.weather-box {
+    background-color: var(--light-fg-color);
+}
+
+.player:hover,
+.player-icons:hover,
+.notification-1:hover,
+.notification-2:hover,
+.clear-button:hover,
+.calendar-arrows:hover,
+.day:hover,
+.day:focus,
+.day-inactive:hover,
+.day-inactive:focus,
+.event-box:hover,
+.weather-box:hover {
+    background-color: var(--light-fg-color-2);
+}
+
+.player:active,
+.player-icons:active,
+.notification-1:active,
+.notification-2:active,
+.clear-button:active,
+.calendar-arrows:active,
+.day-inactive:hover,
+.event-box:active,
+.weather-box:active {
+    background-color: var(--light-fg-color);
+}
+
+.day {
+    color: var(--light-color);
+}
+.day-active {
+    color: var(--dark-color);
+}
+
+.day-active {
+    background-color: var(--accent-blue);
+}
+
+.day-active:focus {
+    background-color: var(--accent-blue-2);
+}
+
+.notification-text-time,
+.day-inactive,
+.event-text-bottom,
+.weather-time {
+    color: var(--light-color-2);
+}
+
+.notification-close-frame:hover {
+    background-color: var(--accent-red-2);
+}
+
+.notification-close-frame:active {
+    background-color: var(--accent-red);
+}
+
+.notification-close-icon {
+    filter: invert(15%) sepia(9%) saturate(9%) hue-rotate(354deg) brightness(97%) contrast(100%);
+}
+
+.notification-close-icon:hover {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
+}
+
+.notification-close-icon:active {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
+}
+
+
+/*switch*/
+.switch-slider {
+    background-color: rgba(40, 40, 40, 0.2);
+}
+
+.switch-slider:hover {
+    background-color: rgba(40, 40, 40, 0.3);
+}
+
+.switch-slider:active {
+    background-color: rgba(40, 40, 40, 0.15);
+}
+
+.switch-slider:before {
+    background-color: var(--dark-color-2);
+}
+
+.switch-slider:hover:before {
+    background-color: var(--dark-color);
+}
+
+input:checked +.switch-slider {
+    background-color: var(--accent-blue);
+}
+
+input:checked:hover +.switch-slider {
+    background-color: var(--accent-blue-2);
+}
+
+input:checked:active +.switch-slider {
+    background-color: var(--accent-blue);
+}
+
+input:checked+.switch-slider:before {
+    background-color: var(--dark-color);
+}
+
+
+/*dash*/
+.dash {
+    background-color: var(--dark-color-2);
+}
+
+.launcher:hover,
+.app:hover,
+.trash:hover,
+.separator {
+    background-color: var(--light-fg-color-2);
+}
+
+.launcher:active,
+.app:active,
+.trash:active {
+    background-color: var(--light-fg-color);
+}
+
+
+/*svg*/
+.notification-icons, .player-icons, .control-top-icons, .weather-icon, .controls-icons {
+    filter: invert(15%) sepia(9%) saturate(9%) hue-rotate(354deg) brightness(97%) contrast(100%);
+}
+
+.arrow {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
+}

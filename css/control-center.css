@@ -3,8 +3,6 @@
     top: 0;
     right: 0;
     font-weight: 700;
-    background-color: #252525;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     margin-right: 10px;
     margin-top: 0px;
@@ -23,7 +21,6 @@
 
 .battery-frame {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     display: flex;
     gap: 8px;
@@ -32,14 +29,6 @@
     padding: 12px 15px;
     transition: 0.2s;
     cursor: pointer;
-}
-
-.battery-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.battery-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .battery-text {
@@ -59,7 +48,6 @@
 .lockscreen-frame,
 .poweroff-frame {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 99px;
     display: flex;
     overflow: hidden;
@@ -67,27 +55,6 @@
     padding: 13px;
     transition: 0.2s;
     cursor: pointer;
-}
-
-.screenshot-frame:hover,
-.settings-frame:hover,
-.lockscreen-frame:hover,
-.poweroff-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.screenshot-frame:active,
-.settings-frame:active,
-.lockscreen-frame:active,
-.poweroff-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-.screenshot-frame:focus,
-.settings-frame:focus,
-.lockscreen-frame:focus,
-.poweroff-frame:focus {
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .controls-frame {
@@ -120,14 +87,6 @@
     align-items: center;
 }
 
-.arrow-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.arrow-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
 .arrow {
     height: 18px;
     width: 18px;
@@ -141,10 +100,8 @@
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
-    color: white;
     border: none;
     align-items: center;
-    background-color: #1B82B3;
     border-radius: 13px;
     padding: 24px 10px;
     display: flex;
@@ -153,18 +110,6 @@
     transition: 0.2s;
     cursor: pointer;
     width: 170px;
-}
-
-.wifi-frame:hover,
-.nightlight-frame:hover,
-.darkmode-frame:hover {
-    background-color: #2094C9;
-}
-
-.wifi-frame:active,
-.nightlight-frame:active,
-.darkmode-frame:active {
-    background-color: #1B82B3;
 }
 
 .bluetooth-frame,
@@ -174,10 +119,8 @@
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
-    color: white;
     border: none;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 13px;
     padding: 24px 10px;
     display: flex;
@@ -186,16 +129,4 @@
     transition: 0.2s;
     cursor: pointer;
     width: 170px;
-}
-
-.bluetooth-frame:hover,
-.power-frame:hover,
-.airplane-frame:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.bluetooth-frame:active,
-.power-frame:active,
-.airplane-frame:active {
-    background-color: rgba(255, 255, 255, 0.05);
 }

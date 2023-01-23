@@ -18,18 +18,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 99px;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-}
-
-.switch-slider:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.switch-slider:active {
-    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .switch-slider:before {
@@ -40,31 +31,13 @@
     top: 2px;
     left: 2px;
     bottom: 2px;
-    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 99px;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-}
-
-.switch-slider:hover:before {
-    background-color: white;
-}
-
-input:checked+.switch-slider {
-    background-color: #1b82b3;
-}
-
-input:checked:hover+.switch-slider {
-    background-color: #2094c9;
-}
-
-input:checked:active+.switch-slider {
-    background-color: #1b82b3;
 }
 
 input:checked+.switch-slider:before {
     -webkit-transform: translateX(19px);
     -ms-transform: translateX(19px);
     transform: translateX(19px);
-    background-color: white;
 }
