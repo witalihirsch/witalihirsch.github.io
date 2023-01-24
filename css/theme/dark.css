@@ -40,8 +40,8 @@ body {
 .bluetooth-frame,
 .power-frame,
 .airplane-frame {
-    background-color: var(--dark-fg-color);
     color: var(--dark-color);
+    background-color: var(--dark-fg-color);
 }
 
 .screenshot-frame:hover,

@@ -40,6 +40,7 @@ body {
 .bluetooth-frame,
 .power-frame,
 .airplane-frame {
+    color: var(--dark-bg-color);
     background-color: var(--light-fg-color);
 }
 
