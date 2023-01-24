@@ -46,10 +46,11 @@ body {
     margin: 2px 5px;
 }
 
-.control-top-icons {
+.control-top-icons,
+.battery-icon {
     height: 16px;
     width: 16px;
-}
+} 
 
 .control-center-frame {
     align-items: center;

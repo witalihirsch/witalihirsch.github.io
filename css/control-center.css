@@ -110,6 +110,7 @@
     transition: 0.2s;
     cursor: pointer;
     width: 170px;
+    text-decoration: none;
 }
 
 .bluetooth-frame,
@@ -129,4 +130,5 @@
     transition: 0.2s;
     cursor: pointer;
     width: 170px;
+    text-decoration: none;
 }

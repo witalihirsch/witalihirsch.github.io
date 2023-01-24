@@ -70,7 +70,7 @@ body {
 .wifi-frame,
 .nightlight-frame,
 .darkmode-frame {
-    color: var(--dark-bg-color);
+    color: var(--light-bg-color);
     background-color: var(--accent-blue);
 }
 
@@ -84,6 +84,68 @@ body {
 .nightlight-frame:active,
 .darkmode-frame:active {
     background-color: var(--accent-blue);
+}
+
+.wifi-frame.clicked,
+.nightlight-frame.clicked,
+.darkmode-frame.clicked {
+    background-color: var(--light-fg-color);
+    color: var(--dark-bg-color);
+}
+
+.wifi-frame.clicked:hover,
+.nightlight-frame.clicked:hover,
+.darkmode-frame.clicked:hover {
+    background-color: var(--light-fg-color-2);
+}
+
+.wifi-frame.clicked:active,
+.nightlight-frame.clicked:active,
+.darkmode-frame.clicked:active {
+    background-color: var(--light-fg-color);
+}
+
+.bluetooth-frame.clicked,
+.power-frame.clicked,
+.airplane-frame.clicked {
+    background-color: var(--accent-blue);
+    color: var(--dark-color);
+}
+
+.bluetooth-frame.clicked:hover,
+.power-frame.clicked:hover,
+.airplane-frame.clicked:hover {
+    background-color: var(--accent-blue-2);
+}
+
+.bluetooth-frame.clicked:active,
+.power-frame.clicked:active,
+.airplane-frame.clicked:active {
+    background-color: var(--accent-blue);
+}
+
+.wifi-frame #wifi-icon,
+.wifi-frame #arrow-icon,
+.nightlight-frame #nightlight-icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
+}
+
+.wifi-frame.clicked #wifi-icon,
+.wifi-frame.clicked #arrow-icon,
+.nightlight-frame.clicked #nightlight-icon {
+    filter: invert(15%) sepia(9%) saturate(9%) hue-rotate(354deg) brightness(97%) contrast(100%);
+}
+
+.bluetooth-frame #bluetooth-icon,
+.power-frame #power-icon,
+.airplane-frame #airplane-icon {
+    filter: invert(15%) sepia(9%) saturate(9%) hue-rotate(354deg) brightness(97%) contrast(100%);
+}
+
+.bluetooth-frame.clicked #bluetooth-icon,
+.power-frame.clicked #power-icon,
+.airplane-frame.clicked #airplane-icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
 }
 
 
@@ -283,10 +345,6 @@ input:checked+.switch-slider:before {
 
 
 /*svg*/
-.notification-icons, .player-icons, .control-top-icons, .weather-icon, .controls-icons {
+.notification-icons, .player-icons, .control-top-icons, .weather-icon, .controls-icons, .arrow {
     filter: invert(15%) sepia(9%) saturate(9%) hue-rotate(354deg) brightness(97%) contrast(100%);
-}
-
-.arrow {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
 }
