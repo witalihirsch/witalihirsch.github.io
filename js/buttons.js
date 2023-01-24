@@ -13,6 +13,8 @@ const batteryFrameIcon = document.getElementById("battery-icon-frame");
 
 const powerText = document.getElementById("power-text");
 
+var metaSafari = document.getElementsByName("theme-color");
+
 let powerColor = true;
 let bluetoothColor = true;
 let wifiColor = true;
@@ -69,11 +71,13 @@ darkmodeButton.addEventListener("click", function() {
     if (darkmodeColor) {
         batteryFrameIcon.src = "images/battery-icon-frame-dark.svg";
         batteryIcon.src = "images/battery-icon-dark.svg";
+        metaSafari.setAttribute('content', '#59819E');
         darkmodeColor = false;
 
     } else {
         batteryFrameIcon.src = "images/battery-icon-frame.svg";
         batteryIcon.src = "images/battery-icon.svg";
+        metaSafari.setAttribute('content', '#15293C');
         darkmodeColor = true;
     }
 });
