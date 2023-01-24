@@ -13,7 +13,7 @@ const batteryFrameIcon = document.getElementById("battery-icon-frame");
 
 const powerText = document.getElementById("power-text");
 
-var metaSafari = document.getElementsByName("theme-color");
+var metaSafari = document.querySelector('meta[name="theme-color"]');
 
 let powerColor = true;
 let bluetoothColor = true;
