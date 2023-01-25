@@ -43,3 +43,7 @@ $("button").on("touchstart", function() {
 $("input[type=checkbox]").on("touchstart", function() {
     $(this).css("background-color", "rgba(0,0,0,0)");
 });
+
+$("label").on("touchstart", function() {
+    $(this).css("background-color", "rgba(0,0,0,0)");
+});

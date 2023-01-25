@@ -25,6 +25,14 @@ body {
     background-color: var(--light-fg-color);
 }
 
+#control-center-appear,
+#calendar-appear,
+#lang-dialog-appear {
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
 
 /*control center*/
 #control-center-appear {
@@ -248,6 +256,13 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     background-color: var(--light-fg-color);
 }
 
+#control-center-appear,
+#calendar-appear,
+#lang-dialog-appear {
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
 
 /*calendar*/
 #calendar-appear {
