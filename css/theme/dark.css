@@ -125,30 +125,26 @@ body {
     background-color: var(--accent-blue);
 }
 
-/*
-.wifi-frame #wifi-icon,
-.wifi-frame #arrow-icon,
-.nightlight-frame #nightlight-icon {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
+.wifi-frame.clicked #wifi-icon {
+    content: url(../../images/dark/wifi-disabled-icon.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.wifi-frame.clicked #wifi-icon,
-.wifi-frame.clicked #arrow-icon,
-.nightlight-frame.clicked #nightlight-icon {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
+.bluetooth-frame.clicked #bluetooth-icon {
+    content: url(../../images/dark/bluetooth-enabled-icon.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.bluetooth-frame #bluetooth-icon,
-.power-frame #power-icon,
-.airplane-frame #airplane-icon {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
+.power-frame.clicked #power-icon {
+    content: url(../../images/dark/power-saver-icon.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-.bluetooth-frame.clicked #bluetooth-icon,
-.power-frame.clicked #power-icon,
-.airplane-frame.clicked #airplane-icon {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
-}*/
 
 
 /*slider*/
