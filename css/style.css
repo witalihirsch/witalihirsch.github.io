@@ -25,6 +25,7 @@ body {
     height: 100%;
 }
 
+input[type="checkbox"],
 input,
 textarea,
 button,
