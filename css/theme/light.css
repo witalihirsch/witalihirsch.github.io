@@ -200,24 +200,29 @@ body {
 /*webkit*/
 input[type=range].styled-slider::-webkit-slider-thumb {
     background: var(--light-bg-color);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 input[type=range].styled-slider.slider-progress::-webkit-slider-runnable-track {
-    background: linear-gradient(var(--light-color-2), var(--light-color-2)) 0/var(--sx) 100% no-repeat, var(--light-fg-color);
+    background: linear-gradient(var(--light-color-2), var(--light-color-2)) 0/var(--sx) 100% no-repeat, var(--light-fg-color-2);
 }
 
 /*mozilla*/
 input[type=range].styled-slider::-moz-range-thumb {
     background: var(--light-bg-color);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 input[type=range].styled-slider.slider-progress::-moz-range-track {
-    background: linear-gradient(var(--light-color-2), var(--light-color-2)) 0/var(--sx) 100% no-repeat, var(--light-fg-color);
+    background: linear-gradient(var(--light-color-2), var(--light-color-2)) 0/var(--sx) 100% no-repeat, var(--light-fg-color-2);
 }
 
 /*ms*/
 input[type=range].styled-slider::-ms-thumb {
     background: var(--dark-color);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 input[type=range].styled-slider.slider-progress::-ms-fill-lower {

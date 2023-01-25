@@ -25,6 +25,15 @@ body {
     height: 100%;
 }
 
+button::-webkit-tap-highlight-color {
+   background-color: transparent;
+}
+
+button {
+   outline: none;
+   box-shadow: none;
+}
+
 .project-top-frame {
     display: flex;
     flex-direction: column;
