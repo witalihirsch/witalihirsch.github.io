@@ -30,7 +30,9 @@ textarea,
 button,
 select,
 a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+    outline: none;
 }
 
 .project-top-frame {
@@ -58,7 +60,7 @@ a {
 .battery-icon {
     height: 16px;
     width: 16px;
-} 
+}
 
 .control-center-frame {
     align-items: center;
