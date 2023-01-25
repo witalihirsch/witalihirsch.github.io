@@ -125,6 +125,7 @@ body {
     background-color: var(--accent-blue);
 }
 
+/*
 .wifi-frame #wifi-icon,
 .wifi-frame #arrow-icon,
 .nightlight-frame #nightlight-icon {
@@ -147,7 +148,7 @@ body {
 .power-frame.clicked #power-icon,
 .airplane-frame.clicked #airplane-icon {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
-}
+}*/
 
 
 /*slider*/
@@ -346,6 +347,6 @@ input:checked+.switch-slider:before {
 
 
 /*svg*/
-.notification-icons, .player-icons, .control-top-icons, .weather-icon, .controls-icons, .arrow {
+/*.notification-icons, .player-icons, .control-top-icons, .weather-icon, .controls-icons, .arrow {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
-}
+}*/
