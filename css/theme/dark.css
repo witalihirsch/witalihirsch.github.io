@@ -3,7 +3,6 @@
 
 /*style*/
 body {
-    background: #071A2B;
     background-image: url(../../images/MonoDark.png);
     color: var(--dark-color);
 }

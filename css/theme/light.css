@@ -3,7 +3,6 @@
 
 /*style*/
 body {
-    background: #1D496E;
     background-image: url(../../images/Mono.png);
     color: var(--light-color);
 }
