@@ -3,7 +3,7 @@
 
 /*style*/
 body {
-    /*background-image: url(../../images/MonoDark.png);*/
+    background-image: url(../../images/MonoDark.png);
     color: var(--dark-color);
 }
 
