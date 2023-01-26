@@ -12,6 +12,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
+    background-image: url(../../images/MonoDark.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,6 +57,7 @@ a {
     align-items: flex-end;
     display: flex;
     justify-content: right;
+    gap: 5px;
     margin: 2px 5px;
 }
 
@@ -70,6 +72,7 @@ a {
     border-radius: 5px;
     display: flex;
     gap: 16px;
+    overflow: hidden;
     padding: 0px 15px;
     height: 27px;
     transition: 0.2s;
@@ -81,6 +84,7 @@ a {
     border-radius: 5px;
     display: flex;
     gap: 16px;
+    overflow: hidden;
     padding: 5px 15px;
     transition: 0.2s;
     cursor: pointer;
@@ -98,6 +102,7 @@ a {
     border-radius: 5px;
     display: flex;
     gap: 16px;
+    overflow: hidden;
     padding: 5px 15px;
     transition: 0.2s;
     cursor: pointer;
@@ -109,6 +114,7 @@ a {
     border-radius: 5px;
     display: flex;
     gap: 16px;
+    overflow: hidden;
     padding: 5px 15px;
     margin-left: auto;
     margin-right: 0;
@@ -123,3 +129,13 @@ a {
     justify-content: space-between;
 }
 
+.project-bottom-frame {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
