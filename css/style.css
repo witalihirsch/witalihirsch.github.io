@@ -12,9 +12,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #252525;
     margin: 0;
     padding: 0;
     height: 100%;

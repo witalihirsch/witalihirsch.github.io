@@ -1,0 +1,32 @@
+.dash {
+    backdrop-filter: blur(30px) brightness(100%);
+    -webkit-backdrop-filter: blur(30px);
+    display: flex;
+    padding: 10px;
+    border-radius: 24px;
+    gap: 5px;
+}
+
+.launcher,
+.app,
+.trash {
+    padding: 7px;
+    padding-bottom: 5px;
+    border-radius: 16px;
+    background-color: transparent;
+}
+
+.launcher-icon,
+.firefox-icon,
+.files-icon,
+.terminal-icon,
+.settings-icon,
+.trash-icon {
+    width: 56px;
+    height: 56px;
+}
+
+.separator {
+    width: 1px;
+    margin: 5px 5px;
+}
