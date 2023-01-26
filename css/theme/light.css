@@ -342,15 +342,15 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 }
 
 .notification-close-icon {
-    filter: invert(15%) sepia(9%) saturate(9%) hue-rotate(354deg) brightness(97%) contrast(100%);
+    content: url(../../images/light/close-icon.svg);
 }
 
 .notification-close-icon:hover {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
+    content: url(../../images/dark/close-icon.svg);
 }
 
 .notification-close-icon:active {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(239deg) brightness(110%) contrast(102%);
+    content: url(../../images/dark/close-icon.svg);
 }
 
 
@@ -408,4 +408,25 @@ input:checked+.switch-slider:before {
 .app:active,
 .trash:active {
     background-color: var(--light-fg-color);
+}
+
+
+/*page*/
+.slide {
+    background: transparent;
+}
+
+a.slide-prev,
+a.slide-next {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+a.slide-prev:hover,
+a.slide-next:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+a.slide-prev:active,
+a.slide-next:active {
+    background-color: rgba(255, 255, 255, 0.3);
 }

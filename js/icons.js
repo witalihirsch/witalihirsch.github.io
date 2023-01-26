@@ -33,6 +33,10 @@ const weather3Icon = document.getElementById("weather3-icon");
 const weather4Icon = document.getElementById("weather4-icon");
 const weather5Icon = document.getElementById("weather5-icon");
 
+const arrowRightPageIcon = document.getElementById("arrow-right-page-icon");
+const arrowLeftPage2Icon = document.getElementById("arrow-left-page2-icon");
+const arrowRightPage2Icon = document.getElementById("arrow-right-page2-icon");
+
 let iconColor = true;
 
 iconButton.addEventListener("click", function() {
@@ -71,6 +75,10 @@ iconButton.addEventListener("click", function() {
         weather3Icon.src = "images/light/weather3-icon.svg";
         weather4Icon.src = "images/light/weather4-icon.svg";
         weather5Icon.src = "images/light/weather5-icon.svg";
+
+        arrowRightPageIcon.src = "images/light/arrow-right-page-icon.svg";
+        arrowLeftPage2Icon.src = "images/light/arrow-left-page2-icon.svg";
+        arrowRightPage2Icon.src = "images/light/arrow-right-page2-icon.svg";
 	} 
 
     else {
@@ -107,5 +115,9 @@ iconButton.addEventListener("click", function() {
         weather3Icon.src = "images/dark/weather3-icon.svg";
         weather4Icon.src = "images/dark/weather4-icon.svg";
         weather5Icon.src = "images/dark/weather5-icon.svg";
+
+        arrowRightPageIcon.src = "images/dark/arrow-right-page-icon.svg";
+        arrowLeftPage2Icon.src = "images/dark/arrow-left-page2-icon.svg";
+        arrowRightPage2Icon.src = "images/dark/arrow-right-page2-icon.svg";
     }
 });
