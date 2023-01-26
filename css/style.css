@@ -1,15 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Inter:800");
-@import url("https://fonts.googleapis.com/css?family=Inter:700");
-@import url("https://fonts.googleapis.com/css?family=Inter:600");
-@import url("https://fonts.googleapis.com/css?family=Inter:500");
-@import url("https://fonts.googleapis.com/css?family=Inter:400");
-
 html {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -23,6 +18,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
 }
 
 input[type="checkbox"],
@@ -37,13 +33,19 @@ a {
     outline: none;
 }
 
+.desktop {
+    height: 100%;
+    width: 100%;
+}
+
 .project-top-frame {
     display: flex;
     flex-direction: column;
 }
 
 .panel {
-    backdrop-filter: blur(30px) brightness(100%);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     align-items: center;
     display: flex;
     width: 100%;
