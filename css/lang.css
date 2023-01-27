@@ -34,3 +34,53 @@
     gap: 11px;
     padding-left: 10px;
 }
+
+@media only screen and (max-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+    #lang-dialog-appear {
+        border-radius: 8px;
+        margin-right: 45px;
+        padding: 4px;
+        gap: 4px;
+    }
+
+    .first-lang,
+    .second-lang,
+    .show-keyboard {
+        padding: 5px 10px 5px 20px;
+        border-radius: 8px;
+    }
+
+    .first-lang {
+        padding-left: 0;
+    }
+
+    .selected-lang {
+        gap: 7px;
+        padding-left: 6px;
+    }
+}
+
+@media only screen and (min-device-width: 828px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #lang-dialog-appear {
+        border-radius: 8px;
+        margin-right: 45px;
+        padding: 4px;
+        gap: 4px;
+    }
+
+    .first-lang,
+    .second-lang,
+    .show-keyboard {
+        padding: 5px 10px 5px 20px;
+        border-radius: 8px;
+    }
+
+    .first-lang {
+        padding-left: 0;
+    }
+
+    .selected-lang {
+        gap: 7px;
+        padding-left: 6px;
+    }
+}

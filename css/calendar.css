@@ -1,6 +1,6 @@
 #calendar-appear {
     font-weight: 700;
-    border-radius: 10px;
+    border-radius: 13px;
     margin-right: 35px;
     overflow: hidden;
     display: none;
@@ -336,4 +336,447 @@
 .weather-icon {
     width: 32px;
     height: 32px;
+}
+
+
+@media only screen and (max-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+    #calendar-appear {
+        border-radius: 8px;
+        margin: 0px 5px;
+        padding: 7px;
+    }
+
+    .calendar-display {
+        gap: 7px;
+    }
+
+    .calendar-left,
+    .calendar-right {
+        padding: 0px;
+    }
+
+    .player {
+        border-radius: 6px;
+        padding: 3px;
+        margin-bottom: 7px;
+    }
+
+    .player-image {
+        border-radius: 4px;
+        padding: 7px;
+        margin: 5px;
+    }
+
+    .notification-icons {
+        width: 24px;
+        height: 24px;
+    }
+
+    .player-text {
+        font-size: 9px;
+        margin-left: 7px;
+        gap: 3px;
+        padding-right: 0px;
+        padding-top: 3px;
+    }
+
+    .player-buttons {
+        gap: 3px;
+    }
+
+    .player-icons {
+        padding: 6px;
+        border-radius: 4px;
+        height: 12px;
+        width: 12px;
+    }
+
+    .notification-1,
+    .notification-2 {
+        border-radius: 6px;
+        padding: 4px;
+        padding-top: 8px;
+        padding-bottom: 12px;
+        margin-bottom: 10px;
+    }
+
+    .notification-image {
+        margin: 5px;
+    }
+
+    .notification-text {
+        font-size: 9px;
+        margin-left: 3px;
+        margin-top: 3px;
+        gap: 3px;
+    }
+
+    .notification-text-top {
+        gap: 30px;
+    }
+
+    .notification-text-top-left {
+        gap: 5px;
+    }
+
+    .notification-text-time {
+        margin-top: 1px;
+        font-size: 6px;
+    }
+
+    .notification-close-frame {
+        height: 18px;
+    }
+
+    .notification-close-icon {
+        padding: 1px;
+    }
+
+    .dnd {
+        gap: 7px;
+    }
+
+    .clear-button {
+        border-radius: 4px;
+        padding: 5px 20px;
+    }
+
+    .calendar-date {
+        padding-left: 3px;
+        padding-bottom: 10px;
+        padding-top: 3px;
+    }
+
+    .calendar-week {
+        padding-bottom: 2px;
+    }
+
+    .calendar-m-d-y {
+        font-size: 15px;
+    }
+
+    .calendar-box {
+        font-size: 8px;
+        border-radius: 6px;
+    }
+
+    .calendar-top {
+        padding: 4px;
+    }
+
+    .calendar-arrows {
+        padding: 6px;
+        border-radius: 4px;
+    }
+
+    .weekdays {
+        margin: 0 10px;
+        padding: 0 3px;
+    }
+
+    .week {
+        border-radius: 100%;
+        padding-bottom: 7px;
+    }
+
+    .days {
+        margin: 0;
+        gap: 1px;
+        padding: 5px;
+        padding-top: 0;
+    }
+
+    .days-1,
+    .days-2,
+    .days-3,
+    .days-4,
+    .days-5,
+    .days-6,
+    .days-7 {
+        gap: 1px;
+    }
+
+    .day {
+        border-radius: 100%;
+        padding: 6px;
+        font-size: 8px;
+    }
+
+    .day-active {
+        border-radius: 100%;
+        padding: 6px;
+        font-size: 8px;
+    }
+
+    .day-inactive {
+        border-radius: 100%;
+        padding: 6px;
+        font-size: 8px;
+    }
+
+    .event-box {
+        font-size: 11px;
+        border-radius: 6px;
+        margin-top: 7px;
+        padding: 10px;
+        gap: 3px;
+    }
+
+    .event-text-top {
+        margin-bottom: 3px;
+    }
+
+    .event-text-bottom {
+        font-size: 8px;
+        margin-left: 7px;
+    }
+
+    .weather-box {
+        font-size: 11px;
+        border-radius: 6px;
+        margin-top: 7px;
+        padding: 10px;
+    }
+
+    .weather-top {
+        margin-bottom: 7px;
+    }
+
+    .weather-bottom {
+        margin: 0 3px;
+    }
+
+    .weather {
+        gap: 3px;
+    }
+
+    .weather-time {
+        font-size: 8px;
+    }
+
+    .weather-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media only screen and (min-device-width: 828px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #calendar-appear {
+        border-radius: 8px;
+        margin: 0px 5px;
+        padding: 7px;
+    }
+
+    .calendar-display {
+        gap: 7px;
+    }
+
+    .calendar-left,
+    .calendar-right {
+        padding: 0px;
+    }
+
+    .player {
+        border-radius: 6px;
+        padding: 3px;
+        margin-bottom: 7px;
+    }
+
+    .player-image {
+        border-radius: 4px;
+        padding: 7px;
+        margin: 5px;
+    }
+
+    .notification-icons {
+        width: 24px;
+        height: 24px;
+    }
+
+    .player-text {
+        font-size: 9px;
+        margin-left: 7px;
+        gap: 3px;
+        padding-right: 30px;
+        padding-top: 3px;
+    }
+
+    .player-buttons {
+        gap: 3px;
+    }
+
+    .player-icons {
+        padding: 6px;
+        border-radius: 4px;
+        height: 12px;
+        width: 12px;
+    }
+
+    .notification-1,
+    .notification-2 {
+        border-radius: 6px;
+        padding: 4px;
+        padding-top: 8px;
+        padding-bottom: 12px;
+        margin-bottom: 10px;
+    }
+
+    .notification-image {
+        margin: 5px;
+    }
+
+    .notification-text {
+        font-size: 9px;
+        margin-left: 3px;
+        margin-top: 3px;
+        gap: 3px;
+    }
+
+    .notification-text-top {
+        gap: 30px;
+    }
+
+    .notification-text-top-left {
+        gap: 5px;
+    }
+
+    .notification-text-time {
+        margin-top: 1px;
+        font-size: 6px;
+    }
+
+    .notification-close-frame {
+        height: 18px;
+    }
+
+    .notification-close-icon {
+        padding: 1px;
+    }
+
+    .dnd {
+        gap: 7px;
+    }
+
+    .clear-button {
+        border-radius: 4px;
+        padding: 5px 20px;
+    }
+
+    .calendar-date {
+        padding-left: 3px;
+        padding-bottom: 10px;
+        padding-top: 3px;
+    }
+
+    .calendar-week {
+        padding-bottom: 2px;
+    }
+
+    .calendar-m-d-y {
+        font-size: 15px;
+    }
+
+    .calendar-box {
+        font-size: 8px;
+        border-radius: 6px;
+    }
+
+    .calendar-top {
+        padding: 4px;
+    }
+
+    .calendar-arrows {
+        padding: 6px;
+        border-radius: 4px;
+    }
+
+    .weekdays {
+        margin: 0 10px;
+        padding: 0 3px;
+    }
+
+    .week {
+        border-radius: 100%;
+        padding-bottom: 7px;
+    }
+
+    .days {
+        margin: 0;
+        gap: 1px;
+        padding: 5px;
+        padding-top: 0;
+    }
+
+    .days-1,
+    .days-2,
+    .days-3,
+    .days-4,
+    .days-5,
+    .days-6,
+    .days-7 {
+        gap: 1px;
+    }
+
+    .day {
+        border-radius: 100%;
+        padding: 6px;
+        font-size: 8px;
+    }
+
+    .day-active {
+        border-radius: 100%;
+        padding: 6px;
+        font-size: 8px;
+    }
+
+    .day-inactive {
+        border-radius: 100%;
+        padding: 6px;
+        font-size: 8px;
+    }
+
+    .event-box {
+        font-size: 11px;
+        border-radius: 6px;
+        margin-top: 7px;
+        padding: 10px;
+        gap: 3px;
+    }
+
+    .event-text-top {
+        margin-bottom: 3px;
+    }
+
+    .event-text-bottom {
+        font-size: 8px;
+        margin-left: 7px;
+    }
+
+    .weather-box {
+        font-size: 11px;
+        border-radius: 6px;
+        margin-top: 7px;
+        padding: 10px;
+    }
+
+    .weather-top {
+        margin-bottom: 7px;
+    }
+
+    .weather-bottom {
+        margin: 0 3px;
+    }
+
+    .weather {
+        gap: 3px;
+    }
+
+    .weather-time {
+        font-size: 8px;
+    }
+
+    .weather-icon {
+        width: 24px;
+        height: 24px;
+    }
 }

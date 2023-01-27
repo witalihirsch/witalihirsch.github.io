@@ -28,5 +28,67 @@
 
 .separator {
     width: 1px;
-    margin: 5px 5px;
+    margin: 5px;
+}
+
+@media only screen and (max-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+    .dash {
+        padding: 5px;
+        border-radius: 12px;
+        gap: 3px;
+    }
+
+    .launcher,
+    .app,
+    .trash {
+        padding: 3px;
+        padding-bottom: 2px;
+        border-radius: 8px
+    }
+
+    .launcher-icon,
+    .firefox-icon,
+    .files-icon,
+    .terminal-icon,
+    .settings-icon,
+    .trash-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .separator {
+        width: 1px;
+        margin: 3px;
+    }
+}
+
+@media only screen and (min-device-width: 828px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .dash {
+        padding: 6px;
+        border-radius: 18px;
+        gap: 4px;
+    }
+
+    .launcher,
+    .app,
+    .trash {
+        padding: 4px;
+        padding-bottom: 3px;
+        border-radius: 12px
+    }
+
+    .launcher-icon,
+    .firefox-icon,
+    .files-icon,
+    .terminal-icon,
+    .settings-icon,
+    .trash-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .separator {
+        width: 1px;
+        margin: 4px;
+    }
 }

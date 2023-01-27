@@ -430,3 +430,12 @@ a.slide-prev:active,
 a.slide-next:active {
     background-color: rgba(255, 255, 255, 0.3);
 }
+
+
+/*page1*/
+.mono,
+.description-text {
+    backdrop-filter: blur(30px) brightness(100%);
+    -webkit-backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.3);
+}

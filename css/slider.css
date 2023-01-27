@@ -1,4 +1,5 @@
-.slider-volume-frame, .slider-brightness-frame {
+.slider-volume-frame,
+.slider-brightness-frame {
     margin-top: 15px;
     margin-left: 10px;
     margin-right: 10px;
@@ -7,7 +8,8 @@
     align-items: center;
 }
 
-.slider-volume, .slider-brightness {
+.slider-volume,
+.slider-brightness {
     width: 100%;
 }
 
@@ -93,4 +95,148 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     margin: -1px 0 -1px -1px;
     border: none;
     border-right-width: 0;
+}
+
+@media only screen and (max-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .slider-volume-frame,
+    .slider-brightness-frame {
+        margin-top: 5px;
+        margin-left: 7px;
+        margin-right: 7px;
+        gap: 8px;
+    }
+
+    .slider-volume,
+    .slider-brightness {
+        width: 100%;
+    }
+
+    input[type=range].styled-slider {
+        height: 2.2em;
+    }
+
+    /*progress support*/
+    input[type=range].styled-slider.slider-progress {
+        --range: calc(var(--max) - var(--min));
+        --ratio: calc((var(--value) - var(--min)) / var(--range));
+        --sx: calc(0.5 * 1.4em + var(--ratio) * (100% - 1.4em));
+        width: 100%;
+    }
+
+    /*webkit*/
+    input[type=range].styled-slider::-webkit-slider-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 99px;
+    }
+
+    input[type=range].styled-slider::-webkit-slider-runnable-track {
+        height: 15px;
+        border: none;
+        border-radius: 99px;
+    }
+
+    /*mozilla*/
+    input[type=range].styled-slider::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 99px;
+    }
+
+    input[type=range].styled-slider::-moz-range-track {
+        height: 15px;
+        border-radius: 99px;
+    }
+
+    /*ms*/
+    input[type=range].styled-slider::-ms-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 99px;
+    }
+
+    input[type=range].styled-slider::-ms-track {
+        height: 15px;
+        border-radius: 99px;
+    }
+
+    input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+        height: 15px;
+        border-radius: 99px 0 0 99px;
+        margin: -1px 0 -1px -1px;
+        border-right-width: 0;
+    }
+}
+
+@media only screen and (min-device-width: 828px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .slider-volume-frame,
+    .slider-brightness-frame {
+        margin-top: 5px;
+        margin-left: 7px;
+        margin-right: 7px;
+        gap: 8px;
+    }
+
+    .slider-volume,
+    .slider-brightness {
+        width: 100%;
+    }
+
+    input[type=range].styled-slider {
+        height: 2.2em;
+    }
+
+    /*progress support*/
+    input[type=range].styled-slider.slider-progress {
+        --range: calc(var(--max) - var(--min));
+        --ratio: calc((var(--value) - var(--min)) / var(--range));
+        --sx: calc(0.5 * 1.4em + var(--ratio) * (100% - 1.4em));
+        width: 100%;
+    }
+
+    /*webkit*/
+    input[type=range].styled-slider::-webkit-slider-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 99px;
+    }
+
+    input[type=range].styled-slider::-webkit-slider-runnable-track {
+        height: 15px;
+        border: none;
+        border-radius: 99px;
+    }
+
+    /*mozilla*/
+    input[type=range].styled-slider::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 99px;
+    }
+
+    input[type=range].styled-slider::-moz-range-track {
+        height: 15px;
+        border-radius: 99px;
+    }
+
+    /*ms*/
+    input[type=range].styled-slider::-ms-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 99px;
+    }
+
+    input[type=range].styled-slider::-ms-track {
+        height: 15px;
+        border-radius: 99px;
+    }
+
+    input[type=range].styled-slider.slider-progress::-ms-fill-lower {
+        height: 15px;
+        border-radius: 99px 0 0 99px;
+        margin: -1px 0 -1px -1px;
+        border-right-width: 0;
+    }
 }
