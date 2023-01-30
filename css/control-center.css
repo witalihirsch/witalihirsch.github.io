@@ -1,4 +1,5 @@
 #control-center-appear {
+    font-size: 1em;
     position: absolute;
     top: 0;
     right: 0;
@@ -79,7 +80,7 @@
 .arrow-frame {
     height: 3.4em;
     width: 2.6em;
-    left: 4em;
+    left: 4.2em;
     position: relative;
     display: flex;
     justify-content: center;
@@ -99,13 +100,13 @@
 .power-frame,
 .airplane-frame {
     font-family: "Inter";
-    font-size: 0.7vw;
+    font-size: 1em;
     font-weight: 700;
     font-style: normal;
     border: none;
     align-items: center;
     border-radius: 0.9em;
-    padding: 1.7em 0.75em;
+    padding: 1.6em 0.7em;
     display: flex;
     height: 0px;
     overflow: hidden;
@@ -115,24 +116,3 @@
     text-decoration: none;
 }
 
-@media only screen and (min-device-width: 320px) and (min-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    .wifi-frame,
-    .nightlight-frame,
-    .darkmode-frame,
-    .bluetooth-frame,
-    .power-frame,
-    .airplane-frame {
-        font-size: 2.5vw;
-    }
-}
-
-@media only screen and (min-device-width: 480px) and (min-device-height: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .wifi-frame,
-    .nightlight-frame,
-    .darkmode-frame,
-    .bluetooth-frame,
-    .power-frame,
-    .airplane-frame {
-        font-size: 1.2vw;
-    }
-}
