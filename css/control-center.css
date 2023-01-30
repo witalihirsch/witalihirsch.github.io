@@ -119,11 +119,13 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #control-center-appear {
         font-size: 1em;
+        margin-right: 2%;
     }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #control-center-appear {
         font-size: 0.8em;
+        margin-right: 1%;
     }
 }

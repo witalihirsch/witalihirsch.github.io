@@ -37,9 +37,6 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #lang-dialog-appear {
         font-size: 1em;
-    }
-
-    #lang-dialog-appear {
         margin-right: 8%;
     }
 }
@@ -47,9 +44,6 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #lang-dialog-appear {
         font-size: 0.8em;
-    }
-
-    #lang-dialog-appear {
-        margin-right: 6%;
+        margin-right: 5.5%;
     }
 }

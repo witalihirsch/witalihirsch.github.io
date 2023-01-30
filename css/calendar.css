@@ -1,8 +1,8 @@
 #calendar-appear {
+    font-size: 1em;
     font-weight: 700;
-    border-radius: 13px;
-    margin-right: 35px;
-    overflow: hidden;
+    border-radius: 0.8em;
+    margin-right: 2.5%;
     display: none;
     transform: translate(0px, 0px);
     opacity: 0;
@@ -15,7 +15,7 @@
 
 .calendar-left,
 .calendar-right {
-    padding: 15px;
+    padding: 1em;
 }
 
 .calendar-left {
@@ -25,26 +25,26 @@
 }
 
 .player {
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 15px;
+    border-radius: 0.6em;
+    padding: 0.7em;
+    margin-bottom: 0.9em;
     display: flex;
     transition: 0.2s;
     cursor: pointer;
 }
 
 .player-image {
-    border-radius: 6px;
-    padding: 10px;
+    border-radius: 0.5em;
+    padding: 0.7em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8px;
+    margin: 0.5em;
 }
 
 .notification-icons {
-    width: 32px;
-    height: 32px;
+    width: 2em;
+    height: 2em;
 }
 
 .player-right {
@@ -53,12 +53,12 @@
 }
 
 .player-text {
-    font-size: 14px;
+    font-size: 1em;
     display: grid;
-    margin-left: 10px;
-    gap: 5px;
-    padding-right: 60px;
-    padding-top: 5px;
+    margin-left: 0.5em;
+    gap: 0.3em;
+    padding-right: 2em;
+    padding-top: 0.3em;
 }
 
 .player-text-top {
@@ -74,22 +74,24 @@
 .player-buttons {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.3em;
 }
 
 .player-icons {
     background-color: transparent;
-    padding: 10px;
-    border-radius: 6px;
+    padding: 0.5em;
+    border-radius: 0.4em;
+    height: 1.2em;
+    width: 1.2em;
 }
 
 .notification-1,
 .notification-2 {
-    border-radius: 8px;
-    padding: 10px;
-    padding-top: 12px;
-    padding-bottom: 18px;
-    margin-bottom: 15px;
+    border-radius: 0.6em;
+    padding: 0.7em;
+    padding-top: 0.8em;
+    padding-bottom: 1em;
+    margin-bottom: 0.9em;
     display: flex;
     transition: 0.2s;
     cursor: pointer;
@@ -99,7 +101,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 0.5em;
 }
 
 .notification-right {
@@ -109,30 +111,29 @@
 }
 
 .notification-text {
-    font-size: 14px;
+    font-size: 1em;
     display: grid;
-    margin-left: 5px;
-    margin-top: 5px;
-    gap: 5px;
+    margin-left: 0.3em;
+    margin-top: 0.3em;
+    gap: 0.3em;
 }
 
 .notification-text-top {
     font-weight: 800;
     display: flex;
     align-items: center;
-    gap: 50px;
 }
 
 .notification-text-top-left {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.5em;
 }
 
 .notification-text-time {
-    margin-top: 2px;
+    margin-top: 0.1em;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 12px;
+    font-size: 0.8em;
     font-weight: 500;
 }
 
@@ -141,12 +142,13 @@
     background-color: transparent;
     border-radius: 100%;
     transition: 0.2s;
-    height: 26px;
+    height: 1.8em;
+    width: 1.8em;
 }
 
 .notification-close-icon {
     opacity: 0;
-    padding: 5px;
+    padding: 0.3em;
 }
 
 .notification-1:hover .notification-close-icon,
@@ -165,7 +167,7 @@
 
 .dnd {
     display: flex;
-    gap: 10px;
+    gap: 0.5em;
     align-items: center;
 }
 
@@ -175,46 +177,48 @@
 }
 
 .clear-button {
-    border-radius: 6px;
-    padding: 5px 25px;
+    border-radius: 0.4em;
+    padding: 0.4em 2em;
     transition: 0.2s;
     cursor: pointer;
+    align-items: center;
+    display: flex;
 }
 
 .calendar-date {
-    padding-left: 5px;
-    padding-bottom: 15px;
-    padding-top: 5px;
+    padding-left: 0.3em;
+    padding-bottom: 0.9em;
+    padding-top: 0.3em;
 }
 
 .calendar-week {
     font-weight: 500;
-    padding-bottom: 3px;
+    padding-bottom: 0.2em;
 }
 
 .calendar-m-d-y {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.4em;
 }
 
 .calendar-box {
     font-weight: 500;
-    font-size: 14px;
-    border-radius: 8px;
+    font-size: 0.9em;
+    border-radius: 0.6em;
 }
 
 .calendar-top {
     display: flex;
     justify-content: space-between;
-    padding: 7px;
+    padding: 0.6em;
     align-items: center;
 }
 
 .calendar-arrows {
     display: flex;
     align-items: center;
-    padding: 8px 8px 8px 8px;
-    border-radius: 6px;
+    padding: 0.6em;
+    border-radius: 0.5em;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -223,22 +227,22 @@
     font-weight: 600;
     display: flex;
     justify-content: space-between;
-    margin: 0 15px;
-    padding: 0 5px;
+    margin: 0 1.3em;
+    padding: 0 0.3em;
 }
 
 .week {
     border-radius: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 0.5em;
     text-align: center;
 }
 
 .days {
     margin: 0;
     display: flex;
-    gap: 3px;
+    gap: 0.2em;
     text-align: center;
-    padding: 8px;
+    padding: 0.8em;
     padding-top: 0;
 }
 
@@ -251,30 +255,33 @@
 .days-7 {
     display: inline-grid;
     justify-content: space-between;
-    gap: 3px;
+    gap: 0.2em;
 }
 
 .day {
+    font-size: 1em;
     background-color: transparent;
     border-radius: 100%;
-    padding: 9px;
+    padding: 0.7em;
     cursor: pointer;
     border: none;
     transition: 0.2s;
 }
 
 .day-active {
+    font-size: 1em;
     border-radius: 100%;
-    padding: 9px;
+    padding: 0.7em;
     cursor: pointer;
     border: none;
     transition: 0.2s;
 }
 
 .day-inactive {
+    font-size: 1em;
     background-color: transparent;
     border-radius: 100%;
-    padding: 9px;
+    padding: 0.7em;
     cursor: pointer;
     border: none;
     transition: 0.2s;
@@ -282,31 +289,31 @@
 
 .event-box {
     font-weight: 500;
-    font-size: 14px;
-    border-radius: 8px;
-    margin-top: 15px;
-    padding: 15px;
+    font-size: 1em;
+    border-radius: 0.6em;
+    margin-top: 0.9em;
+    padding: 0.9em;
     display: grid;
-    gap: 5px;
+    gap: 0.3em;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .event-text-top {
-    margin-bottom: 5px;
+    margin-bottom: 0.3em;
 }
 
 .event-text-bottom {
-    font-size: 12px;
-    margin-left: 10px;
+    font-size: 0.8em;
+    margin-left: 0.5em;
 }
 
 .weather-box {
     font-weight: 500;
-    font-size: 14px;
-    border-radius: 8px;
-    margin-top: 15px;
-    padding: 15px;
+    font-size: 1em;
+    border-radius: 0.6em;
+    margin-top: 0.9em;
+    padding: 0.9em;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -314,469 +321,42 @@
 .weather-top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 .weather-bottom {
     display: flex;
     justify-content: space-between;
-    margin: 0 5px;
+    margin: 0 0.3em;
 }
 
 .weather {
     display: grid;
-    gap: 5px;
+    gap: 0.3em;
     text-align: center;
 }
 
 .weather-time {
-    font-size: 12px;
+    font-size: 0.8em;
 }
 
 .weather-icon {
-    width: 32px;
-    height: 32px;
+    width: 2.2em;
+    height: 2.2em;
 }
 
-
-@media only screen and (min-device-width: 360px) and (min-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #calendar-appear {
-        border-radius: 8px;
-        margin: 0px 5px;
-        padding: 7px;
-    }
-
-    .calendar-display {
-        gap: 7px;
-    }
-
-    .calendar-left,
-    .calendar-right {
-        padding: 0px;
-    }
-
-    .player {
-        border-radius: 6px;
-        padding: 3px;
-        margin-bottom: 7px;
-    }
-
-    .player-image {
-        border-radius: 4px;
-        padding: 7px;
-        margin: 5px;
-    }
-
-    .notification-icons {
-        width: 24px;
-        height: 24px;
-    }
-
-    .player-text {
-        font-size: 9px;
-        margin-left: 7px;
-        gap: 3px;
-        padding-right: 0px;
-        padding-top: 3px;
-    }
-
-    .player-buttons {
-        gap: 3px;
-    }
-
-    .player-icons {
-        padding: 6px;
-        border-radius: 4px;
-        height: 12px;
-        width: 12px;
-    }
-
-    .notification-1,
-    .notification-2 {
-        border-radius: 6px;
-        padding: 4px;
-        padding-top: 8px;
-        padding-bottom: 12px;
-        margin-bottom: 10px;
-    }
-
-    .notification-image {
-        margin: 5px;
-    }
-
-    .notification-text {
-        font-size: 9px;
-        margin-left: 3px;
-        margin-top: 3px;
-        gap: 3px;
-    }
-
-    .notification-text-top {
-        gap: 30px;
-    }
-
-    .notification-text-top-left {
-        gap: 5px;
-    }
-
-    .notification-text-time {
-        margin-top: 1px;
-        font-size: 6px;
-    }
-
-    .notification-close-frame {
-        height: 18px;
-    }
-
-    .notification-close-icon {
-        padding: 1px;
-    }
-
-    .dnd {
-        gap: 7px;
-    }
-
-    .clear-button {
-        border-radius: 4px;
-        padding: 5px 20px;
-    }
-
-    .calendar-date {
-        padding-left: 3px;
-        padding-bottom: 10px;
-        padding-top: 3px;
-    }
-
-    .calendar-week {
-        padding-bottom: 2px;
-    }
-
-    .calendar-m-d-y {
-        font-size: 15px;
-    }
-
-    .calendar-box {
-        font-size: 8px;
-        border-radius: 6px;
-    }
-
-    .calendar-top {
-        padding: 4px;
-    }
-
-    .calendar-arrows {
-        padding: 6px;
-        border-radius: 4px;
-    }
-
-    .weekdays {
-        margin: 0 10px;
-        padding: 0 3px;
-    }
-
-    .week {
-        border-radius: 100%;
-        padding-bottom: 7px;
-    }
-
-    .days {
-        margin: 0;
-        gap: 1px;
-        padding: 5px;
-        padding-top: 0;
-    }
-
-    .days-1,
-    .days-2,
-    .days-3,
-    .days-4,
-    .days-5,
-    .days-6,
-    .days-7 {
-        gap: 1px;
-    }
-
-    .day {
-        border-radius: 100%;
-        padding: 6px;
-        font-size: 8px;
-    }
-
-    .day-active {
-        border-radius: 100%;
-        padding: 6px;
-        font-size: 8px;
-    }
-
-    .day-inactive {
-        border-radius: 100%;
-        padding: 6px;
-        font-size: 8px;
-    }
-
-    .event-box {
-        font-size: 11px;
-        border-radius: 6px;
-        margin-top: 7px;
-        padding: 10px;
-        gap: 3px;
-    }
-
-    .event-text-top {
-        margin-bottom: 3px;
-    }
-
-    .event-text-bottom {
-        font-size: 8px;
-        margin-left: 7px;
-    }
-
-    .weather-box {
-        font-size: 11px;
-        border-radius: 6px;
-        margin-top: 7px;
-        padding: 10px;
-    }
-
-    .weather-top {
-        margin-bottom: 7px;
-    }
-
-    .weather-bottom {
-        margin: 0 3px;
-    }
-
-    .weather {
-        gap: 3px;
-    }
-
-    .weather-time {
-        font-size: 8px;
-    }
-
-    .weather-icon {
-        width: 24px;
-        height: 24px;
+        font-size: 0.8em;
+        margin-right: 0;
+        margin: 0 1%;
     }
 }
 
-@media only screen and (min-device-width: 667px) and (min-device-width: 360px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #calendar-appear {
-        border-radius: 8px;
-        margin: 0px 5px;
-        padding: 7px;
-    }
-
-    .calendar-display {
-        gap: 7px;
-    }
-
-    .calendar-left,
-    .calendar-right {
-        padding: 0px;
-    }
-
-    .player {
-        border-radius: 6px;
-        padding: 3px;
-        margin-bottom: 7px;
-    }
-
-    .player-image {
-        border-radius: 4px;
-        padding: 7px;
-        margin: 5px;
-    }
-
-    .notification-icons {
-        width: 24px;
-        height: 24px;
-    }
-
-    .player-text {
-        font-size: 9px;
-        margin-left: 7px;
-        gap: 3px;
-        padding-right: 30px;
-        padding-top: 3px;
-    }
-
-    .player-buttons {
-        gap: 3px;
-    }
-
-    .player-icons {
-        padding: 6px;
-        border-radius: 4px;
-        height: 12px;
-        width: 12px;
-    }
-
-    .notification-1,
-    .notification-2 {
-        border-radius: 6px;
-        padding: 4px;
-        padding-top: 8px;
-        padding-bottom: 12px;
-        margin-bottom: 10px;
-    }
-
-    .notification-image {
-        margin: 5px;
-    }
-
-    .notification-text {
-        font-size: 9px;
-        margin-left: 3px;
-        margin-top: 3px;
-        gap: 3px;
-    }
-
-    .notification-text-top {
-        gap: 30px;
-    }
-
-    .notification-text-top-left {
-        gap: 5px;
-    }
-
-    .notification-text-time {
-        margin-top: 1px;
-        font-size: 6px;
-    }
-
-    .notification-close-frame {
-        height: 18px;
-    }
-
-    .notification-close-icon {
-        padding: 1px;
-    }
-
-    .dnd {
-        gap: 7px;
-    }
-
-    .clear-button {
-        border-radius: 4px;
-        padding: 5px 20px;
-    }
-
-    .calendar-date {
-        padding-left: 3px;
-        padding-bottom: 10px;
-        padding-top: 3px;
-    }
-
-    .calendar-week {
-        padding-bottom: 2px;
-    }
-
-    .calendar-m-d-y {
-        font-size: 15px;
-    }
-
-    .calendar-box {
-        font-size: 8px;
-        border-radius: 6px;
-    }
-
-    .calendar-top {
-        padding: 4px;
-    }
-
-    .calendar-arrows {
-        padding: 6px;
-        border-radius: 4px;
-    }
-
-    .weekdays {
-        margin: 0 10px;
-        padding: 0 3px;
-    }
-
-    .week {
-        border-radius: 100%;
-        padding-bottom: 7px;
-    }
-
-    .days {
-        margin: 0;
-        gap: 1px;
-        padding: 5px;
-        padding-top: 0;
-    }
-
-    .days-1,
-    .days-2,
-    .days-3,
-    .days-4,
-    .days-5,
-    .days-6,
-    .days-7 {
-        gap: 1px;
-    }
-
-    .day {
-        border-radius: 100%;
-        padding: 6px;
-        font-size: 8px;
-    }
-
-    .day-active {
-        border-radius: 100%;
-        padding: 6px;
-        font-size: 8px;
-    }
-
-    .day-inactive {
-        border-radius: 100%;
-        padding: 6px;
-        font-size: 8px;
-    }
-
-    .event-box {
-        font-size: 11px;
-        border-radius: 6px;
-        margin-top: 7px;
-        padding: 10px;
-        gap: 3px;
-    }
-
-    .event-text-top {
-        margin-bottom: 3px;
-    }
-
-    .event-text-bottom {
-        font-size: 8px;
-        margin-left: 7px;
-    }
-
-    .weather-box {
-        font-size: 11px;
-        border-radius: 6px;
-        margin-top: 7px;
-        padding: 10px;
-    }
-
-    .weather-top {
-        margin-bottom: 7px;
-    }
-
-    .weather-bottom {
-        margin: 0 3px;
-    }
-
-    .weather {
-        gap: 3px;
-    }
-
-    .weather-time {
-        font-size: 8px;
-    }
-
-    .weather-icon {
-        width: 24px;
-        height: 24px;
+        font-size: 0.8em;
+        margin-right: 0;
+        margin: 0 1%;
     }
 }
