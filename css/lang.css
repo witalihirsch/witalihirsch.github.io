@@ -34,7 +34,7 @@
     padding-left: 0.7em;
 }
 
-@media only screen and (min-device-width: 320px) and (min-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #lang-dialog-appear {
         font-size: 1em;
     }
@@ -44,12 +44,12 @@
     }
 }
 
-@media only screen and (min-device-width: 480px) and (min-device-height: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #lang-dialog-appear {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     #lang-dialog-appear {
-        margin-right: 4%;
+        margin-right: 6%;
     }
 }
