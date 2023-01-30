@@ -124,6 +124,6 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #control-center-appear {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 }
