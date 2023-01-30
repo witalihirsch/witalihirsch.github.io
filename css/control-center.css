@@ -116,3 +116,14 @@
     text-decoration: none;
 }
 
+@media only screen and (min-device-width: 320px) and (min-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #control-center-appear {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (min-device-height: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #control-center-appear {
+        font-size: 0.8em;
+    }
+}
