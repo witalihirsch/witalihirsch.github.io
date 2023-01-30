@@ -15,7 +15,7 @@ html {
 body {
     background: #071A2B;
     font-family: "Inter";
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: 700;
     font-style: normal;
     background-position: center center;
@@ -53,79 +53,48 @@ a {
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     align-items: center;
+    justify-content: space-between;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    padding: 0.2em 0;
 }
 
 .panel-right {
     align-items: flex-end;
     display: flex;
     justify-content: right;
-    gap: 5px;
-    margin: 2px 5px;
-}
-
-.control-top-icons,
-.battery-icon {
-    height: 16px;
-    width: 16px;
-}
-
-.control-center-frame {
-    align-items: center;
-    border-radius: 5px;
-    display: flex;
-    gap: 16px;
-    overflow: hidden;
-    padding: 0px 15px;
-    height: 27px;
-    transition: 0.2s;
-    cursor: pointer;
-}
-
-.lang-dialog-frame {
-    align-items: center;
-    border-radius: 5px;
-    display: flex;
-    gap: 16px;
-    overflow: hidden;
-    padding: 5px 15px;
-    transition: 0.2s;
-    cursor: pointer;
+    gap: 0.5em;
+    margin-right: 0.5em;
 }
 
 .panel-center {
     display: flex;
     justify-content: center;
-    gap: 5px;
-    padding: 2px 5px;
+    margin-left: 4em;
 }
 
-.calendar-frame {
-    align-items: center;
-    border-radius: 5px;
-    display: flex;
-    gap: 16px;
-    overflow: hidden;
-    padding: 5px 15px;
-    transition: 0.2s;
-    cursor: pointer;
-    margin-left: 30px;
+.panel-left {
+    margin-left: 0.5em;
 }
 
+.control-top-icons,
+.battery-icon {
+    height: 1.25em;
+    width: 1.25em;
+}
+
+.control-center-frame,
+.lang-dialog-frame,
+.calendar-frame,
 .activities-frame {
     align-items: center;
-    border-radius: 5px;
+    border-radius: 0.4em;
     display: flex;
-    gap: 16px;
-    overflow: hidden;
-    padding: 5px 15px;
-    margin-left: auto;
-    margin-right: 0;
+    gap: 1em;
+    height: 1.9em;
+    padding: 0 1.2em;
     transition: 0.2s;
     cursor: pointer;
-    margin: 2px 5px;
 }
 
 .popups {
@@ -138,34 +107,22 @@ a {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 10px;
+    bottom: 1%;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
 }
 
-@media only screen and (max-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (min-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     body {
-        font-size: 11px;
-    }
-
-    .control-top-icons,
-    .battery-icon {
-        height: 12px;
-        width: 12px;
+        font-size: 2.5vw;
     }
 }
 
 
-@media only screen and (min-device-width: 828px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 480px) and (min-device-height: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     body {
-        font-size: 12px;
-    }
-
-    .control-top-icons,
-    .battery-icon {
-        height: 12px;
-        width: 12px;
+        font-size: 1.2vw;
     }
 }

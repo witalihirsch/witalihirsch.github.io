@@ -42,7 +42,7 @@ input:checked+.switch-slider:before {
     transform: translateX(19px);
 }
 
-@media only screen and (max-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 360px) and (min-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     .switch {
         position: relative;
         display: inline-block;
@@ -83,7 +83,7 @@ input:checked+.switch-slider:before {
     }
 }
 
-@media only screen and (min-device-width: 828px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 667px) and (min-device-width: 360px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .switch {
         position: relative;
         display: inline-block;

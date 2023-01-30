@@ -339,7 +339,7 @@
 }
 
 
-@media only screen and (max-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 360px) and (min-device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
     #calendar-appear {
         border-radius: 8px;
         margin: 0px 5px;
@@ -560,7 +560,7 @@
     }
 }
 
-@media only screen and (min-device-width: 828px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 667px) and (min-device-width: 360px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #calendar-appear {
         border-radius: 8px;
         margin: 0px 5px;

@@ -3,11 +3,10 @@
     top: 0;
     right: 0;
     font-weight: 700;
-    border-radius: 12px;
-    margin-right: 10px;
+    border-radius: 0.8em;
+    margin-right: 0.5%;
     margin-top: 0px;
-    overflow: hidden;
-    padding: 22px;
+    padding: 1.5em;
     display: none;
     transform: translate(0px, 0px);
     opacity: 0;
@@ -21,12 +20,12 @@
 
 .battery-frame {
     align-items: center;
-    border-radius: 12px;
+    border-radius: 0.8em;
     display: flex;
-    gap: 8px;
+    gap: 0.6em;
     overflow: hidden;
     justify-content: center;
-    padding: 12px 15px;
+    padding: 0.8em 0.9em;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -40,7 +39,7 @@
     display: flex;
     margin-left: auto;
     margin-right: 0;
-    gap: 15px;
+    gap: 0.8em;
 }
 
 .screenshot-frame,
@@ -52,7 +51,7 @@
     display: flex;
     overflow: hidden;
     justify-content: center;
-    padding: 13px;
+    padding: 0.9em;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -60,27 +59,27 @@
 .controls-frame {
     align-items: flex-start;
     display: flex;
-    gap: 12px;
-    margin-top: 20px;
+    gap: 0.8em;
+    margin-top: 1.2em;
 }
 
 .controls-row {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1em;
 }
 
 .controls-icons {
-    height: 16px;
-    width: 16px;
-    margin: 0 7px;
+    height: 1.25em;
+    width: 1.25em;
+    margin: 0 0.5em;
 }
 
 .arrow-frame {
-    height: 50px;
-    width: 35px;
-    left: 60px;
+    height: 3.4em;
+    width: 2.6em;
+    left: 4em;
     position: relative;
     display: flex;
     justify-content: center;
@@ -88,8 +87,8 @@
 }
 
 .arrow {
-    height: 18px;
-    width: 18px;
+    height: 1.4em;
+    width: 1.4em;
     position: absolute;
 }
 
@@ -100,160 +99,40 @@
 .power-frame,
 .airplane-frame {
     font-family: "Inter";
-    font-size: 14px;
+    font-size: 0.7vw;
     font-weight: 700;
     font-style: normal;
     border: none;
     align-items: center;
-    border-radius: 13px;
-    padding: 24px 10px;
+    border-radius: 0.9em;
+    padding: 1.7em 0.75em;
     display: flex;
     height: 0px;
     overflow: hidden;
     transition: 0.2s;
     cursor: pointer;
-    width: 170px;
+    width: 12.2em;
     text-decoration: none;
 }
 
-@media only screen and (max-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
-    #control-center-appear {
-        font-size: 11px;
-        border-radius: 8px;
-        margin-right: 10px;
-        margin-top: 0px;
-        padding: 11px;
-    }
-
-    .battery-frame {
-        border-radius: 8px;
-        gap: 4px;
-        padding: 8px 10px;
-        transition: 0.2s;
-        cursor: pointer;
-    }
-
-    .control-center-topright {
-        margin-right: 0;
-        gap: 8px;
-    }
-
-    .screenshot-frame,
-    .settings-frame,
-    .lockscreen-frame,
-    .poweroff-frame {
-        border-radius: 100%;
-        padding: 10px;
-    }
-
-    .controls-frame {
-        gap: 10px;
-        margin-top: 5px;
-    }
-
-    .controls-row {
-        gap: 10px;
-    }
-
-    .controls-icons {
-        height: 12px;
-        width: 12px;
-        margin: 0 4px;
-    }
-
-    .arrow-frame {
-        height: 50px;
-        width: 35px;
-        left: 35px;
-    }
-
-    .arrow {
-        height: 14px;
-        width: 14px;
-    }
-
+@media only screen and (min-device-width: 320px) and (min-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .wifi-frame,
     .nightlight-frame,
     .darkmode-frame,
     .bluetooth-frame,
     .power-frame,
     .airplane-frame {
-        font-size: 11px;
-        border-radius: 8px;
-        padding: 18px 6px;
-        height: 0px;
-        width: 120px;
+        font-size: 2.5vw;
     }
-
 }
 
-@media only screen and (min-device-width: 828px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    #control-center-appear {
-        font-size: 11px;
-        border-radius: 8px;
-        margin-right: 10px;
-        margin-top: 0px;
-        padding: 11px;
-    }
-
-    .battery-frame {
-        border-radius: 8px;
-        gap: 4px;
-        padding: 8px 10px;
-        transition: 0.2s;
-        cursor: pointer;
-    }
-
-    .control-center-topright {
-        margin-right: 0;
-        gap: 8px;
-    }
-
-    .screenshot-frame,
-    .settings-frame,
-    .lockscreen-frame,
-    .poweroff-frame {
-        border-radius: 100%;
-        padding: 10px;
-    }
-
-    .controls-frame {
-        gap: 10px;
-        margin-top: 5px;
-    }
-
-    .controls-row {
-        gap: 10px;
-    }
-
-    .controls-icons {
-        height: 12px;
-        width: 12px;
-        margin: 0 4px;
-    }
-
-    .arrow-frame {
-        height: 50px;
-        width: 35px;
-        left: 35px;
-    }
-
-    .arrow {
-        height: 14px;
-        width: 14px;
-    }
-
+@media only screen and (min-device-width: 480px) and (min-device-height: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .wifi-frame,
     .nightlight-frame,
     .darkmode-frame,
     .bluetooth-frame,
     .power-frame,
     .airplane-frame {
-        font-size: 11px;
-        border-radius: 8px;
-        padding: 18px 6px;
-        height: 0px;
-        width: 120px;
+        font-size: 1.2vw;
     }
-
 }

@@ -36,7 +36,6 @@
     flex-shrink: 0;
     width: 100%;
     scroll-snap-align: center;
-    margin-right: 0px;
     box-sizing: border-box;
     transform-origin: center center;
     transform: scale(1);
@@ -50,22 +49,22 @@
 a.slide-prev {
     backdrop-filter: blur(30px) brightness(100%);
     -webkit-backdrop-filter: blur(30px);
-    left: 3%;
-    border-radius: 99px;
+    left: 4%;
+    border-radius: 100%;
 }
 
 a.slide-next {
     backdrop-filter: blur(30px) brightness(100%);
     -webkit-backdrop-filter: blur(30px);
-    right: 3%;
-    border-radius: 99px;
+    right: 4%;
+    border-radius: 100%;
 }
 
 .slide-prev,
 .slide-next {
     position: absolute;
     top: 48%;
-    padding: 12px 12px 10px 12px;
+    padding: 0.8em 0.8em 0.7em 0.8em;
     box-sizing: border-box;
     cursor: pointer;
     z-index: 1;

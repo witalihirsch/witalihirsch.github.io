@@ -2,17 +2,17 @@
     backdrop-filter: blur(30px) brightness(100%);
     -webkit-backdrop-filter: blur(30px);
     display: flex;
-    padding: 10px;
-    border-radius: 24px;
-    gap: 5px;
+    padding: 0.7em;
+    border-radius: 1.6em;
+    gap: 0.5em;
 }
 
 .launcher,
 .app,
 .trash {
-    padding: 7px;
-    padding-bottom: 5px;
-    border-radius: 16px;
+    padding: 0.5em;
+    padding-bottom: 0.3em;
+    border-radius: 1.2em;
     background-color: transparent;
 }
 
@@ -22,73 +22,11 @@
 .terminal-icon,
 .settings-icon,
 .trash-icon {
-    width: 56px;
-    height: 56px;
+    width: 4em;
+    height: 4em;
 }
 
 .separator {
     width: 1px;
-    margin: 5px;
-}
-
-@media only screen and (max-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) {
-    .dash {
-        padding: 5px;
-        border-radius: 12px;
-        gap: 3px;
-    }
-
-    .launcher,
-    .app,
-    .trash {
-        padding: 3px;
-        padding-bottom: 2px;
-        border-radius: 8px
-    }
-
-    .launcher-icon,
-    .firefox-icon,
-    .files-icon,
-    .terminal-icon,
-    .settings-icon,
-    .trash-icon {
-        width: 28px;
-        height: 28px;
-    }
-
-    .separator {
-        width: 1px;
-        margin: 3px;
-    }
-}
-
-@media only screen and (min-device-width: 828px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .dash {
-        padding: 6px;
-        border-radius: 18px;
-        gap: 4px;
-    }
-
-    .launcher,
-    .app,
-    .trash {
-        padding: 4px;
-        padding-bottom: 3px;
-        border-radius: 12px
-    }
-
-    .launcher-icon,
-    .firefox-icon,
-    .files-icon,
-    .terminal-icon,
-    .settings-icon,
-    .trash-icon {
-        width: 42px;
-        height: 42px;
-    }
-
-    .separator {
-        width: 1px;
-        margin: 4px;
-    }
+    margin: 0.3em;
 }
