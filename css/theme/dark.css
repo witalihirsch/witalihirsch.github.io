@@ -290,11 +290,11 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     content: url(../../images/dark/close-icon.svg);
 }
 
-.notification-close-icon:hover {
+.notification-close-frame:hover .notification-close-icon {
     content: url(../../images/light/close-icon.svg);
 }
 
-.notification-close-icon:active {
+.notification-close-frame:active .notification-close-icon {
     content: url(../../images/light/close-icon.svg);
 }
 

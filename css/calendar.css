@@ -138,17 +138,20 @@
 }
 
 .notification-close-frame {
-    justify-content: flex-end;
     background-color: transparent;
     border-radius: 100%;
     transition: 0.2s;
     height: 1.8em;
     width: 1.8em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .notification-close-icon {
     opacity: 0;
-    padding: 0.3em;
+    height: 1.1em;
+    width: 1.1em;
 }
 
 .notification-1:hover .notification-close-icon,
@@ -163,6 +166,7 @@
 .calendar-left-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .dnd {
@@ -178,7 +182,8 @@
 
 .clear-button {
     border-radius: 0.4em;
-    padding: 0.4em 2em;
+    padding: 0em 2em;
+    height: 2em;
     transition: 0.2s;
     cursor: pointer;
     align-items: center;
@@ -242,7 +247,7 @@
     display: flex;
     gap: 0.2em;
     text-align: center;
-    padding: 0.8em;
+    padding: 0.7em;
     padding-top: 0;
 }
 
@@ -345,7 +350,7 @@
     height: 2.2em;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #calendar-appear {
         font-size: 0.8em;
         margin-right: 0;
@@ -353,10 +358,20 @@
     }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 932px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #calendar-appear {
         font-size: 0.8em;
         margin-right: 0;
         margin: 0 1%;
+    }
+
+    .event-box {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 932px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #calendar-appear {
+        font-size: 0.95em;
     }
 }
