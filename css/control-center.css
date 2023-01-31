@@ -129,3 +129,15 @@
         margin-right: 1%;
     }
 }
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #control-center-appear {
+        font-size: 0.95em;
+    }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1360px) {
+    #control-center-appear {
+        font-size: 0.85em;
+    }
+}

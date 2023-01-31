@@ -33,7 +33,8 @@ label,
 textarea,
 button,
 select,
-a {
+a,
+div {
     -webkit-tap-highlight-color: transparent;
     tap-highlight-color: transparent;
     outline: none;
