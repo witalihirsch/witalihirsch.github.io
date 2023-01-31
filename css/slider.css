@@ -104,7 +104,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
     }
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 932px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     input[type=range].styled-slider.slider-progress {
         font-size: 0.9em;
     }

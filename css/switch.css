@@ -49,7 +49,7 @@ input:checked+.switch-slider:before {
     }
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 932px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .switch {
         transform: scale(0.7);
     }
