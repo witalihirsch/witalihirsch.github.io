@@ -43,3 +43,21 @@
         font-size: 0.8em;
     }
 }
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .dash {
+        font-size: 0.95em;
+    }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .dash {
+        font-size: 0.95em;
+    }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
+    .dash {
+        font-size: 0.8em;
+    }
+}

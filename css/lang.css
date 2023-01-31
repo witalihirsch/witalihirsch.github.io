@@ -48,15 +48,22 @@
     }
 }
 
+@media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    #lang-dialog-appear {
+        font-size: 0.95em;
+        margin-right: 8%;
+    }
+}
+
 @media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #lang-dialog-appear {
         font-size: 0.95em;
     }
 }
 
-@media only screen and (min-device-width: 700px) and (max-device-width: 1360px) {
+@media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
     #lang-dialog-appear {
-        font-size: 0.85em;
+        font-size: 0.8em;
         margin-right: 4.5%;
     }
 }
