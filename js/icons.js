@@ -37,6 +37,12 @@ const arrowRightPageIcon = document.getElementById("arrow-right-page-icon");
 const arrowLeftPage2Icon = document.getElementById("arrow-left-page2-icon");
 const arrowRightPage2Icon = document.getElementById("arrow-right-page2-icon");
 
+const arrowLeftPage3Icon = document.getElementById("arrow-left-page3-icon");
+const githubIcon = document.getElementById("github-icon");
+const patreonIcon = document.getElementById("patreon-icon");
+const redditIcon = document.getElementById("reddit-icon");
+const googleIcon = document.getElementById("google-icon");
+
 let iconColor = true;
 
 iconButton.addEventListener("click", function() {
@@ -79,6 +85,12 @@ iconButton.addEventListener("click", function() {
         arrowRightPageIcon.src = "images/light/arrow-right-page-icon.svg";
         arrowLeftPage2Icon.src = "images/light/arrow-left-page2-icon.svg";
         arrowRightPage2Icon.src = "images/light/arrow-right-page2-icon.svg";
+
+        arrowLeftPage3Icon.src = "images/light/arrow-left-page3-icon.svg";
+        githubIcon.src = "images/links/light/github.svg";
+        patreonIcon.src = "images/links/light/patreon.svg";
+        redditIcon.src = "images/links/light/reddit.svg";
+        googleIcon.src = "images/links/light/google.svg";
 	} 
 
     else {
@@ -119,5 +131,11 @@ iconButton.addEventListener("click", function() {
         arrowRightPageIcon.src = "images/dark/arrow-right-page-icon.svg";
         arrowLeftPage2Icon.src = "images/dark/arrow-left-page2-icon.svg";
         arrowRightPage2Icon.src = "images/dark/arrow-right-page2-icon.svg";
+
+        arrowLeftPage3Icon.src = "images/dark/arrow-left-page3-icon.svg";
+        githubIcon.src = "images/links/dark/github.svg";
+        patreonIcon.src = "images/links/dark/patreon.svg";
+        redditIcon.src = "images/links/dark/reddit.svg";
+        googleIcon.src = "images/links/dark/google.svg";
     }
 });
