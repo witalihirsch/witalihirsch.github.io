@@ -393,23 +393,3 @@
         margin-right: 0;
     }
 }
-
-/*androids*/
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    #calendar-appear {
-        font-size: 0.8em;
-        margin-right: 0;
-        margin: 0 1%;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 800px) {
-    #calendar-appear {
-        font-size: 0.65em;
-        margin-right: 0;
-    }
-
-    .event-box {
-        display: none;
-    }
-}
