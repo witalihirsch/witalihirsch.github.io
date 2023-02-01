@@ -22,6 +22,8 @@
     width: 2em;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .links-icon {
@@ -29,7 +31,7 @@
     width: 1em;
 }
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .links {
         display: grid;
         justify-content: center;
@@ -56,7 +58,7 @@
 }
 
 /*iphones*/
-@media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .link {
         margin: 0 10px;
     }

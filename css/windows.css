@@ -24,14 +24,14 @@
 }
 
 /*iphones*/
-@media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .window-image {
         width: 100%;
         margin-top: 25%;
     }
 }
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .window-image {
         width: 45%;
     }

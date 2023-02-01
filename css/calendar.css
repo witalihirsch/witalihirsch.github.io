@@ -363,7 +363,7 @@
 }
 
 /*iphones*/
-@media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #calendar-appear {
         font-size: 0.8em;
         margin-right: 0;
@@ -371,7 +371,7 @@
     }
 }
 
-@media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #calendar-appear {
         font-size: 0.65em;
         margin-right: 0;
