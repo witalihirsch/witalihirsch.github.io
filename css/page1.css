@@ -40,30 +40,34 @@
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    .page-1 {
-        display: grid;
-    }
+    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: portrait) {
+        .page-1 {
+            display: grid;
+        }
 
-    .title {
-        margin-top: 30%;
-    }
+        .title {
+            margin-top: 30%;
+        }
 
-    .mono {
-        font-size: 16vw;
-    }
+        .mono {
+            font-size: 16vw;
+        }
 
-    .description-text {
-        font-size: 4vw;
-        margin-bottom: 30%;
+        .description-text {
+            font-size: 4vw;
+            margin-bottom: 30%;
+        }
     }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .mono {
-        font-size: 8vw;
-    }
+    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: landscape) {
+        .mono {
+            font-size: 8vw;
+        }
 
-    .description-text {
-        font-size: 2vw;
+        .description-text {
+            font-size: 2vw;
+        }
     }
 }

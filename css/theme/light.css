@@ -36,7 +36,7 @@ body {
 
 /*control center*/
 #control-center-appear {
-    background-color: var(--light-bg-color);
+    background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid var(--light-fg-color-2);
 }
 
@@ -240,7 +240,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 
 /*lang dialog*/
 #lang-dialog-appear {
-    background-color: var(--light-bg-color);
+    background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid var(--light-fg-color-2);
 }
 
@@ -266,7 +266,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
 
 /*calendar*/
 #calendar-appear {
-    background-color: var(--light-bg-color);
+    background-color: rgba(255, 255, 255, 0.7);
     border: 1px solid var(--light-fg-color-2);
 }
 

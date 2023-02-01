@@ -1,4 +1,6 @@
 #lang-dialog-appear {
+    backdrop-filter: blur(30px) brightness(100%);
+    -webkit-backdrop-filter: blur(30px);
     font-size: 1em;
     position: absolute;
     top: 0;
@@ -35,16 +37,20 @@
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    #lang-dialog-appear {
-        font-size: 1em;
-        margin-right: 8%;
+    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: portrait) {
+        #lang-dialog-appear {
+            font-size: 1em;
+            margin-right: 8%;
+        }
     }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    #lang-dialog-appear {
-        font-size: 0.8em;
-        margin-right: 5.5%;
+    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: landscape) {
+        #lang-dialog-appear {
+            font-size: 0.8em;
+            margin-right: 5.5%;
+        }
     }
 }
 
