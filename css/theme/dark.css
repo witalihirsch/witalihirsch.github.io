@@ -384,18 +384,18 @@ a.slide-next:active {
 }
 
 /*page3*/
-.links {
+.page-3 {
     background-color: rgba(40, 40, 40, 0.1);
 }
 
 .link {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .link:hover {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.15) !important;
 }
 
 .link:active {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }

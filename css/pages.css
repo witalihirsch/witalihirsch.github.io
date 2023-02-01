@@ -63,7 +63,6 @@ a.slide-next {
 .slide-prev,
 .slide-next {
     position: absolute;
-    top: 48%;
     padding: 0.8em 0.8em 0.7em 0.8em;
     box-sizing: border-box;
     cursor: pointer;
