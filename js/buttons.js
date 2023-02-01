@@ -35,11 +35,3 @@ wifiButton.addEventListener("click", function() {
 nightlightButton.addEventListener("click", function() {
     nightlightButton.classList.toggle("clicked");
 });
-
-$("input[type=checkbox]").on("touchstart", function() {
-    $(this).css("background-color", "rgba(0,0,0,0)");
-});
-
-$("label").on("touchstart", function() {
-    $(this).css("background-color", "rgba(0,0,0,0)");
-});

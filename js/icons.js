@@ -43,6 +43,18 @@ const patreonIcon = document.getElementById("patreon-icon");
 const redditIcon = document.getElementById("reddit-icon");
 const googleIcon = document.getElementById("google-icon");
 
+var imagesToLoad = ["images/dark/wifi-disabled-icon.svg", "images/dark/bluetooth-enabled-icon.svg", "images/dark/power-saver-icon.svg"];
+
+var images = [];
+
+for (var i = 0; i < imagesToLoad.length; i++) {
+    images[i] = new Image();
+    images[i].onload = function() {
+        console.log(imagesToLoad[i] + " is loaded");
+    };
+    images[i].src = imagesToLoad[i];
+}
+
 let iconColor = true;
 
 iconButton.addEventListener("click", function() {

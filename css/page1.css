@@ -4,23 +4,6 @@
     width: 100%;
 }
 
-.switch-text {
-    display: flex;
-}
-
-.switch-page1 {
-    position: relative;
-    display: inline-block;
-    width: 100px;
-    height: 24px;
-}
-
-.switch-page1 input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
 .title {
     height: 100%;
     width: 100%;
