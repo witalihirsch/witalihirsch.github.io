@@ -36,10 +36,6 @@ nightlightButton.addEventListener("click", function() {
     nightlightButton.classList.toggle("clicked");
 });
 
-$("button").on("touchstart", function() {
-    $(this).css("background-color", "rgba(0,0,0,0)");
-});
-
 $("input[type=checkbox]").on("touchstart", function() {
     $(this).css("background-color", "rgba(0,0,0,0)");
 });
