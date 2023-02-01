@@ -43,7 +43,99 @@ const patreonIcon = document.getElementById("patreon-icon");
 const redditIcon = document.getElementById("reddit-icon");
 const googleIcon = document.getElementById("google-icon");
 
-var imagesToLoad = ["images/dark/wifi-disabled-icon.svg", "images/dark/bluetooth-enabled-icon.svg", "images/dark/power-saver-icon.svg"];
+var imagesToLoad = [
+    //light theme icons preload
+    "images/light/wifi-icon-frame.svg",
+    "images/light/volume-icon-frame.svg",
+    "images/light/battery-icon-frame.svg",
+    "images/light/battery-icon.svg",
+    "images/light/screenshot-icon.svg",
+    "images/light/settings-icon.svg",
+    "images/light/lockscreen-icon.svg",
+    "images/light/poweroff-icon.svg",
+    "images/light/volume-icon.svg",
+    "images/light/brightness-icon.svg",
+    "images/light/arrow-icon.svg",
+    "images/light/wifi-icon.svg",
+    "images/light/wifi-disabled-icon.svg",
+    "images/light/power-icon.svg",
+    "images/light/power-saver-icon.svg",
+    "images/light/darkmode-icon.svg",
+    "images/light/bluetooth-icon.svg",
+    "images/light/bluetooth-enabled-icon.svg",
+    "images/light/nightlight-icon.svg",
+    "images/light/airplane-icon.svg",
+
+    "images/light/music-icon.svg",
+    "images/light/backward-icon.svg",
+    "images/light/pause-icon.svg",
+    "images/light/forward-icon.svg",
+    "images/light/mail-icon.svg",
+    "images/light/updates-icon.svg",
+    "images/light/arrow-left-icon.svg",
+    "images/light/arrow-right-icon.svg",
+    "images/light/weather-icon.svg",
+    "images/light/weather2-icon.svg",
+    "images/light/weather3-icon.svg",
+    "images/light/weather4-icon.svg",
+    "images/light/weather5-icon.svg",
+
+    "images/light/arrow-right-page-icon.svg",
+    "images/light/arrow-left-page2-icon.svg",
+    "images/light/arrow-right-page2-icon.svg",
+    "images/light/arrow-left-page3-icon.svg",
+
+    "images/links/light/github.svg",
+    "images/links/light/patreon.svg",
+    "images/links/light/reddit.svg",
+    "images/links/light/google.svg",
+
+    //dark theme icons preload
+    "images/dark/wifi-icon-frame.svg",
+    "images/dark/volume-icon-frame.svg",
+    "images/dark/battery-icon-frame.svg",
+    "images/dark/battery-icon.svg",
+    "images/dark/screenshot-icon.svg",
+    "images/dark/settings-icon.svg",
+    "images/dark/lockscreen-icon.svg",
+    "images/dark/poweroff-icon.svg",
+    "images/dark/volume-icon.svg",
+    "images/dark/brightness-icon.svg",
+    "images/dark/arrow-icon.svg",
+    "images/dark/wifi-icon.svg",
+    "images/dark/wifi-disabled-icon.svg",
+    "images/dark/power-icon.svg",
+    "images/dark/power-saver-icon.svg",
+    "images/dark/darkmode-icon.svg",
+    "images/dark/bluetooth-icon.svg",
+    "images/dark/bluetooth-enabled-icon.svg",
+    "images/dark/nightdark-icon.svg",
+    "images/dark/airplane-icon.svg",
+
+    "images/dark/music-icon.svg",
+    "images/dark/backward-icon.svg",
+    "images/dark/pause-icon.svg",
+    "images/dark/forward-icon.svg",
+    "images/dark/mail-icon.svg",
+    "images/dark/updates-icon.svg",
+    "images/dark/arrow-left-icon.svg",
+    "images/dark/arrow-right-icon.svg",
+    "images/dark/weather-icon.svg",
+    "images/dark/weather2-icon.svg",
+    "images/dark/weather3-icon.svg",
+    "images/dark/weather4-icon.svg",
+    "images/dark/weather5-icon.svg",
+
+    "images/dark/arrow-right-page-icon.svg",
+    "images/dark/arrow-left-page2-icon.svg",
+    "images/dark/arrow-right-page2-icon.svg",
+    "images/dark/arrow-left-page3-icon.svg",
+
+    "images/links/dark/github.svg",
+    "images/links/dark/patreon.svg",
+    "images/links/dark/reddit.svg",
+    "images/links/dark/google.svg",
+];
 
 var images = [];
 
@@ -103,9 +195,7 @@ iconButton.addEventListener("click", function() {
         patreonIcon.src = "images/links/light/patreon.svg";
         redditIcon.src = "images/links/light/reddit.svg";
         googleIcon.src = "images/links/light/google.svg";
-	} 
-
-    else {
+    } else {
         iconColor = true;
         wifiFrameIcon.src = "images/dark/wifi-icon.svg";
         volumeFrameIcon.src = "images/dark/volume-icon-frame.svg";
