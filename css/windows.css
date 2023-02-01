@@ -1,68 +1,52 @@
-.dash {
-    font-size: 1em;
-    backdrop-filter: blur(30px) brightness(100%);
-    -webkit-backdrop-filter: blur(30px);
-    display: flex;
-    padding: 0.7em;
-    border-radius: 1.6em;
-    gap: 0.5em;
+.window {
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    transform: translate(0px, 0px);
+    opacity: 0;
+    transition: 0.3s;
 }
 
-.launcher,
-.app,
-.trash {
-    padding: 0.5em;
-    padding-bottom: 0.3em;
-    border-radius: 1.2em;
-    background-color: transparent;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.launcher-icon,
-.firefox-icon,
-.files-icon,
-.terminal-icon,
-.settings-icon,
-.trash-icon {
-    width: 4em;
-    height: 4em;
-}
-
-.separator {
-    width: 1px;
-    margin: 0.3em;
+.window-image {
+    width: 55%;
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
 }
 
 /*for old pcs, laptops*/
 @media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
-    .dash {
-        font-size: 0.8em;
+    .window-image {
+        width: 50%;
     }
 }
 
 /*iphones*/
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    .dash {
-        font-size: 1em;
+    .window-image {
+        width: 100%;
+        margin-top: 25%;
     }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .dash {
-        font-size: 0.7em;
+    .window-image {
+        width: 45%;
     }
 }
 
 /*ipads*/
 @media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    .dash {
-        font-size: 0.95em;
+    .window-image {
+        width: 100%;
+        margin-top: 15%;
     }
 }
 
 @media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .dash {
-        font-size: 0.95em;
+    .window-image {
+        width: 80%;
     }
 }

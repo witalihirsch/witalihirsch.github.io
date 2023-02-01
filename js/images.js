@@ -43,8 +43,10 @@ const patreonIcon = document.getElementById("patreon-icon");
 const redditIcon = document.getElementById("reddit-icon");
 const googleIcon = document.getElementById("google-icon");
 
+const firefoxIcon = document.getElementById("firefox-image");
+
 var imagesToLoad = [
-    //light theme icons preload
+    //light theme images preload
     "images/light/wifi-icon-frame.svg",
     "images/light/volume-icon-frame.svg",
     "images/light/battery-icon-frame.svg",
@@ -91,7 +93,9 @@ var imagesToLoad = [
     "images/links/light/reddit.svg",
     "images/links/light/google.svg",
 
-    //dark theme icons preload
+    "images/windows/firefox-light.png",
+
+    //dark theme images preload
     "images/dark/wifi-icon-frame.svg",
     "images/dark/volume-icon-frame.svg",
     "images/dark/battery-icon-frame.svg",
@@ -137,6 +141,8 @@ var imagesToLoad = [
     "images/links/dark/patreon.svg",
     "images/links/dark/reddit.svg",
     "images/links/dark/google.svg",
+
+    "images/windows/firefox-dark.png",
 ];
 
 var images = [];
@@ -197,6 +203,8 @@ iconButton.addEventListener("click", function() {
         patreonIcon.src = "images/links/light/patreon.svg";
         redditIcon.src = "images/links/light/reddit.svg";
         googleIcon.src = "images/links/light/google.svg";
+
+        firefoxIcon.src = "images/windows/firefox-light.png";
     } else {
         iconColor = true;
         wifiFrameIcon.src = "images/dark/wifi-icon.svg";
@@ -241,5 +249,7 @@ iconButton.addEventListener("click", function() {
         patreonIcon.src = "images/links/dark/patreon.svg";
         redditIcon.src = "images/links/dark/reddit.svg";
         googleIcon.src = "images/links/dark/google.svg";
+
+        firefoxIcon.src = "images/windows/firefox-dark.png";
     }
 });

@@ -43,6 +43,7 @@ div {
 .desktop {
     height: 100%;
     width: 100%;
+    display: grid;
 }
 
 .project-top-frame {
@@ -107,12 +108,7 @@ div {
 .project-bottom-frame {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 1%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
+    align-items: end;
 }
 
 

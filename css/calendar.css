@@ -2,11 +2,14 @@
     backdrop-filter: blur(30px) brightness(100%);
     -webkit-backdrop-filter: blur(30px);
     font-size: 1em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
     font-weight: 700;
     border-radius: 0.8em;
-    margin-right: 2%;
     display: none;
-    transform: translate(0px, 0px);
+    transform: translate(-50%, 0px);
     opacity: 0;
     transition: 0.3s;
 }

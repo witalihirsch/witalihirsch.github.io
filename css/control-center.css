@@ -5,6 +5,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 1;
     font-weight: 700;
     border-radius: 0.8em;
     margin-right: 0.5%;
