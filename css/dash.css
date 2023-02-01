@@ -32,36 +32,35 @@
     margin: 0.3em;
 }
 
+/*for old pcs, laptops*/
+@media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
+    .dash {
+        font-size: 0.8em;
+    }
+}
+
+/*iphones*/
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: portrait) {
-        .dash {
-            font-size: 1em;
-        }
+    .dash {
+        font-size: 1em;
     }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: landscape) {
-        .dash {
-            font-size: 0.8em;
-        }
-    }
-}
-
-@media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    .dash {
-        font-size: 0.95em;
-    }
-}
-
-@media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    .dash {
-        font-size: 0.95em;
-    }
-}
-
-@media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
     .dash {
         font-size: 0.8em;
+    }
+}
+
+/*ipads*/
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .dash {
+        font-size: 0.95em;
+    }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .dash {
+        font-size: 0.95em;
     }
 }

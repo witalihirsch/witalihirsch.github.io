@@ -118,39 +118,44 @@
     text-decoration: none;
 }
 
+/*for old pcs, laptops*/
+@media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
+    #control-center-appear {
+        font-size: 0.8em;
+    }
+}
+
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: portrait) {
-        #control-center-appear {
-            font-size: 1em;
-            margin-right: 2%;
-        }
+    #control-center-appear {
+        font-size: 1em;
+        margin-right: 2%;
     }
 }
 
+/*iphones*/
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: landscape) {
-        #control-center-appear {
-            font-size: 0.8em;
-            margin-right: 1%;
-        }
+    #control-center-appear {
+        font-size: 0.8em;
+        margin-right: 1%;
     }
 }
 
-@media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #control-center-appear {
         font-size: 0.95em;
         margin-right: 2%;
     }
 }
 
-@media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+/*ipads*/
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #control-center-appear {
         font-size: 0.95em;
     }
 }
 
-@media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #control-center-appear {
-        font-size: 0.8em;
+        font-size: 0.95em;
     }
 }

@@ -43,18 +43,15 @@ input:checked+.switch-slider:before {
 }
 
 
+/*iphones*/
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: portrait) {
-        .switch {
-            transform: scale(0.7);
-        }
+    .switch {
+        transform: scale(0.7);
     }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: landscape) {
-        .switch {
-            transform: scale(0.5);
-        }
+    .switch {
+        transform: scale(0.5);
     }
 }

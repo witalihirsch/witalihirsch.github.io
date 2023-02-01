@@ -30,31 +30,35 @@
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: portrait) {
-        .links {
-            display: grid;
-            justify-content: center;
-        }
+    .links {
+        display: grid;
+        justify-content: center;
+    }
 
-        .link {
-            border-radius: 0.8em;
-            margin: 20px 0;
-            height: 4em;
-            width: 4em;
-        }
+    .link {
+        border-radius: 0.8em;
+        margin: 20px 0;
+        height: 4em;
+        width: 4em;
+    }
 
-        .links-icon {
-            height: 2em;
-            width: 2em;
-        }
+    .links-icon {
+        height: 2em;
+        width: 2em;
     }
 }
 
+/*for old pcs, laptops*/
+@media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
+    .link {
+        margin: 0 30px;
+    }
+}
+
+/*iphones*/
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: landscape) {
-        .link {
-            margin: 0 10px;
-        }
+    .link {
+        margin: 0 10px;
     }
 }
 
@@ -77,14 +81,9 @@
     }
 }
 
+/*ipads*/
 @media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     .link {
         margin: 0 20px;
-    }
-}
-
-@media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
-    .link {
-        margin: 0 30px;
     }
 }

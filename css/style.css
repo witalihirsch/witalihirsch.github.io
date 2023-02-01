@@ -115,19 +115,16 @@ div {
     text-align: center;
 }
 
+
+/*iphones*/
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: portrait) {
-        body {
-            font-size: 2.5vw;
-        }
+    body {
+        font-size: 2.5vw;
     }
 }
 
-
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: landscape) {
-        body {
-            font-size: 1.2vw;
-        }
+    body {
+        font-size: 1.2vw;
     }
 }

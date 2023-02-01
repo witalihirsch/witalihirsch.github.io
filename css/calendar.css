@@ -352,43 +352,64 @@
     height: 2.2em;
 }
 
+/*for old pcs, laptops*/
+@media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
+    #calendar-appear {
+        font-size: 0.8em;
+    }
+}
+
+/*iphones*/
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: portrait) {
-        #calendar-appear {
-            font-size: 0.8em;
-            margin-right: 0;
-            margin: 0 1%;
-        }
+    #calendar-appear {
+        font-size: 0.8em;
+        margin-right: 0;
+        margin: 0 1%;
     }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 430px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-    @media only screen and (min-device-width: 0px) and (max-device-width: 1200px) and (orientation: landscape) {
-        #calendar-appear {
-            font-size: 0.65em;
-            margin-right: 0;
-        }
+    #calendar-appear {
+        font-size: 0.65em;
+        margin-right: 0;
+    }
 
-        .event-box {
-            display: none;
-        }
+    .event-box {
+        display: none;
     }
 }
 
-@media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+/*ipads*/
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #calendar-appear {
         font-size: 0.95em;
+        margin-right: 0;
     }
 }
 
-@media only screen and (min-device-width: 700px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #calendar-appear {
         font-size: 0.95em;
+        margin-right: 0;
     }
 }
 
-@media only screen and (min-device-width: 700px) and (max-device-width: 1440px) {
+/*androids*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
     #calendar-appear {
         font-size: 0.8em;
+        margin-right: 0;
+        margin: 0 1%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    #calendar-appear {
+        font-size: 0.65em;
+        margin-right: 0;
+    }
+
+    .event-box {
+        display: none;
     }
 }
