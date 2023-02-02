@@ -52,12 +52,12 @@
                                 </div>
                                 <div class="panel-center">
                                     <div id="calendar-button" class="calendar-frame" ontouchstart="">
-                                        <div class="calendar-text">Jan 1 12:00 PM</div>
+                                        <div id="calendar-text" class="calendar-text"></div>
                                     </div>
                                 </div>
                                 <div class="panel-right">
                                     <div id="lang-dialog-button" class="lang-dialog-frame" ontouchstart="">
-                                        <div class="lang-text">lg</div>
+                                        <div id="current-lang-frame" class="current-lang-frame"></div>
                                     </div>
                                     <div id="control-center-button" class="control-center-frame" ontouchstart="">
                                         <img id="wifi-icon-frame" class="control-top-icons" src="images/dark/wifi-icon.svg" alt="wifi-icon" />
@@ -141,15 +141,15 @@
                                         </div>
                                         <div class="calendar-right">
                                             <div class="calendar-date">
-                                                <div class="calendar-week">Sunday</div>
-                                                <div class="calendar-m-d-y">January 1 2023</div>
+                                                <div id="calendar-week" class="calendar-week"></div>
+                                                <div id="calendar-m-d-y" class="calendar-m-d-y"></div>
                                             </div>
                                             <div class="calendar-box">
                                                 <div class="calendar-top">
                                                     <div class="calendar-arrows" ontouchstart="">
                                                         <img id="arrow-left-icon" class="control-top-icons" src="images/dark/arrow-left-icon.svg" alt="arrow-left-icon" />
                                                     </div>
-                                                    <div class="calendar-mouth">January</div>
+                                                    <div id="calendar-month" class="calendar-month"></div>
                                                     <div class="calendar-arrows" ontouchstart="">
                                                         <img id="arrow-right-icon" class="control-top-icons" src="images/dark/arrow-right-icon.svg" alt="arrow-right-icon" />
                                                     </div>
@@ -268,13 +268,13 @@
                                         <div class="first-lang" ontouchstart="">
                                             <div class="selected-lang">
                                                 <div class="selected-lang-dot">•</div>
-                                                <div class="language">Language</div>
+                                                <div id="current-lang-full" class="language"></div>
                                             </div>
-                                            <div class="lg">lg</div>
+                                            <div id="current-lang" class="current-lang">lg</div>
                                         </div>
                                         <div class="second-lang" ontouchstart="">
-                                            <div class="english">English (US)</div>
-                                            <div class="en">en</div>
+                                            <div class="english">Language</div>
+                                            <div class="lg">lg</div>
                                         </div>
                                         <div class="show-keyboard" ontouchstart="">Show Keyboard Layout</div>
                                     </div>
@@ -418,6 +418,8 @@
     <script type="text/javascript" src="js/theme.js"></script>
     <script type="text/javascript" src="js/images.js"></script>
     <script type="text/javascript" src="js/dash.js"></script>
+    <script type="text/javascript" src="js/time.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
 </body>
 
 </html>
