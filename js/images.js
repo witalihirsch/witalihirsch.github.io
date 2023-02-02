@@ -44,6 +44,7 @@ const redditIcon = document.getElementById("reddit-icon");
 const googleIcon = document.getElementById("google-icon");
 
 const firefoxIcon = document.getElementById("firefox-image");
+const filesIcon = document.getElementById("files-image");
 
 var imagesToLoad = [
     //light theme images preload
@@ -94,6 +95,7 @@ var imagesToLoad = [
     "images/links/light/google.svg",
 
     "images/windows/firefox-light.png",
+    "images/windows/files-light.png",
 
     //dark theme images preload
     "images/dark/wifi-icon-frame.svg",
@@ -143,6 +145,7 @@ var imagesToLoad = [
     "images/links/dark/google.svg",
 
     "images/windows/firefox-dark.png",
+    "images/windows/files-dark.png",
 ];
 
 var images = [];
@@ -205,6 +208,7 @@ iconButton.addEventListener("click", function() {
         googleIcon.src = "images/links/light/google.svg";
 
         firefoxIcon.src = "images/windows/firefox-light.png";
+        filesIcon.src = "images/windows/files-light.png";
     } else {
         iconColor = true;
         wifiFrameIcon.src = "images/dark/wifi-icon.svg";
@@ -251,5 +255,6 @@ iconButton.addEventListener("click", function() {
         googleIcon.src = "images/links/dark/google.svg";
 
         firefoxIcon.src = "images/windows/firefox-dark.png";
+        filesIcon.src = "images/windows/files-dark.png";
     }
 });

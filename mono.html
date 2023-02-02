@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#071A2B">
+    <meta name="theme-color" content="#0B243A">
     <link rel="preload" href="css/theme/dark.css" as="style">
     <link rel="preload" href="css/theme/light.css" as="style">
     <link rel="preload" href="images/bg/MonoDark.png" as="image">
@@ -349,8 +349,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="firefox-window-appear" class="window">
-                            <img id="firefox-image" class="window-image" src="images/windows/firefox-dark.png" alt="firefox-image">
+                        <div class="windows">
+                            <div id="firefox-window-appear" class="firefox-window">
+                                <img id="firefox-image" class="firefox-window-image" src="images/windows/firefox-dark.png" alt="firefox-image">
+                            </div>
+                            <div id="files-window-appear" class="files-window">
+                                <img id="files-image" class="files-window-image" src="images/windows/files-dark.png" alt="files-image">
+                            </div>
                         </div>
                         <div class="project-bottom-frame">
                             <div class="dash">
@@ -360,7 +365,7 @@
                                 <div id="firefox-button" class="app" ontouchstart="">
                                     <img class="firefox-icon" src="images/dash/firefox.svg" alt="firefox-icon">
                                 </div>
-                                <div class="app" ontouchstart="">
+                                <div id="files-button" class="app" ontouchstart="">
                                     <img class="files-icon" src="images/dash/files.svg" alt="files-icon">
                                 </div>
                                 <div class="app" ontouchstart="">

@@ -49,6 +49,7 @@ div {
 .project-top-frame {
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 .panel {
@@ -110,6 +111,7 @@ div {
     justify-content: center;
     align-items: end;
     margin-bottom: 0.5%;
+    z-index: 1;
 }
 
 
