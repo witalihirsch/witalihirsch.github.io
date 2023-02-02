@@ -26,7 +26,7 @@
     align-items: center;
     border-radius: 0.8em;
     display: flex;
-    gap: 0.6em;
+    column-gap: 0.6em;
     overflow: hidden;
     justify-content: center;
     padding: 0.8em 0.9em;
@@ -43,7 +43,7 @@
     display: flex;
     margin-left: auto;
     margin-right: 0;
-    gap: 0.8em;
+    column-gap: 0.8em;
 }
 
 .screenshot-frame,
@@ -63,7 +63,7 @@
 .controls-frame {
     align-items: flex-start;
     display: flex;
-    gap: 0.8em;
+    column-gap: 0.8em;
     margin-top: 1.2em;
 }
 
@@ -71,7 +71,7 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    row-gap: 1em;
 }
 
 .controls-icons {

@@ -33,7 +33,7 @@
 
 .selected-lang {
     display: flex;
-    gap: 0.7em;
+    column-gap: 0.7em;
     padding-left: 0.7em;
 }
 

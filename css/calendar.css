@@ -61,9 +61,10 @@
     font-size: 1em;
     display: grid;
     margin-left: 0.5em;
-    gap: 0.3em;
+    row-gap: 0.3em;
     padding-right: 5em;
     padding-top: 0.3em;
+    width: 6em;
 }
 
 .player-text-top {
@@ -79,7 +80,7 @@
 .player-buttons {
     display: flex;
     align-items: center;
-    gap: 0.3em;
+    column-gap: 0.3em;
 }
 
 .player-icons {
@@ -120,7 +121,7 @@
     display: grid;
     margin-left: 0.3em;
     margin-top: 0.3em;
-    gap: 0.3em;
+    row-gap: 0.3em;
 }
 
 .notification-text-top {
@@ -132,7 +133,7 @@
 .notification-text-top-left {
     display: flex;
     align-items: center;
-    gap: 0.5em;
+    column-gap: 0.5em;
 }
 
 .notification-text-time {
@@ -176,7 +177,7 @@
 
 .dnd {
     display: flex;
-    gap: 0.5em;
+    column-gap: 0.5em;
     align-items: center;
 }
 
@@ -250,7 +251,7 @@
 .days {
     margin: 0;
     display: flex;
-    gap: 0.2em;
+    column-gap: 0.2em;
     text-align: center;
     padding: 0.7em;
     padding-top: 0;
@@ -265,7 +266,7 @@
 .days-7 {
     display: inline-grid;
     justify-content: space-between;
-    gap: 0.2em;
+    row-gap: 0.2em;
 }
 
 .day {
@@ -304,7 +305,7 @@
     margin-top: 0.9em;
     padding: 0.9em;
     display: grid;
-    gap: 0.3em;
+    row-gap: 0.3em;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -342,7 +343,7 @@
 
 .weather {
     display: grid;
-    gap: 0.3em;
+    row-gap: 0.3em;
     text-align: center;
 }
 
@@ -366,15 +367,12 @@
 @media only screen and (min-device-width: 0px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #calendar-appear {
         font-size: 0.8em;
-        margin-right: 0;
-        margin: 0 1%;
     }
 }
 
 @media only screen and (min-device-width: 0px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #calendar-appear {
         font-size: 0.65em;
-        margin-right: 0;
     }
 
     .event-box {
@@ -386,13 +384,11 @@
 @media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     #calendar-appear {
         font-size: 0.95em;
-        margin-right: 0;
     }
 }
 
 @media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     #calendar-appear {
         font-size: 0.95em;
-        margin-right: 0;
     }
 }

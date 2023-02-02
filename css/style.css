@@ -65,7 +65,7 @@ div {
     align-items: flex-end;
     display: flex;
     justify-content: right;
-    gap: 0.5em;
+    column-gap: 0.5em;
     margin-right: 0.5em;
 }
 
@@ -92,7 +92,7 @@ div {
     align-items: center;
     border-radius: 0.4em;
     display: flex;
-    gap: 1em;
+    column-gap: 1em;
     height: 1.9em;
     padding: 0 1.2em;
     transition: 0.2s;
@@ -109,6 +109,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: end;
+    margin-bottom: 0.5%;
 }
 
 

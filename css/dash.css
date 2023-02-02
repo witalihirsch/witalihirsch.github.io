@@ -5,7 +5,7 @@
     display: flex;
     padding: 0.7em;
     border-radius: 1.6em;
-    gap: 0.5em;
+    column-gap: 0.5em;
 }
 
 .launcher,
