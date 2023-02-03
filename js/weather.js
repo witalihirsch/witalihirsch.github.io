@@ -1,30 +1,29 @@
-navigator.geolocation.getCurrentPosition(function(position) {
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
+async function getWeather() {
+    const city = await getCity();
 
-    function displayWeather(data) {
-        const city = document.querySelector('#weather-city');
-        city.innerText = `${data.name}`;
+    const apiKey = "921ff53f10100c24957c6387f91b96c4";
+    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
 
-        const temperature1 = document.querySelector('#weather-temp1');
-        const temperature2 = document.querySelector('#weather-temp2');
-        const temperature3 = document.querySelector('#weather-temp3');
-        const temperature4 = document.querySelector('#weather-temp4');
-        const temperature5 = document.querySelector('#weather-temp5');
+    const response = await fetch(apiUrl);
+    const data = await response.json();
 
-        temperature1.innerText = `${Math.floor(data.main.temp)}°`;
-        temperature2.innerText = `${Math.floor(data.main.temp)}°`;
-        temperature3.innerText = `${Math.floor(data.main.temp)}°`;
-        temperature4.innerText = `${Math.floor(data.main.temp)}°`;
-        temperature5.innerText = `${Math.floor(data.main.temp)}°`;
+    const cityDiv = document.getElementById("weather-city");
+    cityDiv.innerHTML = `${city}`;
+
+    for (let i = 0; i < 5; i++) {
+        const temperature = data.list[i].main.temp - 273.15;
+        const roundedTemperature = Math.floor(temperature);
+
+        const temperatureDiv = document.getElementById(`weather-temp${i + 1}`);
+        temperatureDiv.innerHTML = roundedTemperature + "&deg;";
     }
+}
 
-    const API_KEY = '921ff53f10100c24957c6387f91b96c4';
-    const API_URL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric" + "&appid=" + API_KEY;
+async function getCity() {
+    const response = await fetch("https://ipapi.co/json/");
+    const data = await response.json();
 
-    fetch(API_URL)
-        .then(response => response.json())
-        .then(data => displayWeather(data))
-        .catch(error => console.error(error));
+    return data.city;
+}
 
-});
+getWeather();
