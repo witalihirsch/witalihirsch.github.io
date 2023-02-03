@@ -410,6 +410,32 @@ input:checked+.switch-slider:before {
     background-color: var(--light-fg-color);
 }
 
+#firefox-button.clicked,
+#files-button.clicked {
+    background-color: rgba(40, 40, 40, 0.1);
+    color: var(--dark-color);
+}
+
+#firefox-button.clicked:hover,
+#files-button.clicked:hover {
+    background-color: rgba(40, 40, 40, 0.15);
+}
+
+#firefox-button.clicked:active,
+#files-button.clicked:active {
+    background-color: rgba(40, 40, 40, 0.1);
+    transition: 0.2s;
+}
+
+#firefox-button.clicked .dot,
+#files-button.clicked .dot {
+    content: url(../../images/light/dot-inactive-icon.svg);
+    display: block;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 /*page*/
 .slide {
@@ -418,25 +444,30 @@ input:checked+.switch-slider:before {
 
 a.slide-prev,
 a.slide-next {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 a.slide-prev:hover,
 a.slide-next:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 a.slide-prev:active,
 a.slide-next:active {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 
 /*page1*/
+.page-1 {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 .mono,
 .description-text {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
 }
+
 
 /*page3*/
 .page-3 {
@@ -444,13 +475,13 @@ a.slide-next:active {
 }
 
 .link {
-    background-color: rgba(40, 40, 40, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .link:hover {
-    background-color: rgba(40, 40, 40, 0.3) !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 .link:active {
-    background-color: rgba(40, 40, 40, 0.2) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }

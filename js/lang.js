@@ -1,42 +1,73 @@
-function displayFullLanguage() {
-    const langCode = navigator.language || navigator.userLanguage;
-    const dateTimeFormat = new Intl.DateTimeFormat(langCode);
-    const languageName = dateTimeFormat.resolvedOptions().locale.split("-")[0];
-    document.getElementById("current-lang-frame").innerHTML = languageName;
-    document.getElementById("current-lang").innerHTML = languageName;
-}
-
-displayFullLanguage();
-
-const languageCode = window.navigator.language || window.navigator.userLanguage;
-const languageMap = {
-    "en": "English",
-    "en-US": "English",
-    "fr": "French",
-    "fr-FR": "French",
+const langCode = window.navigator.language || window.navigator.userLanguage;
+const langFormat = new Intl.DateTimeFormat(langCode);
+const langName = langFormat.resolvedOptions().locale.split("-")[0];
+const langMap = {
+    "af": "Afrikaans",
+    "ar": "Arabic",
+    "be": "Belarusian",
+    "bg": "Bulgarian",
+    "ca": "Catalan",
+    "cs": "Czech",
+    "cy": "Welsh",
+    "da": "Danish",
     "de": "German",
-    "de-DE": "German",
+    "el": "Greek",
+    "en": "English",
     "es": "Spanish",
-    "es-ES": "Spanish",
+    "et": "Estonian",
+    "eu": "Basque",
+    "fa": "Farsi",
+    "fi": "Finnish",
+    "fo": "Faeroese",
+    "fr": "French",
+    "ga": "Irish",
+    "gd": "Gaelic",
+    "he": "Hebrew",
+    "hi": "Hindi",
+    "hr": "Croatian",
+    "hu": "Hungarian",
+    "id": "Indonesian",
+    "is": "Icelandic",
     "it": "Italian",
-    "it-IT": "Italian",
+    "ji": "Yiddish",
     "ja": "Japanese",
-    "ja-JP": "Japanese",
-    "zh": "Chinese",
-    "zh-CN": "Chinese",
-    "zh-TW": "Chinese",
-    "pt": "Portuguese",
-    "pt-PT": "Portuguese",
-    "pt-BR": "Portuguese",
-    "ru": "Russian",
-    "ru-RU": "Russian",
-    "nl": "Dutch",
-    "nl-NL": "Dutch",
     "kk": "Kazakh",
-    "kk-KZ": "Kazakh",
     "ko": "Korean",
-    "ko-KR": "Korean"
+    "ku": "Kurdish",
+    "lt": "Lithuanian",
+    "lv": "Latvian",
+    "ml": "Malayalam",
+    "ms": "Malaysian",
+    "mt": "Maltese",
+    "nl": "Dutch",
+    "no": "Norwegian",
+    "pa": "Punjabi",
+    "pl": "Polish",
+    "pt": "Portuguese",
+    "ro": "Romanian",
+    "rm": "Rhaeto-Romanic",
+    "ru": "Russian",
+    "sb": "Sorbian",
+    "sk": "Slovak",
+    "sl": "Slovenian",
+    "sq": "Albanian",
+    "sr": "Serbian",
+    "sv": "Swedish",
+    "th": "Thai",
+    "tn": "Tswana",
+    "tr": "Turkish",
+    "ts": "Tsonga",
+    "uk": "Ukrainian",
+    "ur": "Urdu",
+    "ve": "Venda",
+    "vi": "Vietnamese",
+    "xh": "Xhosa",
+    "zh": "Chinese",
+    "zu": "Zulu",
 };
-const language = languageMap[languageCode] || "English";
 
+const language = langMap[langName] || "English";
+
+document.getElementById("current-lang-frame").innerHTML = langName;
+document.getElementById("current-lang").innerHTML = langName;
 document.getElementById("current-lang-full").innerHTML = language;

@@ -84,6 +84,8 @@ var imagesToLoad = [
     "images/light/weather4-icon.svg",
     "images/light/weather5-icon.svg",
 
+    "images/light/dot-inactive-icon.svg",
+
     "images/light/arrow-right-page-icon.svg",
     "images/light/arrow-left-page2-icon.svg",
     "images/light/arrow-right-page2-icon.svg",
@@ -133,6 +135,8 @@ var imagesToLoad = [
     "images/dark/weather3-icon.svg",
     "images/dark/weather4-icon.svg",
     "images/dark/weather5-icon.svg",
+
+    "images/dark/dot-inactive-icon.svg",
 
     "images/dark/arrow-right-page-icon.svg",
     "images/dark/arrow-left-page2-icon.svg",

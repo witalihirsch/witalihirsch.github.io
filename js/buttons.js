@@ -35,3 +35,21 @@ wifiButton.addEventListener("click", function() {
 nightlightButton.addEventListener("click", function() {
     nightlightButton.classList.toggle("clicked");
 });
+
+
+var firefoxButton = document.getElementById("firefox-button");
+var firefoxWindow = document.getElementById("firefox-window-appear");
+var filesButton = document.getElementById("files-button");
+var filesWindow = document.getElementById("files-window-appear");
+
+firefoxButton.addEventListener("click", function() {
+    firefoxButton.classList.toggle("clicked");
+    firefoxWindow.style.zIndex = "1";
+    filesWindow.style.zIndex = "0";
+});
+
+filesButton.addEventListener("click", function() {
+    filesButton.classList.toggle("clicked");
+    filesWindow.style.zIndex = "1";
+    firefoxWindow.style.zIndex = "0";
+});
