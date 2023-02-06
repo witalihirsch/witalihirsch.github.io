@@ -40,6 +40,10 @@ div {
     outline: none;
 }
 
+button {
+    font-family: "Inter";
+}
+
 .desktop {
     width: 100%;
     height: 100%;

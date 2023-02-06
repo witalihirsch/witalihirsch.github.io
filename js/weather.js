@@ -2,7 +2,7 @@ async function getWeather() {
     const city = await getCity();
 
     const apiKey = "921ff53f10100c24957c6387f91b96c4";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
 
     const response = await fetch(apiUrl);
     const data = await response.json();
@@ -11,7 +11,7 @@ async function getWeather() {
     cityDiv.innerHTML = `${city}`;
 
     for (let i = 0; i < 5; i++) {
-        const temperature = data.list[i].main.temp - 273.15;
+        const temperature = data.list[i].main.temp;
         const roundedTemperature = Math.floor(temperature);
 
         const temperatureDiv = document.getElementById(`weather-temp${i + 1}`);

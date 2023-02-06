@@ -37,3 +37,17 @@ function displayFullMonth() {
 }
 
 displayFullMonth();
+
+function displayWeatherTime() {
+    var currentWeatherTime = new Date();
+    var weatherTimeOptions = { hour: 'numeric', hour12: true };
+    var weatherTime = currentWeatherTime.toLocaleTimeString('en-US', weatherTimeOptions);
+    for (let i = 0; i < 5; i++) {
+        let [time, meridiem] = weatherTime.split(' ');
+        time = parseInt(time, 10) + (i + 1);
+        const nextWeatherTime = `${time} ${meridiem}`;
+        document.getElementById(`weather-time${i+1}`).innerHTML = `${nextWeatherTime}`.slice(0, -3) + ":00";
+    }
+}
+
+displayWeatherTime();
