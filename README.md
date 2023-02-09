@@ -8,8 +8,8 @@
 </div>
 
 ## Mono Project Preview
-<div>
+<div align="center">
     <a href="https://www.patreon.com/witalihirsch">
-        <img src="images/monoproject.png" height="200px" >
+        <img src="images/monoproject.png" height="250px" >
     </a>
 </div> 
