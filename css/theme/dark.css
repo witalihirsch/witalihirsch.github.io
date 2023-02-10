@@ -430,3 +430,13 @@ a.slide-next:active {
 .link:active {
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
+
+
+/*loading*/
+.loading-page {
+    background-color: #252525;
+}
+
+.loading-text {
+    color: #ffffff;
+}

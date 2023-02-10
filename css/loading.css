@@ -1,0 +1,78 @@
+.loading-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-text {
+    font-size: 3vw;
+}
+
+.loading-dots {
+    font-size: 3vw;
+    display: flex;
+    margin-left: 1.5%;
+    margin-bottom: 1%;
+}
+
+.loading-dot {
+    width: 4px;
+    height: 1em;
+    margin: 0 0.2em;
+    transform-origin: center;
+    animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*iphones*/
+@media only screen and (min-device-width: 0px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .loading-text {
+        font-size: 8vw;
+    }
+
+    .loading-dots {
+        font-size: 8vw;
+    }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .loading-text {
+        font-size: 6vw;
+    }
+
+    .loading-dots {
+        font-size: 6vw;
+    }
+}
+
+/*ipads*/
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .loading-text {
+        font-size: 6vw;
+    }
+
+    .loading-dots {
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .loading-text {
+        font-size: 4vw;
+    }
+
+    .loading-dots {
+        font-size: 4vw;
+    }
+}

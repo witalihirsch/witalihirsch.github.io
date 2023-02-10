@@ -21,11 +21,20 @@
     <link rel="stylesheet" type="text/css" href="css/dash.css" />
     <link rel="stylesheet" type="text/css" href="css/windows.css" />
     <link rel="stylesheet" type="text/css" href="css/page3.css" />
+    <link rel="stylesheet" type="text/css" href="css/loading.css" />
     <title>Mono</title>
 </head>
 
 <body>
-    <div class="slider-container">
+    <div id="loading" class="loading-page">
+        <div class="loading-text">Loading</div>
+        <div class="loading-dots">
+            <div class="loading-dot">.</div>
+            <div class="loading-dot">.</div>
+            <div class="loading-dot">.</div>
+        </div>
+    </div>
+    <div id="content" class="slider-container">
         <div class="slider">
             <div class="slides">
                 <div id="slides-1" class="slide">
@@ -422,6 +431,7 @@
     <script type="text/javascript" src="js/time.js"></script>
     <script type="text/javascript" src="js/lang.js"></script>
     <script type="text/javascript" src="js/weather.js"></script>
+    <script type="text/javascript" src="js/loading.js"></script>
 </body>
 
 </html>
