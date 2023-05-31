@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scalee=1.0, user-scalable=0">
+    <meta name="theme-color" content="#101010">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="shortcut icon" type="image/svg" href="img/icon/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <a class="nav__link active" href="#landing"></a>
+        <a class="nav__link" href="#about"></a>
+        <a class="nav__link" href="#works"></a>
+    </nav>
+    <button class="back-to-top" onclick="scrollToTop()" ontouchstart="">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 36V12" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 24L24 12L36 24" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+    <section class="landing" id="landing">
+        <img class="landing__img" src="img/landing.png">
+        <h1 class="title">Hello!</h1>
+        <div class="contact">
+            <div class="contact__row">
+                <a class="contact__icon" href="https://www.figma.com/@witalihirsch" target="_blank" ontouchstart="">
+                    <img src="img/icon/figma.svg" alt="Figma">
+                </a>
+                <a class="contact__icon" href="https://github.com/witalihirsch" target="_blank" ontouchstart="">
+                    <img src="img/icon/github.svg" alt="Github">
+                </a>
+                <a class="contact__icon" href="mailto:witalihirsch1@gmail.com" target="_blank" ontouchstart="">
+                    <img src="img/icon/email.svg" alt="Email">
+                </a>
+            </div>
+        </div>
+        <a class="scroll__btn" href="#about" ontouchstart="">
+            <img src="img/icon/scroll.svg" alt="Scroll Down">
+        </a>
+    </section>
+    <section class="about" id="about">
+        <div class="about__row">
+            <div class="row__item" id="scroll__block">
+                <h2>scroll down to see works</h2>
+            </div>
+            <div class="row__item" id="info__block">
+                <div class="item__block">
+                    <h3>Education</h3>
+                    <p>Siberian State University of Geosystems and Technologies (Bachelor’s degree)</p>
+                </div>
+                <div class="item__block">
+                    <h3>Software</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                </div>
+                <div class="item__block">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Russian (native)</li>
+                        <li>English (B2)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row__item" id="about__block">
+                <div class="item__avatar">
+                    <img src="img/image/avatar.png" alt="Avatar">
+                </div>
+                <div class="item__about">
+                    <h4 class="about__title">My name is Vitaly Hirsch.</h4>
+                    <h4 class="about__text"> I’m UI/UX Designer and Web Developer</h4>
+                </div>
+            </div>
+        </div>
+        <a class="scroll__btn" href="#works" ontouchstart="">
+            <img src="img/icon/scroll.svg" alt="Scroll Down">
+        </a>
+    </section>
+    <section class="works" id="works">
+        <div class="works__row">
+            <div class="works__block">
+                <div class="block__title">
+                    <h3>UI/UX</h3>
+                </div>
+                <div class="block__body">
+                    <div class="block__column">
+                        <div class="column__item">
+                            <div class="item__row">
+                                <div class="item__img">
+                                    <img src="img/image/kaspi.png" alt="Preview">
+                                </div>
+                                <a class="item__link" href="https://www.figma.com/community/file/1241037288624025047" target="_blank" ontouchstart="">
+                                    <div class="link__text">
+                                        <span class="btn__underline">See more</span>
+                                        <div class="link__icon">
+                                            <img src="img/icon/arrow.svg">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column__item">
+                            <div class="item__row">
+                                <div class="item__img">
+                                    <img src="img/image/groceries.png" alt="Preview">
+                                </div>
+                                <a class="item__link" href="https://www.figma.com/community/file/1243117012728758567" target="_blank" ontouchstart="">
+                                    <div class="link__text">
+                                        <span class="btn__underline">See more</span>
+                                        <div class="link__icon">
+                                            <img src="img/icon/arrow.svg">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column__item">
+                            <div class="item__row">
+                                <div class="item__img">
+                                    <img src="img/image/bank.png" alt="Preview">
+                                </div>
+                                <a class="item__link" href="https://www.figma.com/community/file/1244940966632757989" target="_blank" ontouchstart="">
+                                    <div class="link__text">
+                                        <span class="btn__underline">See more</span>
+                                        <div class="link__icon">
+                                            <img src="img/icon/arrow.svg">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span></span>
+            <div class="works__block">
+                <div class="block__item">
+                    <div class="block__title">
+                        <h3>Websites</h3>
+                    </div>
+                    <div class="block__body">
+                        <div class="block__row">
+                            <a class="row__img" href="https://witalihirsch.github.io/websites/mono/" target="_blank" ontouchstart="">
+                                <img src="img/image/mono-web.png" alt="Preview">
+                            </a>
+                            <a class="row__img" href="https://witalihirsch.github.io/websites/bank/" target="_blank" ontouchstart="">
+                                <img src="img/image/bank-web.png" alt="Preview">
+                            </a>
+                        </div>
+                        <div class="block__row">
+                            <a class="row__img" href="https://witalihirsch.github.io/websites/groceries/" target="_blank" ontouchstart="">
+                                <img src="img/image/groceries-web.png" alt="Preview">
+                            </a>
+                            <a class="row__img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__item">
+                    <div class="block__title">
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="block__body">
+                        <div class="block__row">
+                            <a class="row__img" href="https://github.com/witalihirsch/Mono-gtk-theme" target="_blank" ontouchstart="">
+                                <img src="img/image/mono-gtk.svg" alt="Preview">
+                            </a>
+                            <a class="row__img" href="https://github.com/witalihirsch/Mono-firefox-theme" target="_blank" ontouchstart="">
+                                <img src="img/image/mono-firefox.svg" alt="Preview">
+                            </a>
+                        </div>
+                        <div class="block__row">
+                            <a class="row__img" href="https://github.com/witalihirsch/Mono-icon-theme" target="_blank" ontouchstart="">
+                                <img src="img/image/mono-icons.svg" alt="Preview">
+                            </a>
+                            <a class="row__img" href="https://github.com/witalihirsch/qBitTorrent-fluent-theme" target="_blank" ontouchstart="">
+                                <img src="img/image/qbittorrent-theme.svg" alt="Preview">
+                            </a>
+                        </div>
+                        <div class="block__row">
+                            <a class="row__img" href="https://github.com/witalihirsch/QTWin11" target="_blank" ontouchstart="">
+                                <img src="img/image/qtwin11.svg" alt="Preview">
+                            </a>
+                            <a class="row__img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/back-to-top.js"></script>
+</body>
+
+</html>
