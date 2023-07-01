@@ -693,6 +693,7 @@ img {
 }
 
 .item__img-popup {
+    width: 60%;
     margin: 0 var(--size40) 0 0;
     border-radius: var(--size60);
     overflow: hidden;
@@ -900,6 +901,10 @@ img {
         content: "";
         height: var(--size4);
         border-radius: var(--size10);
+    }
+
+    .item__img-popup {
+        width: 100%;
     }
 }
 
