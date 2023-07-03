@@ -651,7 +651,7 @@ img {
     display: none;
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: var(--size60) var(--size150);
     z-index: 2;
 }
