@@ -97,8 +97,6 @@ h6 {
 
 /*---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
-
 img,
 a,
 button {
@@ -174,14 +172,13 @@ body {
     background-color: #101010;
     color: #fff;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Clash Display';
     font-weight: 500;
 }
 
 h1 {
     font-size: var(--size250);
     font-weight: 700;
-    letter-spacing: -0.05em;
 }
 
 img {
@@ -384,7 +381,6 @@ img {
     font-weight: 600;
     font-size: var(--size96);
     line-height: var(--size96);
-    letter-spacing: -0.01em;
     text-transform: uppercase;
 }
 
@@ -407,14 +403,12 @@ img {
 
     font-weight: 600;
     font-size: var(--size48);
-    letter-spacing: -0.01em;
 }
 
 .item__block p,
 .item__block ul li {
     max-width: 476px;
     font-size: var(--size20);
-    letter-spacing: -0.01em;
     line-height: 120%;
 
     color: rgba(255, 255, 255, 0.55);
@@ -441,17 +435,16 @@ img {
 .about__title {
     margin: 0 0 var(--size2) 0;
 
-    font-weight: 600;
+    font-weight: 500;
     font-size: var(--size20);
     text-align: right;
-    letter-spacing: -0.01em;
     flex: none;
 }
 
 .about__text {
+    font-weight: 500;
     font-size: var(--size20);
     text-align: right;
-    letter-spacing: -0.02em;
     flex: none;
 
     color: rgba(255, 255, 255, 0.55);
@@ -502,7 +495,6 @@ img {
 .block__title h3 {
     font-weight: 600;
     font-size: var(--size48);
-    letter-spacing: -0.01em;
 }
 
 .block__column {
@@ -547,7 +539,6 @@ img {
 
     font-weight: 600;
     font-size: var(--size24);
-    letter-spacing: -0.01em;
 }
 
 .link__text span {
@@ -672,10 +663,6 @@ img {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-}
-
-.header__icon {
-    cursor: pointer;
 }
 
 .popup__content {
@@ -1071,4 +1058,55 @@ img {
         }
     }
 
+}
+
+
+
+/*CURSOR*/
+
+#custom-cursor {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: transparent;
+    backdrop-filter: blur(var(--size8));
+    -webkit-backdrop-filter: blur(var(--size8));
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    mix-blend-mode: difference;
+    opacity: 0;
+    z-index: 5;
+    border: 2px solid #fff;
+}
+
+body, a, button {
+    cursor: none;
+}
+
+body:hover #custom-cursor {
+    opacity: 1;
+}
+
+body:active #custom-cursor {
+    width: 24px;
+    height: 24px;
+    transition: 0.2s;
+    border: 3px solid #fff;
+}
+
+
+
+/*RANDOM SHAPE*/
+
+.shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--size100);
+    height: var(--size100);
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(var(--size50));
 }
