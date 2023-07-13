@@ -97,6 +97,8 @@ h6 {
 
 /*---------------------------------------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
 img,
 a,
 button {
@@ -172,6 +174,7 @@ body {
     background-color: #101010;
     color: #fff;
 
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Clash Display';
     font-weight: 500;
 }
