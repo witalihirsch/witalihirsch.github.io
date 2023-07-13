@@ -182,6 +182,7 @@ body {
 h1 {
     font-size: var(--size250);
     font-weight: 700;
+    letter-spacing: -0.03em;
 }
 
 img {
@@ -412,6 +413,7 @@ img {
 .item__block ul li {
     max-width: 476px;
     font-size: var(--size20);
+    letter-spacing: -0.01em;
     line-height: 120%;
 
     color: rgba(255, 255, 255, 0.55);
@@ -438,7 +440,6 @@ img {
 .about__title {
     margin: 0 0 var(--size2) 0;
 
-    font-weight: 500;
     font-size: var(--size20);
     text-align: right;
     flex: none;
@@ -447,6 +448,7 @@ img {
 .about__text {
     font-weight: 500;
     font-size: var(--size20);
+    letter-spacing: -0.02em;
     text-align: right;
     flex: none;
 
@@ -496,6 +498,7 @@ img {
 }
 
 .block__title h3 {
+    letter-spacing: -0.01em;
     font-weight: 600;
     font-size: var(--size48);
 }
@@ -1052,7 +1055,7 @@ img {
     }
 
     body:hover #custom-cursor {
-    opacity: 1;
+        opacity: 1;
     }
 
     body:active #custom-cursor {
@@ -1094,7 +1097,9 @@ img {
     border: 2px solid #fff;
 }
 
-body, a, button {
+body,
+a,
+button {
     cursor: none;
 }
 
