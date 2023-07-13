@@ -1048,6 +1048,17 @@ img {
         transform: scale(0.97, 0.94);
     }
 
+    body:hover #custom-cursor {
+    opacity: 1;
+    }
+
+    body:active #custom-cursor {
+        width: 24px;
+        height: 24px;
+        transition: 0.2s;
+        border: 3px solid #fff;
+    }
+
     @media (max-width: 1024px) {
         .row__img:hover {
             transform: scale(1.02, 1.04);
@@ -1082,17 +1093,6 @@ img {
 
 body, a, button {
     cursor: none;
-}
-
-body:hover #custom-cursor {
-    opacity: 1;
-}
-
-body:active #custom-cursor {
-    width: 24px;
-    height: 24px;
-    transition: 0.2s;
-    border: 3px solid #fff;
 }
 
 
