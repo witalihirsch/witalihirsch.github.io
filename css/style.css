@@ -28,7 +28,7 @@ aside {
 
 html,
 body {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     font-size: 100%;
     line-height: 1;
@@ -1054,15 +1054,63 @@ img {
         transform: scale(0.97, 0.94);
     }
 
-    body:hover #custom-cursor {
-        opacity: 1;
+    body,
+    a,
+    button {
+        cursor: none;
     }
 
-    body:active #custom-cursor {
-        width: 24px;
-        height: 24px;
-        transition: 0.2s;
-        border: 3px solid #fff;
+    [data-cursor] {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(120deg, #ff1744, #e040fb, #2979ff, #00e5ff, #76ff03);
+        background-size: 1600% 1600%;
+        mix-blend-mode: difference;
+        pointer-events: none;
+        z-index: 50;
+        transition: 0.1s linear;
+        animation: blobRadius 5s ease infinite, blobBackground 15s ease infinite;
+    }
+
+    @keyframes blobRadius {
+
+        0%,
+        100% {
+            border-radius: 43% 77% 80% 40% / 40% 40% 80% 80%;
+        }
+
+        20% {
+            border-radius: 47% 73% 61% 59% / 47% 75% 45% 73%;
+        }
+
+        40% {
+            border-radius: 46% 74% 74% 46% / 74% 58% 62% 46%;
+        }
+
+        60% {
+            border-radius: 47% 73% 61% 59% / 40% 40% 80% 80%;
+        }
+
+        80% {
+            border-radius: 50% 70% 52% 68% / 51% 61% 59% 69%;
+        }
+    }
+
+    @keyframes blobBackground {
+
+        0%,
+        100% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+    }
+
+    .cursor-hover--a [data-cursor] {
+        width: 100px;
+        height: 100px;
     }
 
     @media (max-width: 1024px) {
@@ -1079,35 +1127,9 @@ img {
 
 
 
-/*CURSOR*/
-
-#custom-cursor {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: transparent;
-    backdrop-filter: blur(var(--size8));
-    -webkit-backdrop-filter: blur(var(--size8));
-    position: fixed;
-    pointer-events: none;
-    top: 0;
-    mix-blend-mode: difference;
-    opacity: 0;
-    z-index: 5;
-    border: 2px solid #fff;
-}
-
-body,
-a,
-button {
-    cursor: none;
-}
-
-
-
 /*RANDOM SHAPE*/
 
-.shape {
+.shape1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1117,4 +1139,16 @@ button {
     border-radius: 50%;
     background-color: #fff;
     filter: blur(var(--size50));
+}
+
+.shape2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--size200);
+    height: var(--size200);
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(var(--size80));
 }

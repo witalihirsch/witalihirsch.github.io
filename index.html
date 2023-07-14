@@ -14,10 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/clash-display.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script defer src="https://unpkg.com/custom-cursor@latest/dist/cursor.min.js"></script>
+    
     <title>Portfolio</title>
 </head>
 
 <body>
+    <div class="shape2"></div>
     <nav class="nav">
         <a class="nav__link active" href="#landing"></a>
         <a class="nav__link" href="#about"></a>
@@ -225,7 +228,7 @@
         </a>
     </section>
     <section class="about" id="about">
-        <div class="shape"></div>
+        <div class="shape1"></div>
         <div class="about__row">
             <div class="row__item" id="scroll__block">
                 <h2>scroll down to see works</h2>
@@ -441,13 +444,19 @@
             </div>
         </div>
     </section>
-    <div id="custom-cursor"></div>
+    <!-- <div id="custom-cursor"></div> -->
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/back-to-top.js"></script>
     <script type="text/javascript" src="js/popup.js"></script>
-    <script type="text/javascript" src="js/cursor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script type="text/javascript" src="js/shape.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        new window['Cursor']({
+            targets: ['a']
+        })
+    })
+    </script>
 </body>
 
 </html>
