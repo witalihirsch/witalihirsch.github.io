@@ -621,6 +621,181 @@ img {
 
 
 
+/*CONNECT*/
+
+.connect {
+    display: flex;
+    position: relative;
+}
+
+.connect__column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--size60) var(--size120);
+}
+
+.connect__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.connect__title h2 {
+    max-width: 720px;
+    font-weight: 600;
+    font-size: var(--size96);
+    line-height: var(--size96);
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.connect__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: var(--size60) 0 0 0;
+}
+
+.connect__subtitle {
+    display: flex;
+    font-size: var(--size48);
+    margin: 0 0 var(--size40) 0;
+}
+
+.connect__subtitle h3 {
+    font-weight: 600;
+}
+
+.connect__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.connect__links {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--size32);
+    padding: 0 0 0 var(--size100);
+}
+
+.connect__link {
+    display: flex;
+    margin: 0 0 var(--size20) 0;
+}
+
+.connect__link h4 {
+    font-weight: 400;
+    color: #fff;
+    margin: 0 var(--size20) 0 0;
+}
+
+.link__text-connect {
+    font-weight: 600;
+    font-size: var(--size32);
+}
+
+
+
+/*CONNECT CIRCLE*/
+
+.square {
+    position: relative;
+    width: var(--size400);
+    height: var(--size400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+
+.square span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.square span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+
+.text:hover span:nth-child(1) {
+    border: none;
+    background: #fff;
+}
+
+.text:hover span:nth-child(2) {
+    border: none;
+    background: #fff;
+}
+
+.text:hover span:nth-child(3) {
+    border: none;
+    background: #fff;
+}
+
+.text:hover .square__title {
+    color: #101010;
+}
+
+.square__title {
+    position: relative;
+    padding: var(--size40) var(--size60);
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 5;
+    font-size: var(--size24);
+    line-height: 140%;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
 /*WORKS*/
 
 .works {
@@ -912,6 +1087,7 @@ img {
     .landing,
     .about,
     .stages,
+    .connect,
     .works {
         min-height: 100vh;
     }
@@ -1068,7 +1244,7 @@ img {
         width: 100%;
     }
 
-    .stages__title h2 {
+    .stages__title h2, .connect__title h2 {
         font-size: var(--size70);
         line-height: var(--size70);
     }
@@ -1079,7 +1255,7 @@ img {
         flex-direction: column;
     }
 
-    .stages__title h2 {
+    .stages__title h2, .connect__title h2 {
         font-size: var(--size96);
         line-height: var(--size96);
     }
@@ -1112,6 +1288,21 @@ img {
     .blob {
         width: 50vmax;
         max-height: 250px;
+    }
+}
+
+@media (max-width: 850px) {
+    .connect__row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .connect__links {
+        padding: 0 0 0 var(--size50);
+    }
+
+    .square {
+        align-self: flex-end;
     }
 }
 
@@ -1172,12 +1363,16 @@ img {
     }
 
     .accordion__text {
-    font-size: var(--size24);
-}
+        font-size: var(--size24);
+    }
+
+    .connect__column {
+        padding: var(--size60) var(--size60);
+    }
 }
 
 @media (max-width: 600px) {
-    .stages__title h2 {
+    .stages__title h2, .connect__title h2 {
         font-size: var(--size80);
         line-height: var(--size80);
     }
@@ -1245,6 +1440,10 @@ img {
     .accordion__icon {
         width: var(--size40);
         height: var(--size40);
+    }
+
+    .connect__links {
+        padding: 0;
     }
 }
 
