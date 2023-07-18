@@ -586,7 +586,7 @@ img {
 
 .blob {
     fill: #fff;
-    width: 30vmax;
+    width: 28vmax;
     z-index: 1;
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
