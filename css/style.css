@@ -691,11 +691,6 @@ img {
     margin: 0 var(--size20) 0 0;
 }
 
-.link__text-connect {
-    font-weight: 600;
-    font-size: var(--size32);
-}
-
 
 
 /*CONNECT CIRCLE*/
@@ -896,6 +891,11 @@ img {
 
 .link__text:active .link__icon {
     transform: translateX(20%);
+}
+
+.link__text-connect {
+    font-weight: 600;
+    font-size: var(--size32);
 }
 
 .link__icon {
