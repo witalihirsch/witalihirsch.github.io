@@ -769,7 +769,7 @@ img {
     color: #fff;
     text-align: center;
     transition: 0.5s;
-    z-index: 5;
+    z-index: 1;
     font-size: var(--size24);
     line-height: 140%;
 }
