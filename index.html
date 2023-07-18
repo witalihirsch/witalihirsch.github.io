@@ -15,15 +15,14 @@
     <link rel="stylesheet" type="text/css" href="css/clash-display.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script defer src="https://unpkg.com/custom-cursor@latest/dist/cursor.min.js"></script>
-    
     <title>Portfolio</title>
 </head>
 
 <body>
-    <div class="shape2"></div>
     <nav class="nav">
         <a class="nav__link active" href="#landing"></a>
         <a class="nav__link" href="#about"></a>
+        <a class="nav__link" href="#stages"></a>
         <a class="nav__link" href="#works"></a>
     </nav>
     <button class="back-to-top" onclick="scrollToTop()" ontouchstart="">
@@ -205,6 +204,7 @@
         </div>
     </article>
     <section class="landing" id="landing">
+        <div class="shape2"></div>
         <img class="landing__img" src="img/landing.png">
         <h1 class="title">Hello!</h1>
         <div class="contact">
@@ -224,7 +224,7 @@
             </div>
         </div>
         <a class="scroll__btn" href="#about" ontouchstart="">
-            <img src="img/icon/scroll.svg" alt="Scroll Down">
+            <img src="img/icon/scroll.svg">
         </a>
     </section>
     <section class="about" id="about">
@@ -264,8 +264,94 @@
                 </div>
             </div>
         </div>
+        <a class="scroll__btn" href="#stages" ontouchstart="">
+            <img src="img/icon/scroll.svg">
+        </a>
+    </section>
+    <section class="stages" id="stages">
+        <div class="stages__row">
+            <div class="stages__title">
+                <h2>stages of cooperation</h2>
+            </div>
+            <div class="stages__body">
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <h3>Introduction and brief</h3>
+                            <div class="accordion__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="19" width="2" height="40" fill="white" />
+                                    <rect y="21" width="2" height="40" transform="rotate(-90 0 21)" fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="accordion__text">We discuss the project with you - what scope of the website is needed, what problem it will solve, and other details.</p>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <h3>Analysis</h3>
+                            <div class="accordion__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="19" width="2" height="40" fill="white" />
+                                    <rect y="21" width="2" height="40" transform="rotate(-90 0 21)" fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="accordion__text">I conduct an analysis of your market, target audience, and competitors. Based on this analysis, I develop the overall structure of the website.</p>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <h3>Prototyping</h3>
+                            <div class="accordion__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="19" width="2" height="40" fill="white" />
+                                    <rect y="21" width="2" height="40" transform="rotate(-90 0 21)" fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="accordion__text">This stage helps to understand where the photo and textual content will be placed on the website and evaluate the comfort of block arrangement.</p>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <h3>Website design style</h3>
+                            <div class="accordion__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="19" width="2" height="40" fill="white" />
+                                    <rect y="21" width="2" height="40" transform="rotate(-90 0 21)" fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="accordion__text">I gather references based on your request. I search for fonts, select a color palette, and develop a cohesive overall style for the website.</p>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <h3>Design concept</h3>
+                            <div class="accordion__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="19" width="2" height="40" fill="white" />
+                                    <rect y="21" width="2" height="40" transform="rotate(-90 0 21)" fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="accordion__text">I merge the prototype with the previously approved style and create the final version of the website.</p>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__title">
+                            <h3>Project handover</h3>
+                            <div class="accordion__icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="19" width="2" height="40" fill="white" />
+                                    <rect y="21" width="2" height="40" transform="rotate(-90 0 21)" fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="accordion__text">I hand over the project to you, and the price will also include layout control to ensure that the design corresponds to reality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <a class="scroll__btn" href="#works" ontouchstart="">
-            <img src="img/icon/scroll.svg" alt="Scroll Down">
+            <img src="img/icon/scroll.svg">
         </a>
     </section>
     <section class="works" id="works">
@@ -444,9 +530,11 @@
             </div>
         </div>
     </section>
-    <!-- <div id="custom-cursor"></div> -->
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/back-to-top.js"></script>
+    <script type="text/javascript" src="js/accordion.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script type="text/javascript" src="js/blob.js"></script>
     <script type="text/javascript" src="js/popup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script type="text/javascript" src="js/shape.js"></script>

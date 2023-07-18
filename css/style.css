@@ -747,6 +747,7 @@ img {
 
     .landing,
     .about,
+    .stages,
     .works {
         min-height: 100vh;
     }
@@ -1151,4 +1152,118 @@ img {
     border-radius: 50%;
     background-color: #fff;
     filter: blur(var(--size80));
+}
+
+
+
+/*STAGES*/
+
+.stages {
+    display: flex;
+
+    position: relative;
+}
+
+.stages__row {
+    display: flex;
+    width: 100%;
+    padding: var(--size60) var(--size120);
+    justify-content: space-between;
+}
+
+.stages__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 var(--size80) 0 0;
+}
+
+.stages__title h2 {
+    max-width: 720px;
+    font-weight: 600;
+    font-size: var(--size96);
+    line-height: var(--size96);
+    text-transform: uppercase;
+}
+
+.stages__body {
+    display: flex;
+    width: 100%;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accordion__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--size10) 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.accordion__item:first-child {
+    padding: 0 0 var(--size20) 0;
+}
+
+.accordion__item:last-child {
+    border-bottom: 0;
+    padding: var(--size20) 0 0 0;
+}
+
+.accordion__item h3 {
+    font-weight: 600;
+    font-size: var(--size48);
+}
+
+.accordion__title {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--size10) 0;
+}
+
+.accordion__icon {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion__text {
+    font-size: var(--size20);
+    letter-spacing: -0.01em;
+    line-height: 120%;
+
+    color: rgba(255, 255, 255, 0.55);
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion__item.active .accordion__text {
+    max-height: 500px;
+}
+
+.accordion__text,
+.accordion__icon {
+    transition: 0.3s ease;
+}
+
+.accordion__icon svg {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.accordion__item.active .accordion__icon svg {
+    transform: rotate(-45deg);
+}
+
+
+canvas {
+    display: none;
 }
