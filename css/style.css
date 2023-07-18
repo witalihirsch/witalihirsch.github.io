@@ -457,7 +457,7 @@ img {
 
 
 
-/*RANDOM SHAPES*/
+/*RANDOM SHAPE*/
 
 .shape1 {
     position: absolute;
@@ -469,18 +469,6 @@ img {
     border-radius: 50%;
     background-color: #fff;
     filter: blur(var(--size50));
-}
-
-.shape2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: var(--size200);
-    height: var(--size200);
-    border-radius: 50%;
-    background-color: #fff;
-    filter: blur(var(--size80));
 }
 
 
@@ -565,7 +553,7 @@ img {
 .accordion__text {
     font-size: var(--size20);
     letter-spacing: -0.01em;
-    line-height: 120%;
+    line-height: 140%;
 
     color: rgba(255, 255, 255, 0.55);
 
@@ -1182,6 +1170,10 @@ img {
     .stages__row {
         padding: var(--size60) var(--size60);
     }
+
+    .accordion__text {
+    font-size: var(--size24);
+}
 }
 
 @media (max-width: 600px) {
