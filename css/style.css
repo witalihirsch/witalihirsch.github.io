@@ -710,7 +710,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 32% 58% 69% 43% / 48% 32% 59% 55%;
     transition: 0.5s;
     animation: animate 6s linear infinite;
@@ -722,7 +722,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     transition: 0.5s;
     animation: animate 4s linear infinite;
@@ -734,7 +734,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 31% 45% 74% 35% / 38% 56% 51% 87%;
     transition: 0.5s;
     animation: animate2 10s linear infinite;
@@ -919,7 +919,7 @@ img {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 1px;
     bottom: 0;
     left: 0;
     background-color: #fff;
@@ -1065,7 +1065,7 @@ img {
 
 .btn__underline-popup:after {
     content: "";
-    height: var(--size4);
+    height: var(--size2);
     border-radius: var(--size10);
 }
 
@@ -1240,7 +1240,7 @@ img {
 
     .btn__underline-popup:after {
         content: "";
-        height: var(--size4);
+        height: var(--size2);
         border-radius: var(--size10);
     }
 
