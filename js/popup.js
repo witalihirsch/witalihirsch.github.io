@@ -1,7 +1,7 @@
 let popup = document.querySelector(".popup");
 let headerIcon = document.querySelector(".header__icon");
 
-let links = document.querySelectorAll("[id^='item__link-']");
+let links = document.querySelectorAll("#item__link");
 let popups = document.querySelectorAll("[id^='popup-']");
 
 for (let i = 0; i < links.length; i++) {
