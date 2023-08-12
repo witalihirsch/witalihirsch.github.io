@@ -314,10 +314,6 @@ img {
     z-index: -1;
 }
 
-.title {
-    letter-spacing: -15px;
-}
-
 .contact {
     position: absolute;
     right: var(--size50);
