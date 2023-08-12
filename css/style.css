@@ -99,6 +99,12 @@ h6 {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
+@font-face {
+    font-family: 'Esqadero';
+    src: url('../fonts/Esqadero.woff2') format('woff2'),
+        url('../fonts/Esqadero.woff') format('woff');
+}
+
 img,
 a,
 button {
@@ -175,8 +181,7 @@ body {
     background-color: #101010;
     color: #fff;
 
-    font-family: 'Montserrat', sans-serif;
-    /*font-family: 'Clash Display';*/
+    font-family: 'Esqadero', sans-serif;
     font-weight: 500;
 }
 
@@ -309,6 +314,10 @@ img {
     z-index: -1;
 }
 
+.title {
+    letter-spacing: -15px;
+}
+
 .contact {
     position: absolute;
     right: var(--size50);
@@ -341,6 +350,47 @@ img {
     transform: scale(0.9);
 }
 
+.switcher {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+    border-radius: var(--size14);
+    position: absolute;
+    overflow: hidden;
+    top: var(--size50);
+    right: var(--size50);
+}
+
+.switcher a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--size10);
+    0;
+    padding-top: var(--size14);
+    min-width: var(--size70);
+    transition: 0.2s;
+}
+
+.switcher a {
+    display: none;
+}
+
+.switcher .active {
+    display: flex;
+    background-color: #fff;
+    color: #101010;
+}
+
+.switcher:hover a {
+    display: flex;
+}
+
+.en,
+.ru {
+    font-size: var(--size26);
+}
+
 
 
 /*ABOUT*/
@@ -366,11 +416,12 @@ img {
 }
 
 #scroll__block {
-    width: 27%;
+    width: 30%;
 }
 
 #info__block {
     width: 36%;
+    margin: 0 var(--size30) 0 0;
 }
 
 #about__block {
@@ -643,7 +694,7 @@ img {
 }
 
 .connect__title h2 {
-    max-width: 720px;
+    max-width: 900px;
     font-weight: 600;
     font-size: var(--size96);
     line-height: var(--size96);
@@ -660,7 +711,7 @@ img {
 
 .connect__subtitle {
     display: flex;
-    font-size: var(--size48);
+    font-size: var(--size40);
     margin: 0 0 var(--size40) 0;
 }
 
@@ -1100,12 +1151,26 @@ img {
     }
 }
 
-@media (max-width: 1024px) {
-    .nav {
+@media (max-width: 1300px) {
+    #scroll__block {
         display: none;
     }
 
-    #scroll__block {
+    #info__block {
+        width: 60%;
+    }
+
+    #about__block {
+        width: 40%;
+    }
+
+    .stages__row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav {
         display: none;
     }
 
@@ -1150,7 +1215,7 @@ img {
     }
 
     .item__block h3 {
-        font-size: var(--size60);
+        font-size: var(--size40);
     }
 
     .item__block p,
@@ -1187,8 +1252,12 @@ img {
         font-size: var(--size60);
     }
 
+    .connect__links {
+        font-size: var(--size26);
+    }
+
     .link__text {
-        font-size: var(--size32);
+        font-size: var(--size26);
     }
 
     .link__icon {
@@ -1251,7 +1320,8 @@ img {
         width: 100%;
     }
 
-    .stages__title h2, .connect__title h2 {
+    .stages__title h2,
+    .connect__title h2 {
         font-size: var(--size70);
         line-height: var(--size70);
     }
@@ -1262,7 +1332,8 @@ img {
         flex-direction: column;
     }
 
-    .stages__title h2, .connect__title h2 {
+    .stages__title h2,
+    .connect__title h2 {
         font-size: var(--size96);
         line-height: var(--size96);
     }
@@ -1330,13 +1401,13 @@ img {
 
     #about__block {
         order: 1;
-        width: 70%;
+        width: 100%;
         margin: 0 0 var(--size40) 0;
     }
 
     #info__block {
         order: 2;
-        width: 70%;
+        width: 100%;
     }
 
     .item__avatar img {
@@ -1370,7 +1441,7 @@ img {
     }
 
     .accordion__text {
-        font-size: var(--size24);
+        font-size: var(--size26);
     }
 
     .connect__column {
@@ -1379,9 +1450,11 @@ img {
 }
 
 @media (max-width: 600px) {
-    .stages__title h2, .connect__title h2 {
-        font-size: var(--size80);
-        line-height: var(--size80);
+
+    .stages__title h2,
+    .connect__title h2 {
+        font-size: var(--size60);
+        line-height: var(--size60);
     }
 
     .blob {
@@ -1397,14 +1470,6 @@ img {
         margin: 0 var(--size32) 0 0;
         border: var(--size4) solid #fff;
         border-radius: var(--size30);
-    }
-
-    #about__block {
-        width: 100%;
-    }
-
-    #info__block {
-        width: 100%;
     }
 
     .popup__content {
@@ -1511,58 +1576,25 @@ img {
         cursor: none;
     }
 
-    [data-cursor] {
-        width: 50px;
-        height: 50px;
-        background: linear-gradient(120deg, #ff1744, #e040fb, #2979ff, #00e5ff, #76ff03);
-        background-size: 1600% 1600%;
-        mix-blend-mode: difference;
+    .custom-cursor {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: width 0.2s, height 0.2s;
         pointer-events: none;
+        mix-blend-mode: difference;
         z-index: 50;
-        transition: 0.1s linear;
-        animation: blobRadius 5s ease infinite, blobBackground 15s ease infinite;
     }
 
-    @keyframes blobRadius {
-
-        0%,
-        100% {
-            border-radius: 43% 77% 80% 40% / 40% 40% 80% 80%;
-        }
-
-        20% {
-            border-radius: 47% 73% 61% 59% / 47% 75% 45% 73%;
-        }
-
-        40% {
-            border-radius: 46% 74% 74% 46% / 74% 58% 62% 46%;
-        }
-
-        60% {
-            border-radius: 47% 73% 61% 59% / 40% 40% 80% 80%;
-        }
-
-        80% {
-            border-radius: 50% 70% 52% 68% / 51% 61% 59% 69%;
-        }
+    .custom-cursor.large {
+        width: 40px;
+        height: 40px;
     }
 
-    @keyframes blobBackground {
 
-        0%,
-        100% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-    }
-
-    .cursor-hover--a [data-cursor] {
-        width: 100px;
-        height: 100px;
-    }
 
     @media (max-width: 1024px) {
         .row__img:hover {
