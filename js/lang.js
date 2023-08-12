@@ -9,7 +9,7 @@ const translations = {
     lang2: 'English (B2)',
     name: 'My name is Vitaly Hirsch.',
     about: 'I’m UI/UX Designer and Web Developer',
-    stages: 'stages of cooperation',
+    stages: 'stages',
     stage1: 'Introduction and brief',
     stage1p: 'We discuss the project with you - what scope of the website is needed, what problem it will solve, and other details.',
     stage2: 'Analysis',
@@ -33,7 +33,7 @@ const translations = {
   },
 
   ru: {
-    title: 'Привет!', 
+    title: 'Hello!', 
     edu: 'Образование',
     eduP: 'Сибирский Государственный Университет Геосистем и Технологий (Бакалавриат)',
     soft: 'Софт',

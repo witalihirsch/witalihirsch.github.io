@@ -97,12 +97,28 @@ h6 {
 
 /*---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@font-face {
+    font-family: 'Conthrax';
+    src: url('../fonts/Conthrax-Light.woff2') format('woff2'),
+        url('../fonts/Conthrax-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
 @font-face {
-    font-family: 'Esqadero';
-    src: url('../fonts/Esqadero.woff2') format('woff2'),
-        url('../fonts/Esqadero.woff') format('woff');
+    font-family: 'Conthrax';
+    src: url('../fonts/Conthrax-Regular.woff2') format('woff2'),
+        url('../fonts/Conthrax-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Conthrax';
+    src: url('../fonts/Conthrax-Medium.woff2') format('woff2'),
+        url('../fonts/Conthrax-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
 
 img,
@@ -137,6 +153,7 @@ input[type=number] {
 :root {
     --size1: calc(0.5px + (1 - 0.5) * ((100vw - 320px) / (1920 - 320)));
     --size2: calc(1px + (2 - 1) * ((100vw - 320px) / (1920 - 320)));
+    --size3: calc(2px + (3 - 2) * ((100vw - 320px) / (1920 - 320)));
     --size4: calc(2px + (4 - 2) * ((100vw - 320px) / (1920 - 320)));
     --size5: calc(2.5px + (5 - 2.5) * ((100vw - 320px) / (1920 - 320)));
     --size8: calc(4px + (8 - 4) * ((100vw - 320px) / (1920 - 320)));
@@ -181,14 +198,18 @@ body {
     background-color: #101010;
     color: #fff;
 
-    font-family: 'Esqadero', sans-serif;
-    font-weight: 500;
+    /*font-family: 'Esqadero', sans-serif;*/
+    /*font-family: 'Jura';*/
+    /*font-family: 'Play';*/
+    font-family: 'Conthrax';
+    /*font-weight: 500;*/
+    font-weight: 300;
 }
 
 h1 {
     font-size: var(--size250);
-    font-weight: 700;
-    letter-spacing: -0.03em;
+    font-weight: 500;
+    letter-spacing: -0.08em;
 }
 
 img {
@@ -349,7 +370,7 @@ img {
 .switcher {
     display: flex;
     flex-direction: column;
-    border: 2px solid #fff;
+    border: var(--size2) solid #fff;
     border-radius: var(--size14);
     position: absolute;
     overflow: hidden;
@@ -361,9 +382,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--size10);
-    0;
-    padding-top: var(--size14);
+    padding: var(--size10) 0;
+    padding-bottom: var(--size14);
     min-width: var(--size70);
     transition: 0.2s;
 }
@@ -430,7 +450,7 @@ img {
 
 .row__item h2 {
     max-width: 400px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: var(--size96);
     line-height: var(--size96);
     text-transform: uppercase;
@@ -453,7 +473,7 @@ img {
     padding: 0 0 var(--size16);
     0;
 
-    font-weight: 600;
+    font-weight: 400;
     font-size: var(--size48);
 }
 
@@ -489,12 +509,13 @@ img {
     margin: 0 0 var(--size2) 0;
 
     font-size: var(--size20);
+    font-weight: 400;
     text-align: right;
     flex: none;
 }
 
 .about__text {
-    font-weight: 500;
+    font-weight: 300;
     font-size: var(--size20);
     letter-spacing: -0.02em;
     text-align: right;
@@ -544,7 +565,7 @@ img {
 
 .stages__title h2 {
     max-width: 720px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: var(--size96);
     line-height: var(--size96);
     text-transform: uppercase;
@@ -580,7 +601,7 @@ img {
 }
 
 .accordion__item h3 {
-    font-weight: 600;
+    font-weight: 400;
     font-size: var(--size40);
 }
 
@@ -690,8 +711,8 @@ img {
 }
 
 .connect__title h2 {
-    max-width: 900px;
-    font-weight: 600;
+    max-width: 1000px;
+    font-weight: 400;
     font-size: var(--size96);
     line-height: var(--size96);
     text-transform: uppercase;
@@ -712,7 +733,7 @@ img {
 }
 
 .connect__subtitle h3 {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .connect__row {
@@ -733,7 +754,7 @@ img {
 }
 
 .connect__link h4 {
-    font-weight: 400;
+    font-weight: 300;
     color: #fff;
     margin: 0 var(--size20) 0 0;
 }
@@ -881,7 +902,7 @@ img {
 
 .block__title h3 {
     letter-spacing: -0.01em;
-    font-weight: 600;
+    font-weight: 400;
     font-size: var(--size48);
 }
 
@@ -925,7 +946,7 @@ img {
     padding: 0 var(--size10) 0 0;
     align-items: center;
 
-    font-weight: 600;
+    font-weight: 300;
     font-size: var(--size24);
 }
 
@@ -941,7 +962,7 @@ img {
 }
 
 .link__text-connect {
-    font-weight: 600;
+    font-weight: 300;
     font-size: var(--size32);
 }
 
@@ -1159,10 +1180,6 @@ img {
     #about__block {
         width: 40%;
     }
-
-    .stages__row {
-        flex-direction: column;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -1177,7 +1194,7 @@ img {
     .back-to-top {
         height: var(--size100);
         width: var(--size100);
-        border: var(--size4) solid #fff;
+        border: var(--size3) solid #fff;
     }
 
     .contact {
@@ -1190,7 +1207,7 @@ img {
         max-width: var(--size100);
         padding: var(--size18);
         margin: 0 var(--size30) 0 0;
-        border: var(--size4) solid #fff;
+        border: var(--size2) solid #fff;
         border-radius: var(--size26);
     }
 
@@ -1321,6 +1338,10 @@ img {
         font-size: var(--size70);
         line-height: var(--size70);
     }
+
+    .item__img {
+        border-radius: var(--size48);
+    }
 }
 
 @media (max-width: 960px) {
@@ -1335,7 +1356,7 @@ img {
     }
 
     .accordion__item h3 {
-        font-size: var(--size48);
+        font-size: var(--size40);
     }
 
     .accordion__item {
@@ -1385,8 +1406,21 @@ img {
         width: var(--size200);
         padding: var(--size18);
         margin: 0 var(--size32) 0 0;
-        border: var(--size4) solid #fff;
+        border: var(--size3) solid #fff;
         border-radius: var(--size26);
+    }
+
+    .switcher {
+        border: var(--size3) solid #fff;
+        border-radius: var(--size14);
+    }
+
+    .switcher a {
+        font-size: var(--size32);
+        padding: var(--size14) 0;
+        padding-bottom: var(--size18);
+        min-width: var(--size100);
+
     }
 
     .about__row {
@@ -1464,12 +1498,16 @@ img {
         max-width: var(--size120);
         padding: var(--size20);
         margin: 0 var(--size32) 0 0;
-        border: var(--size4) solid #fff;
+        border: var(--size3) solid #fff;
         border-radius: var(--size30);
     }
 
     .popup__content {
         width: 100%;
+    }
+
+    .item__img {
+        border-radius: var(--size30);
     }
 }
 
@@ -1478,7 +1516,7 @@ img {
         width: var(--size120);
         padding: var(--size18);
         margin: 0 var(--size26) 0 0;
-        border: var(--size4) solid #fff;
+        border: var(--size3) solid #fff;
         border-radius: var(--size30);
     }
 
