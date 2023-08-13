@@ -1615,7 +1615,7 @@ img {
         height: 20px;
         border-radius: 50%;
         background: white;
-        position: absolute;
+        position: fixed;
         transform: translate(-50%, -50%);
         transition: width 0.2s, height 0.2s;
         pointer-events: none;

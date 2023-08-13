@@ -818,22 +818,7 @@
     <script type="text/javascript" src="js/select.js"></script>
     <script type="text/javascript" src="js/lang.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $("button, a").hover(function() {
-            $(".custom-cursor").addClass("large");
-        }, function() {
-            $(".custom-cursor").removeClass("large");
-        });
-
-        $(document).mousemove(function(e) {
-            $(".custom-cursor").css({
-                left: e.pageX,
-                top: e.pageY
-            });
-        });
-    });
-    </script>
+    <script type="text/javascript" src="js/cursor.js"></script>
 </body>
 
 </html>
