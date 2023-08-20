@@ -1,5 +1,4 @@
 const body = document.body;
-const img = document.querySelector('.landing__img');
 const system = document.getElementById("system-button");
 const light = document.getElementById("light-button");
 const dark = document.getElementById("dark-button");
@@ -21,12 +20,6 @@ function setTheme(themeToSet) {
         }
     });
 
-    if (themeToSet === "dark") {
-        img.src = "img/landing-dark.webp";
-    } else if (themeToSet === "light") {
-        img.src = "img/landing-light.webp";
-    }
-
     if (!body.classList.contains(themeToSet)) body.classList.add(themeToSet);
 }
 
@@ -38,12 +31,6 @@ function loadTheme() {
     }
 
     setTheme(theme);
-
-    if (theme === "dark") {
-        img.src = "img/landing-dark.webp";
-    } else if (theme === "light") {
-        img.src = "img/landing-light.webp";
-    }
 }
 
 loadTheme();
