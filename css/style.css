@@ -1143,7 +1143,7 @@ img {
     position: fixed;
     width: 100%;
     height: 100vh;
-    padding: var(--size60) var(--size150);
+/*    padding: var(--size60) var(--size150);*/
     z-index: 2;
 }
 
@@ -1155,7 +1155,7 @@ img {
     backdrop-filter: blur(var(--size120));
     -webkit-backdrop-filter: blur(var(--size120));
     background-color: var(--blur-color);
-    border-radius: var(--size120);
+/*    border-radius: var(--size120);*/
     padding: var(--size60) var(--size80);
 }
 
@@ -1184,7 +1184,7 @@ img {
 }
 
 .item__img-popup {
-    width: 60%;
+    width: 50%;
     margin: 0 var(--size40) 0 0;
     border-radius: var(--size60);
     overflow: hidden;
