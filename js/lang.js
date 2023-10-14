@@ -28,7 +28,7 @@ const translations = {
         email: 'Email:',
         available: "I'm always available, you can choose a convenient way to get in touch with me and describe your project for discussion",
         more: 'See more',
-        works: 'Works',
+        works: 'Websites',
         this: 'And this :)',
     },
 
@@ -61,7 +61,7 @@ const translations = {
         email: 'Почта:',
         available: "Я всегда на связи, вы можете выбрать удобный способ связи со мной и описать свой проект для обсуждения",
         more: 'Подробнее',
-        works: 'Работы',
+        works: 'Сайты',
         this: 'И этот :)',
     }
 };
