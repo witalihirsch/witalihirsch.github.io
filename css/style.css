@@ -874,6 +874,7 @@ img {
     background-color: transparent;
     outline: none;
     color: var(--color1);
+    border-radius: 0;
 }
 
 .input-container .label {
