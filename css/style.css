@@ -377,7 +377,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1; 
+    z-index: -1;
 }
 
 .contact {
@@ -821,7 +821,8 @@ img {
     display: flex;
     flex-direction: column;
     font-size: var(--size32);
-    padding: 0 0 0 var(--size100);
+    /*    padding: 0 0 0 var(--size100);*/
+    justify-content: flex-end;
 }
 
 .connect__link {
@@ -834,6 +835,80 @@ img {
     color: var(--color1);
     margin: 0 var(--size20) 0 0;
 }
+
+
+/*connect form*/
+
+.form {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form__btn {
+    display: flex;
+    background-color: var(--color1);
+    color: var(--color2);
+    font-size: var(--size26);
+    border-radius: var(--size14);
+    padding: var(--size14) var(--size26);
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: var(--size32);
+    max-width: 100%;
+
+}
+
+.input-container input {
+    font-size: var(--size20);
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-soft);
+    padding: 3px 0;
+    background-color: transparent;
+    outline: none;
+    color: var(--color1);
+}
+
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--color-soft);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: var(--size24);
+}
+
+.input-container input:focus~.label,
+.input-container input:valid~.label {
+    top: -16px;
+    font-size: var(--size16);
+    color: var(--color1);
+}
+
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color1);
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-container input:focus~.underline,
+.input-container input:valid~.underline {
+    transform: scaleX(1);
+}
+
 
 
 /*connect circle*/
@@ -1143,7 +1218,7 @@ img {
     position: fixed;
     width: 100%;
     height: 100vh;
-/*    padding: var(--size60) var(--size150);*/
+    /*    padding: var(--size60) var(--size150);*/
     z-index: 2;
 }
 
@@ -1155,7 +1230,7 @@ img {
     backdrop-filter: blur(var(--size120));
     -webkit-backdrop-filter: blur(var(--size120));
     background-color: var(--blur-color);
-/*    border-radius: var(--size120);*/
+    /*    border-radius: var(--size120);*/
     padding: var(--size60) var(--size80);
 }
 
@@ -1369,9 +1444,9 @@ img {
         font-size: var(--size60);
     }
 
-    .connect__links {
+    /*.connect__links {
         font-size: var(--size26);
-    }
+    }*/
 
     .link__text {
         font-size: var(--size26);
@@ -1446,6 +1521,41 @@ img {
     .item__img {
         border-radius: var(--size48);
     }
+
+    /*connect form*/
+    .form {
+        max-width: 70%;
+    }
+
+    .form__btn {
+        font-size: var(--size32);
+        border-radius: var(--size16);
+        padding: var(--size16) var(--size32);
+    }
+
+    .input-container {
+        margin-bottom: var(--size40);
+    }
+
+    .input-container input {
+        font-size: var(--size24);
+        width: 100%;
+        padding: 3px 0;
+    }
+
+    .input-container .label {
+        font-size: var(--size32);
+    }
+
+    .input-container input:focus~.label,
+    .input-container input:valid~.label {
+        top: -14px;
+        font-size: var(--size20);
+    }
+
+    .input-container .underline {
+        height: 2px;
+    }
 }
 
 @media (max-width: 960px) {
@@ -1491,17 +1601,23 @@ img {
 }
 
 @media (max-width: 850px) {
-    .connect__row {
+    /*.connect__row {
         display: flex;
         flex-direction: column;
-    }
+    }*/
 
-    .connect__links {
+    /*.connect__links {
         padding: 0 0 0 var(--size50);
-    }
+    }*/
 
     .square {
         align-self: flex-end;
+    }
+
+    /*connect form*/
+    .form {
+        max-width: 100%;
+        margin-bottom: var(--size40);
     }
 }
 
@@ -1590,7 +1706,6 @@ img {
 }
 
 @media (max-width: 600px) {
-
     .stages__title h2,
     .connect__title h2 {
         font-size: var(--size60);
@@ -1600,6 +1715,11 @@ img {
     .blob {
         width: 30vmax;
         max-height: 200px;
+    }
+
+    .connect__row {
+        display: flex;
+        flex-direction: column;
     }
 }
 

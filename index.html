@@ -7,10 +7,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32.png"/>
-    <link rel="icon" type="image/png" sizes="64x64" href="img/icon/favicon-64.png"/>
-    <link rel="icon" type="image/png" sizes="76x76" href="img/icon/favicon-76.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="img/icon/favicon-64.png" />
+    <link rel="icon" type="image/png" sizes="76x76" href="img/icon/favicon-76.png" />
     <link rel="apple-touch-icon" sizes="76x76" href="img/icon/favicon-76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="img/icon/favicon-120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/icon/favicon-152.png">
@@ -616,13 +616,13 @@
             </div>
         </div>
         <div class="theme">
-            <a class="btn" id="system-button">system</a>
-            <a class="btn" id="light-button">light</a>
-            <a class="btn" id="dark-button">dark</a>
+            <a data-translate="theme__system" class="btn" id="system-button">system</a>
+            <a data-translate="theme__light" class="btn" id="light-button">light</a>
+            <a data-translate="theme__dark" class="btn" id="dark-button">dark</a>
         </div>
         <div class="lang" ontouchstart="">
-            <a class="en" ontouchstart="">en</a>
-            <a class="ru" ontouchstart="">ru</a>
+            <a data-translate="land__en" class="en" ontouchstart="">en</a>
+            <a data-translate="lang__ru" class="ru" ontouchstart="">ру</a>
         </div>
         <a class="scroll__btn" href="#about" ontouchstart="">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -776,8 +776,21 @@
             </div>
             <div class="connect__body">
                 <div class="connect__subtitle">
-                    <h3 data-translate="feedback">There'll be a feedback form here someday, but now:</h4>
+                    <h3 data-translate="feedback">Drop your info, and I'll hit you up</h3>
                 </div>
+                <form class="form" action="https://formspree.io/f/xayrdljq" method="POST">
+                    <div class="input-container">
+                        <input name="email" id="input" required="">
+                        <label data-translate="email__input" for="input" class="label">Email</label>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="input-container">
+                        <input name="message" id="input" required="">
+                        <label data-translate="message__input" for="input" class="label">Message (optional)</label>
+                        <div class="underline"></div>
+                    </div>
+                    <button data-translate="submit__btn" class="form__btn" type="submit">Send</button>
+                </form>
                 <div class="connect__row">
                     <div class="connect__links">
                         <div class="connect__link" href="">
@@ -1191,7 +1204,7 @@
                             </a>
                             <div class="row__img">
                                 <div class="row__this">
-                                    <h3 data-translate="this">And this :)</h3>
+                                    <!-- <h3 data-translate="this">And this :)</h3> -->
                                 </div>
                             </div>
                         </div>
