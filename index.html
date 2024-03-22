@@ -1257,6 +1257,14 @@
     <script type="text/javascript" src="js/lang.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/cursor.js"></script>
+    <script>
+    function setMinHeight() {
+        var viewportHeight = window.innerHeight;
+        document.getElementById("landing").style.minHeight = viewportHeight + "px";
+    }
+
+    window.onload = setMinHeight;
+    </script>
 </body>
 
 </html>
