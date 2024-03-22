@@ -1678,6 +1678,7 @@ img {
     #info__block {
         order: 2;
         width: 100%;
+        margin: 0;
     }
 
     .item__avatar img {
