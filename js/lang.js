@@ -29,6 +29,7 @@ const translations = {
         available: "I'm always available, you can choose a convenient way to get in touch with me and describe your project for discussion",
         more: 'See more',
         works: 'Websites',
+        work: 'Works',
         this: 'And this :)',
         email__input: 'Email',
         message__input: 'Message (optional)',
@@ -36,8 +37,7 @@ const translations = {
         theme__system: 'system',
         theme__light: 'light',
         theme__dark: 'dark',
-        // lang__en: 'en',
-        // lang__ru: 'ru',
+        website: 'Website',
     },
 
     ru: {
@@ -70,15 +70,15 @@ const translations = {
         available: "Я всегда на связи, вы можете выбрать удобный способ связи со мной и описать свой проект для обсуждения",
         more: 'Подробнее',
         works: 'Сайты',
+        work: 'Работы',
         this: 'И этот :)',
         email__input: 'Почта',
-        message__input: 'Сообщение (по желанию)',
+        message__input: 'Сообщение',
         submit__btn: 'Отправить',
         theme__system: 'система',
         theme__light: 'светлый',
         theme__dark: 'темный',
-        // lang__en: 'анг',
-        // lang__ru: 'ру',
+        website: 'Сайт',
     }
 };
 
