@@ -7,10 +7,10 @@ window.addEventListener('scroll', function() {
 
         if (newTopPosition < 10) {
             newTopPosition = 10;
-            newHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--model-max'));
+            newHeight = 100;
         } else {
             var scrollPercentage = (50 - newTopPosition) / 40;
-            newHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--model-max')) - (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--model-max')) - parseInt(getComputedStyle(document.documentElement).getPropertyValue('--model-min'))) * scrollPercentage;
+            newHeight = 300 - (300 - 100) * scrollPercentage;
         }
 
         document.querySelector('.model__frame').style.top = newTopPosition + '%';
