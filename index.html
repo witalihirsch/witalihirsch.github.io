@@ -7,21 +7,22 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="yes">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="64x64" href="img/icon/favicon-64.png" />
-    <link rel="icon" type="image/png" sizes="76x76" href="img/icon/favicon-76.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32.png"/>
+    <link rel="icon" type="image/png" sizes="64x64" href="img/icon/favicon-64.png"/>
+    <link rel="icon" type="image/png" sizes="76x76" href="img/icon/favicon-76.png"/>
     <link rel="apple-touch-icon" sizes="76x76" href="img/icon/favicon-76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="img/icon/favicon-120.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/icon/favicon-152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/icon/favicon-180.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.76/build/spline-viewer.js"></script>
     <script type="text/javascript" src="js/logo.js"></script>
     <title>UI/UX Designer</title>
 </head>
 
 <body>
+    <div class="noise"></div>
     <nav class="nav">
         <a class="nav__link active" href="#landing"></a>
         <a class="nav__link" href="#about"></a>
@@ -824,25 +825,19 @@
         </div>
         <div class="dropdown">
             <div>
+                <div class="lang" ontouchstart="">
+                    <a data-translate="land__en" class="en" ontouchstart="">en</a>
+                    <a data-translate="lang__ru" class="ru" ontouchstart="">ру</a>
+                </div>
+            </div>
+            <div>
                 <div class="theme">
                     <a data-translate="theme__system" class="btn" id="system-button">system</a>
                     <a data-translate="theme__light" class="btn" id="light-button">light</a>
                     <a data-translate="theme__dark" class="btn" id="dark-button">dark</a>
                 </div>
             </div>
-            <div>
-                <div class="lang" ontouchstart="">
-                    <a data-translate="land__en" class="en" ontouchstart="">en</a>
-                    <a data-translate="lang__ru" class="ru" ontouchstart="">ру</a>
-                </div>
-            </div>
         </div>
-        <a class="scroll__btn" href="#about" ontouchstart="">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M39 20.5303H38.9522L23.9993 32.0003L9.04781 20.5303H9V22.5266L23.9979 34.0003L38.9972 22.5266L39 20.5303Z" fill="white" fill-opacity="0.6" />
-                <path d="M36 12.5303H35.9618L23.9994 21.4713L12.0382 12.5303H12V14.0864L23.9983 23.0303L35.9978 14.0864L36 12.5303Z" fill="white" />
-            </svg>
-        </a>
     </section>
     <section class="about" id="about">
         <div class="shape1"></div>
@@ -881,12 +876,6 @@
                 </div>
             </div>
         </div>
-        <a class="scroll__btn" href="#stages" ontouchstart="">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M39 20.5303H38.9522L23.9993 32.0003L9.04781 20.5303H9V22.5266L23.9979 34.0003L38.9972 22.5266L39 20.5303Z" fill="white" fill-opacity="0.6" />
-                <path d="M36 12.5303H35.9618L23.9994 21.4713L12.0382 12.5303H12V14.0864L23.9983 23.0303L35.9978 14.0864L36 12.5303Z" fill="white" />
-            </svg>
-        </a>
     </section>
     <section class="stages" id="stages">
         <div class="stages__row">
@@ -975,12 +964,6 @@
                 </div>
             </div>
         </div>
-        <a class="scroll__btn" href="#connect" ontouchstart="">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M39 20.5303H38.9522L23.9993 32.0003L9.04781 20.5303H9V22.5266L23.9979 34.0003L38.9972 22.5266L39 20.5303Z" fill="white" fill-opacity="0.6" />
-                <path d="M36 12.5303H35.9618L23.9994 21.4713L12.0382 12.5303H12V14.0864L23.9983 23.0303L35.9978 14.0864L36 12.5303Z" fill="white" />
-            </svg>
-        </a>
     </section>
     <section class="connect" id="connect">
         <div class="connect__column">
@@ -1034,12 +1017,12 @@
                 </div>
             </div>
         </div>
-        <a class="scroll__btn" href="#works" ontouchstart="">
+<!--         <a class="scroll__btn" href="#works" ontouchstart="">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M39 20.5303H38.9522L23.9993 32.0003L9.04781 20.5303H9V22.5266L23.9979 34.0003L38.9972 22.5266L39 20.5303Z" fill="white" fill-opacity="0.6" />
                 <path d="M36 12.5303H35.9618L23.9994 21.4713L12.0382 12.5303H12V14.0864L23.9983 23.0303L35.9978 14.0864L36 12.5303Z" fill="white" />
             </svg>
-        </a>
+        </a> -->
     </section>
     <section class="works" id="works">
         <div class="connect__title title__padding">
@@ -1069,7 +1052,7 @@
                                 <a id="website__link" class="row__img" target="_blank" ontouchstart="">
                                     <img src="img/image/works/victory.jpg" alt="Preview">
                                 </a>
-                                <a id="website__link" class="row__img" style="border: 1px solid #000" target="_blank" ontouchstart="">
+                                <a id="website__link" class="row__img" style="border: 2px solid #000" target="_blank" ontouchstart="">
                                     <img src="img/image/works/malinabonita.jpg" alt="Preview">
                                 </a>
                             </div>
@@ -1093,7 +1076,7 @@
                                 <a id="website__link" class="row__img" target="_blank" ontouchstart="">
                                     <img src="img/image/works/bank.jpg" alt="Preview">
                                 </a>
-                                <a id="website__link" class="row__img" style="border: 1px solid #000" target="_blank" ontouchstart="">
+                                <a id="website__link" class="row__img" target="_blank" ontouchstart="">
                                     <img src="img/image/works/groceries.jpg" alt="Preview">
                                 </a>
                             </div>
@@ -1156,7 +1139,7 @@
                         </a>
                         <a id="item__link" class="column__item swiper-slide">
                             <div class="item__row">
-                                <div class="item__img" style="border: 1px solid #000">
+                                <div class="item__img">
                                     <img src="img/image/equipment.jpg" alt="Preview">
                                 </div>
                             </div>
@@ -1212,7 +1195,7 @@
                         </a>
                         <a id="item__link" class="column__item swiper-slide">
                             <div class="item__row">
-                                <div class="item__img" style="border: 1px solid #000">
+                                <div class="item__img">
                                     <img src="img/image/groceries.jpg" alt="Preview">
                                 </div>
                             </div>
@@ -1235,6 +1218,7 @@
     <script type="text/javascript" src="js/theme.js"></script>
     <script type="text/javascript" src="js/select.js"></script>
     <script type="text/javascript" src="js/lang.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
     <script type="text/javascript" src="js/back-to-top.js"></script>
     <script type="text/javascript" src="js/accordion.js"></script>
     <script type="text/javascript" src="js/popup.js"></script>
