@@ -1457,42 +1457,6 @@ img {
 }
 
 
-/*cookies*/
-.cookie-popup {
-    display: none;
-    position: fixed;
-    bottom: var(--size50);
-    left: var(--size50);
-    background-color: var(--color1);
-    color: var(--color2);
-    padding: var(--size20) var(--size20);
-    border-radius: var(--size14);
-    width: var(--size400);
-    flex-direction: column;
-    z-index: 6;
-}
-
-.cookie-popup p {
-    font-size: var(--size20);
-    line-height: 1.4;
-    margin-bottom: var(--size20);
-    text-align: left;
-}
-
-.cookie-popup a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color2);
-    color: var(--color1);
-    border: none;
-    padding: var(--size14) var(--size14);
-    border-radius: var(--size10);
-    font-size: var(--size26);
-}
-
-
-
 
 /*MEDIA*/
 
