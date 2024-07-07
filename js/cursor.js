@@ -1,24 +1,25 @@
 let cursor = document.querySelector(".custom-cursor");
 
-const updateCursor = () => {
-    if (cursor.classList.contains("large")) {
-        cursor.style.width = "40px";
-        cursor.style.height = "40px";
-    } else {
-        cursor.style.width = "20px";
-        cursor.style.height = "20px";
-    }
-}
+const updateCursor = (size) => {
+    cursor.style.width = size + "px";
+    cursor.style.height = size + "px";
+};
 
 document.querySelectorAll("button, a").forEach(el => {
     el.addEventListener("mouseenter", () => {
-        cursor.classList.add("large");
-        updateCursor();
+        updateCursor(40);
     });
 
     el.addEventListener("mouseleave", () => {
-        cursor.classList.remove("large");
-        updateCursor();
+        updateCursor(30);
+    });
+
+    el.addEventListener("mousedown", () => {
+        updateCursor(25);
+    });
+
+    el.addEventListener("mouseup", () => {
+        updateCursor(40);
     });
 });
 
@@ -28,6 +29,14 @@ document.addEventListener("mousemove", e => {
 
     cursor.style.left = x + "px";
     cursor.style.top = y + "px";
+});
+
+document.addEventListener("mousedown", () => {
+    updateCursor(25);
+});
+
+document.addEventListener("mouseup", () => {
+    updateCursor(30);
 });
 
 document.addEventListener("mouseout", () => {

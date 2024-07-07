@@ -63,6 +63,10 @@ aside {
     display: block;
 }
 
+body::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
 html,
 body {
     min-height: 100%;
@@ -72,6 +76,10 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow: auto; /* Ensure scrolling works */
 }
 
 input,
