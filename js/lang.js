@@ -1,6 +1,5 @@
 const translations = {
     en: {
-        title: 'Hello!',
         edu: 'Education',
         eduP: 'Siberian State University of Geosystems and Technologies (Bachelor’s degree)',
         soft: 'Software',
@@ -45,7 +44,6 @@ const translations = {
     },
 
     ru: {
-        title: 'Hello!',
         edu: 'Образование',
         eduP: 'Сибирский Государственный Университет Геосистем и Технологий (Бакалавриат)',
         soft: 'Софт',
