@@ -789,11 +789,11 @@ img {
 
 .accordion__text,
 .accordion__icon {
-    transition: 0.25s ease;
+    transition: 0.1s ease;
 }
 
 .accordion__icon svg {
-    transition: transform 0.25s ease;
+    transition: transform 0.1s ease;
 }
 
 .accordion__item.active .accordion__icon svg {
@@ -962,7 +962,7 @@ img {
     top: 0;
     left: 0;
     color: var(--color-soft);
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     pointer-events: none;
     font-size: var(--size24);
 }
