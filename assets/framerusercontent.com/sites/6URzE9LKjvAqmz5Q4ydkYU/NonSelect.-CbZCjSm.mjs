@@ -1,0 +1,2 @@
+import{t as e}from"./rolldown-runtime.Cn0fvqDa.mjs";import{C as t,O as n,c as r,o as i}from"./react.CkbBTWya.mjs";import{V as a,i as o}from"./framer.D5zf1qBy.mjs";function s(){return{style:{userSelect:`none`,WebkitUserSelect:`none`,MozUserSelect:`none`,msUserSelect:`none`,cursor:`default`,width:`100%`}}}function c(e){return t=>(n(o),r(e,{...t,...s(t)}))}var l=e((()=>{i(),t(),a(),c.displayName=`disableSelection`}));export{c as n,l as t};
+//# sourceMappingURL=NonSelect.-CbZCjSm.mjs.map
